@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import "common.scss";
+
+.title-bar{
+	height:50px;
+	background:#edefed;
+	border-top:1px solid $border-color;
+	border-left:1px solid $border-color;
+	border-right:1px solid $border-color;
+	p{
+		font-size:16px;
+		padding-top:14px;
+		padding-left:5px;
+		color:$text-color;
+	}
+}
+.side-bar-title{
+	@media #{$smaller}{
+		font-size:16px;
+
+	}
+	@media #{$middle}{
+		font-size:18px;
+	}
+	@media #{$large}{
+		font-size:20px;
+	}
+}
+#mypage-tabs{
+	li{
+		list-style:none;
+		padding-bottom:10px;
+	}
+	a{
+		color:#a0a0a0;
+		text-decoration:none;
+		&:hover{
+			color:#ffffff;
+		}
+	}
+	.col-sm-2{
+		padding-left:0;
+		padding-right:0;
+	}
+}
+#mypage-cnts-dashboard{
+	padding-top:20px;
+}
+.dashboard-sidebar{
+	height:500px;
+
+}
+.dashboard-mainbar{
+
+}
+.dash-elm{
+	height:auto;
+	padding-bottom:25px;
+}
+.dash-article{
+	padding:20px;
+	height:auto;
+	background:#ffffff;
+	border:1px solid $border-color;
+	p{
+		font-size:14px;
+		color:$text-color;
+		padding-bottom:5px;
+		padding-top:5px;
+	}
+	a{
+		font-size:14px;
+		font-weight:bold;
+		text-decoration:none;
+		color:$btn-color;
+	}
+	label{
+		font-weight:lighter;
+		color:$text-color;
+		padding-top:8px;
+	}
+	.col-sm-3{
+		text-align:right;
+	}
+	.form-control{
+		border-radius:2px;
+		height:38px;
+		box-shadow:none;
+		-webkit-box-shadow:none;
+
+	}
+	@media #{$smartp}{
+		.col-sm-3{
+		text-align:left;
+		}
+	}
+
+}
+
+//sidebar
+.profile-pic{
+	background:#e0e0e0;
+	background-position:center;
+	background-repeat:no-repeat;
+	-moz-background-size:cover;
+	background-size:cover;
+	@media #{$smaller}{
+		height:150px;
+	}
+	@media #{$middle}{
+		height:205px;
+	}
+	@media #{$large}{
+		height:255px;
+	}
+
+}
+.main-profile-name{
+	background:#ffffff;
+	text-align:center;
+	padding:20px 0;
+	border-left:1px solid $border-color;
+	border-bottom:1px solid $border-color;
+	border-right:1px solid $border-color;
+	@media #{$smaller}{
+		p{
+			font-size:20px;
+			font-weight:bold;
+		}
+	}
+	@media #{$middle}{
+		p{
+			font-size:24px;
+		}
+
+	}
+	@media #{$large}{
+		p{
+			font-size:26px;
+		}
+
+	}
+	a{
+		font-size:14px;
+		text-decoration:none;
+		color:$btn-color;
+	}
+}
+.sidebar-point{
+	background:#ffffff;
+	padding:20px;
+	border:1px solid $border-color;
+	p{
+		font-size:14px;
+		color:$text-color;
+	}
+	a{
+		font-size:14px;
+		text-decoration:none;
+		color:$btn-color;
+	}
+
+}
+
+
+//user-edit
+.form-row{
+	padding-top:7px;
+	padding-bottom:15px;
+	.form-group{
+		margin-bottom:0;
+	}
+}
+.user-edit-info{
+	padding-top:0;
+	p{
+		margin-bottom:0;
+		color:$text-note;
+		font-weight:100;
+
+	}
+}

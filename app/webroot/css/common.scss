@@ -1,0 +1,136 @@
+@charset "UTF-8";
+$background-grey:#f5f5f5;
+$text-color:#565a5c;
+$text-note:#969a9c;
+$title-bar:#edefed;
+$border-color:#dce0e0;
+$color-tb-sub:#82888a;
+$kokokara-logo:#131626;
+$btn-color:#ff5a5f;
+$btn-border-color:#ff5a5f;
+$btn-bottom-color:#e00007;
+
+$smartp: "only screen and (max-width:768px)";
+$smaller: "only screen and (min-width:769px) and (max-width:992px)";
+$middle: "only screen and (min-width:993px) and (max-width:1200px)";
+$large:  "only screen and (min-width:1201px)";
+
+$smartp-more: "only screen and (min-width:768px)";
+$smaller-more: "only screen and (min-width:992px)";
+$middle-more: "only screen and (min-width:1200px)";
+
+$ori:100%;
+$sub:30px;
+
+body {
+    font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic","MS Gothic","ＭＳ ゴシック","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    line-height: 1.43;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale // Firefox
+}
+a{
+	text-decoration:none;
+}
+header{
+	z-index:1000;
+}
+hr{
+	margin-top: 22px;
+    margin-bottom: 22px;
+    border: 0;
+    border-top: 1px solid #dce0e0;
+}
+.popover{
+	width:150px;
+	text-align:center;
+	box-shadow:none;
+	padding:5px;
+}
+.nopadding {
+    padding: 0 !important;
+   	margin: 0 !important;
+}
+.nopadding-vw{
+	padding: 0 !important;
+   	margin: 0 !important;
+   	width:100vw;
+}
+.sp-nopadding{
+	@media #{$smartp}{
+		padding:0;
+		margin:0;
+	}
+}
+.lg-nopadding{
+	@media #{$large}{
+		width:100vw;
+		padding:0;
+		margin:0;
+	}
+}
+.header-home{
+	position:absolute;
+	width:100vw;
+}
+.header-search-icon{
+	background:none;
+	border:none;
+	font-size:24px;
+	color:#ccc;
+	padding:none;
+}
+.header-search-input{
+	border-radius:none;
+	border:none;
+	box-shadow:none;
+	height:36px;
+	width:200px;
+}
+.header-login{
+	float:right;
+}
+.nopadding {
+    padding: 0 !important;
+   	margin: 0 !important;
+}
+.subtext{
+	font-size:16px;
+}
+.btn-on-img{
+	border-radius:2px;
+	opacity:0.6;
+	&:hover{
+		background:#000000;
+		opacity:0.6;
+	}
+}
+.sample-font{
+	text-align:center;
+	color:$border-color;
+	i{
+		font-size:34px;
+	}
+}
+footer{
+	background:#322f2f;
+	height:400px;
+	color:#ffffff;
+	li{
+		list-style:none;
+		padding-bottom:2px;
+		padding-top:2px;
+	}
+	a{
+		text-decoration:none;
+		color:#ffffff;
+		&:hover{
+			text-decoration:none;
+			color:#e0e0e0;
+		}
+	}
+	@media #{$smartp}{
+		.col-sm-4{
+			margin:0 auto;
+		}
+	}
+}

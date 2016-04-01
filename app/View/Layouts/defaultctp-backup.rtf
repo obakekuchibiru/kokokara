@@ -1,0 +1,243 @@
+<?php
+/**
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.View.Layouts
+ * @since         CakePHP(tm) v 0.10.0.1076
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
+
+$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="kokokara University"/>
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="大学生活の勉強以外のもの全てをサポート、kokokara Universityは前向きな人を増やします。" />
+	<?php echo $this->Html->charset(); ?>
+	<title>
+		<?php echo $this->fetch('title'); ?>
+	</title>
+	<?php
+		echo $this->Html->meta('icon');
+
+		echo $this->Html->css('cake.generic');
+
+		echo $this->Html->script("jquery-1.11.2.min.js");
+		echo $this->Html->script("jquery.remodal.js");
+		echo $this->Html->css("kai.css");
+		echo $this->Html->script("kai.js");
+
+		echo $this->fetch('meta');
+		echo $this->fetch('css');
+		echo $this->fetch('script');
+		echo $scripts_for_layout;
+	?>
+
+	<!-- Jquery 導入 -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<?php
+	echo $this->Html->script('bootstrap.min.js');
+	echo $this->Html->css('bootstrap.min.css');
+	echo $this->Html->css('jquery.remodal.css');
+	echo $this->Html->css('font-awesome.min.css');
+
+	echo $this->Html->css('style.css')
+	?>
+	<script>
+	$(function(){
+	    var $setElm = $('.text-fit');
+	    var cutFigure = '70'; // カットする文字数
+	    var afterTxt = ' …'; // 文字カット後に表示するテキスト
+	 
+	    $setElm.each(function(){
+	        var textLength = $(this).text().length;
+	        var textTrim = $(this).text().substr(0,(cutFigure))
+	 
+	        if(cutFigure < textLength) {
+	            $(this).html(textTrim + afterTxt).css({visibility:'visible'});
+	        } else if(cutFigure >= textLength) {
+	            $(this).css({visibility:'visible'});
+	        }
+	    });
+	});
+	</script>
+</head>
+<body>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54273956-2', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	<div id="container">
+		<div id="header">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			 	<div class="container-fluid"  style="margin:0 auto;">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <? echo $this->Html->image("kokologo.png", array("alt" => "Homeへ", 'url' => '/', "class" => "navbar-brand")); ?>
+				      <div class="kokologo-header-div">
+				      	<? echo $this->Html->image("kokologo-header.png", array("alt" => "Homeへ", 'url' => '/', "class" => "kokologo-header hidden-sm hidden-md hidden-lg")); ?>
+				      </div>
+				    </div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				     	<ul class="nav navbar-nav">
+				        	<!--
+				        	<li class="header-btn-lg-1 dropdown">
+				        		<a href="#" class="dropdown-toggle header-gal" data-toggle="dropdown" role="button" aria-expanded="false" style="border-left:1px solid #ededed;" >国内インターン <span class="caret"></span></a>
+				        		<ul class="dropdown-menu" role="menu">
+				            		<li><?php echo $this->Html->link('長期インターン', array('controller' => 'events', 'action' => 'category', 1)); ?></li>
+				            		<!--
+				            		<li><?php echo $this->Html->link('短期インターン', array('controller' => 'events', 'action' => 'category', 2)); ?></li>
+				          		</ul>
+				        	</li>
+				        	-->
+					        <li class="header-btn-lg-2"><?php echo $this->Html->link('海外インターン', array('controller' => 'events', 'action' => 'category', 3), array('class' => 'header-gal')); ?></li>
+					        <li class="header-btn-lg-3"><?php echo $this->Html->link('留学', array('controller' => 'events', 'action' => 'category', 5), array('class' => 'header-gal')); ?></li>
+					        <!--
+					        <li class="header-btn-lg-4"><?php echo $this->Html->link('習い事', array('controller' => 'events', 'action' => 'category', 7), array('class' => 'header-gal')); ?></li>
+					        <li class="header-btn-lg-5"><?php echo $this->Html->link('おもしろい', array('controller' => 'events', 'action' => 'category', 8), array('class' => 'header-gal')); ?></li>
+					        <li class="header-btn-lg-6"><?php echo $this->Html->link('合宿', array('controller' => 'events', 'action' => 'category', 6), array('class' => 'header-gal')); ?></li>
+					    	-->
+					        <li class="header-btn-lg-7 dropdown">
+					        	<a href="#" class="dropdown-toggle header-gal" data-toggle="dropdown" role="button" aria-expanded="false">学生団体 <span class="caret"></span></a>
+				        		<ul class="dropdown-menu" role="menu">
+				            		<li><?php echo $this->Html->link('団体ページ', array('controller' => 'events', 'action' => 'category', 4)); ?></li>
+				            		<!--
+				            		<li><?php echo $this->Html->link('学生イベント', array('controller' => 'events', 'action' => 'category', 9)); ?></li>
+				            	-->
+				          		</ul>
+				          	</li>
+				      	</ul>
+				     	<ul class="nav navbar-nav navbar-right">
+					        <li>
+					        	<?php echo $this->Html->link(
+	        						'kokokaraって？',
+								      array('controller'=>'pages',
+									    'action'=>'about')
+										)
+								?>
+					        </li>
+					        <li class="header-login-btn">						      
+						        <?php
+						        $myData=$this->Session->read("myData");
+								if(!$myData){
+								   echo $this->Html->link('登校する', array('controller' => 'students', 'action' => 'login'));
+								}else{
+								   echo $this->Html->link('下校する', array('controller' => 'students', 'action' => 'logout'));
+								}
+								?>
+					        	<!--
+								<?php
+								if(!$myData){
+									echo $this->Html->link('登校する', array('controller' => 'students', 'action' => 'login'));
+								}else{
+									echo $this->Html->link('下校する', array('controller' => 'students', 'action' => 'logout'));
+									//debug($myData);
+								}
+								?>
+					    		-->
+							</li>
+						</ul>
+					</div>
+			  	</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		<div id="content">
+
+			<?php echo $this->Session->flash(); ?>
+			 <?php echo $this->fetch('content'); ?>
+		</div>
+		<div class="remodal" data-remodal-id="modal">
+		    <h1 style="margin-bottom:40px;">おかえりなさい！</h1>
+		    <div class="row">
+		    	<div class="col-sm-6">
+		    		<h4>学生証（アカウント）をお持ちの方</h4>
+		    	</div>
+		    	<div class="col-sm-6 hidden-xs">
+		    		<h4>学生証をお持ちでない方</h4>
+		    	</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-sm-4 col-sm-offset-1 login-fb-btn">
+		    		<?php
+					echo $this->Html->link('', array("controller" => "fbconnect", "action" => "facebook"));
+					?>
+					<h1><i class="fa fa-facebook-square"></i><br><font style="font-size:14px;">Facebookで登校する</font></h1>
+			    </div>
+			    <div class="col-sm-4 col-sm-offset-2 login-fb-btn2">
+					<?php
+					echo $this->Html->link('', array('action' => 'signup'));
+					?>
+					<h1><i class="fa fa-facebook-square"></i><br><font style="font-size:14px;">Facebookで簡単入学</font></h1>
+			    </div>
+		    </div>
+		    <br>
+		    <a class="remodal-cancel" href="#">閉じる</a>
+		</div>
+	    <footer class="footer">
+			<div class="container footer-container">
+				<div class="row">
+					<div class="col-sm-4 footer-kokologo">
+						<? echo $this->Html->image('kokologo-2.png', array('alt' => 'kokokara_logo','url' => array('controller' => ''),'class' => 'img-responsive'));?>
+					</div>
+					<div class="col-sm-8"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 footer-col">
+		        		<ul>
+		        			<li><?php echo $this->Html->link(
+	        						'kokokaraって？',
+								      array('controller'=>'pages',
+									    'action'=>'about')
+										)
+								?>
+							</li>
+		        			<li><?php echo $this->Html->link(
+	        						'運営企業',
+								      array('controller'=>'pages',
+									    'action'=>'about')
+										)
+								?>
+							</li>
+		        		</ul>
+		        	</div>
+		        	<div class="col-sm-4 footer-col">
+		        		<ul>
+		        			<li>
+		        				<?php
+								echo $this->Html->link('新規会員登録', array('action' => 'signup'));
+								?>
+		        			</li>
+		        		</ul>
+		        	</div>
+		        	<div class="col-sm-4 footer-col">
+		        		
+		        	</div>
+		        </div>
+	        </div>
+	    </footer>
+	</div>
+	<!-- <?php echo $this->element('sql_dump'); ?> -->
+</body>
+</html>

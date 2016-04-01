@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import "common.scss";
+
+// HELP PAGE
+#help-main{
+	background:#f3f3f3;
+	border:1px solid $border-color;
+	padding-top:40px;
+	.row{
+		margin-left:0;
+		margin-right:0;
+	}
+}
+
+.help-header{
+  text-align:center;
+  color:#ffffff;
+  background-image:url('../img/help-bg.jpg');
+  background-position:center;
+  background-repeat:no-repeat;
+  -moz-background-size:cover;
+  background-size:cover;
+  @media #{$smartp}{
+  	height:250px;
+  	padding-top:40px;
+		h1{
+			font-size:24px;
+		}
+		h3{
+			font-size:18px;
+		}
+	}
+  @media #{$smartp-more}{
+  	height:350px;
+  	padding-top:40px;
+		h1{
+			font-size:30px;
+		}
+		h3{
+			font-size:22px;
+		}
+	}
+}
+.help-search-form{
+	height:50px;
+	background:#ffffff;
+	margin-top:70px;
+	@media #{$smartp}{
+	   	margin-top:30px;
+	}
+}
+.help-sidebar{
+	ul{
+		padding-left:0;
+	}
+	li{
+		list-style:none;
+		padding-bottom:15px;
+	}
+	a{
+		font-size:16px;
+		text-decoration:none;
+		color:$text-note;
+		&:hover{
+			text-decoration:none;
+			color:$text-color;
+		}
+	}
+
+}
+.help-main{
+	background:#f3f3f3;
+	h1{
+		font-size:26px;
+		padding-bottom:20px !important;
+	}
+}
+.help-list{
+	padding-left:0;
+	li{
+		list-style:none;
+		padding-bottom:20px;
+	}
+	a{
+		color:$text-color;
+		text-decoration:none;
+		font-size:16px;
+		&:hover{
+			color:$text-note;
+		}
+	}
+	.fa-question{
+		position:relative;
+		top:7px;
+		font-size:40px;
+		color:#d3d3d3;
+	}
+}
+.help-panels{
+	position:relative;
+	padding:0 10px 10px 0;
+	height:200px;
+	a{
+		position:absolute;
+		top:0;
+		down:0;
+		width:100%;
+		height:100%;
+		opacity:0;
+		background:#ffffff;
+		&:hover{
+			opacity:0.2;
+		}
+	}
+	@media #{$smartp}{
+		height:120px;
+		padding:0 5px 5px 0;
+	}
+}
+.help-panel-inside{
+	width:100%;
+	height:100%;
+	background:#ffffff;
+	border:1px solid $border-color;
+	text-align:center;
+	padding-top:30px;
+	.fa{
+		font-size:42px;
+		color:$btn-color;
+		padding-bottom:10px;
+	}
+	@media #{$smartp}{
+		padding-top:15px;
+		.fa{
+			font-size:36px;
+			color:$btn-color;
+			padding-bottom:5px;
+		}
+	}
+}
+
+//ABOUT
+.aboutus-header{
+  text-align:center;
+  color:#ffffff;
+  background:$kokokara-logo;
+  	img{
+		width:200px;
+		height:auto;
+		margin:0 auto;
+	}
+  @media #{$smartp}{
+  	height:250px;
+  	padding-top:50px;
+		h1{
+			font-size:24px;
+		}
+		h3{
+			font-size:18px;
+		}
+	}
+  @media #{$smartp-more}{
+  	height:350px;
+  	padding-top:100px;
+		h1{
+			font-size:30px;
+		}
+		h3{
+			font-size:22px;
+		}
+	}
+}
