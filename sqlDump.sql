@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: 2016 年 3 月 03 日 20:15
--- サーバのバージョン： 5.5.38-log
+-- Generation Time: Apr 01, 2016 at 06:54 PM
+-- Server version: 5.5.38-log
 -- PHP Version: 5.6.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `applies_events`
+-- Table structure for table `applies_events`
 --
 
 CREATE TABLE `applies_events` (
@@ -29,7 +29,7 @@ CREATE TABLE `applies_events` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `applies_events`
+-- Dumping data for table `applies_events`
 --
 
 INSERT INTO `applies_events` (`id`, `student_id`, `event_id`, `created`, `modified`) VALUES
@@ -38,7 +38,7 @@ INSERT INTO `applies_events` (`id`, `student_id`, `event_id`, `created`, `modifi
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `attachments`
+-- Table structure for table `attachments`
 --
 
 CREATE TABLE `attachments` (
@@ -53,7 +53,7 @@ CREATE TABLE `attachments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `attachments`
+-- Dumping data for table `attachments`
 --
 
 INSERT INTO `attachments` (`id`, `model`, `foreign_key`, `attachment`, `dir`, `type`, `size`, `active`) VALUES
@@ -168,7 +168,7 @@ INSERT INTO `attachments` (`id`, `model`, `foreign_key`, `attachment`, `dir`, `t
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `camp`
+-- Table structure for table `camp`
 --
 
 CREATE TABLE `camp` (
@@ -185,7 +185,7 @@ CREATE TABLE `camp` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `camp`
+-- Dumping data for table `camp`
 --
 
 INSERT INTO `camp` (`id`, `event_id`, `fromwhere`, `limit_num`, `food`, `withmen`, `tuition`, `stay_type`, `schedule`, `cost`) VALUES
@@ -196,7 +196,7 @@ INSERT INTO `camp` (`id`, `event_id`, `fromwhere`, `limit_num`, `food`, `withmen
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `etags`
+-- Table structure for table `etags`
 --
 
 CREATE TABLE `etags` (
@@ -209,7 +209,7 @@ CREATE TABLE `etags` (
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `etags_events`
+-- Table structure for table `etags_events`
 --
 
 CREATE TABLE `etags_events` (
@@ -223,7 +223,7 @@ CREATE TABLE `etags_events` (
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `events`
+-- Table structure for table `events`
 --
 
 CREATE TABLE `events` (
@@ -249,7 +249,7 @@ CREATE TABLE `events` (
 ) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `events`
+-- Dumping data for table `events`
 --
 
 INSERT INTO `events` (`id`, `state`, `title`, `company_name`, `company_info`, `body`, `detail`, `period`, `e-mail`, `phone`, `related-url`, `sns-facebook`, `sns-twitter`, `thumbnail`, `location`, `pref`, `date`, `created`, `modified`) VALUES
@@ -278,7 +278,7 @@ INSERT INTO `events` (`id`, `state`, `title`, `company_name`, `company_info`, `b
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `events_logs`
+-- Table structure for table `events_logs`
 --
 
 CREATE TABLE `events_logs` (
@@ -291,7 +291,7 @@ CREATE TABLE `events_logs` (
 ) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `events_logs`
+-- Dumping data for table `events_logs`
 --
 
 INSERT INTO `events_logs` (`id`, `student_id`, `event_id`, `counter`, `created`, `modified`) VALUES
@@ -301,7 +301,7 @@ INSERT INTO `events_logs` (`id`, `student_id`, `event_id`, `counter`, `created`,
 (4, NULL, NULL, 10, '2015-03-14 19:07:57', '2015-04-03 21:50:38'),
 (5, NULL, 3, 367, '2015-03-16 20:23:15', '2015-04-03 16:01:41'),
 (6, NULL, 8, 2, '2015-03-24 00:05:01', '2015-03-27 21:48:35'),
-(7, NULL, 10, 324, '2015-03-26 14:07:20', '2016-02-28 17:30:06'),
+(7, NULL, 10, 326, '2015-03-26 14:07:20', '2016-04-01 17:54:55'),
 (8, NULL, 11, 73, '2015-03-26 14:12:12', '2015-05-14 22:01:09'),
 (9, NULL, 12, 28, '2015-03-26 14:17:49', '2015-05-02 13:59:12'),
 (10, NULL, 13, 190, '2015-03-26 14:22:29', '2015-05-14 22:20:13'),
@@ -340,7 +340,7 @@ INSERT INTO `events_logs` (`id`, `student_id`, `event_id`, `counter`, `created`,
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `facebook_users`
+-- Table structure for table `facebook_users`
 --
 
 CREATE TABLE `facebook_users` (
@@ -367,7 +367,7 @@ CREATE TABLE `facebook_users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `facebook_users`
+-- Dumping data for table `facebook_users`
 --
 
 INSERT INTO `facebook_users` (`id`, `student_id`, `facebook_user_id`, `birthday`, `email`, `first_name`, `gender`, `last_name`, `link`, `locale`, `name`, `timezone`, `updated_time`, `verified`, `university`, `faculty`, `friends_num`, `access_token`, `created`, `modified`) VALUES
@@ -376,7 +376,7 @@ INSERT INTO `facebook_users` (`id`, `student_id`, `facebook_user_id`, `birthday`
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `funny_event`
+-- Table structure for table `funny_event`
 --
 
 CREATE TABLE `funny_event` (
@@ -390,7 +390,7 @@ CREATE TABLE `funny_event` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `funny_event`
+-- Dumping data for table `funny_event`
 --
 
 INSERT INTO `funny_event` (`id`, `event_id`, `limit_num`, `limit_min`, `deadline`, `cost`, `schedule`) VALUES
@@ -401,7 +401,7 @@ INSERT INTO `funny_event` (`id`, `event_id`, `limit_num`, `limit_min`, `deadline
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `intern`
+-- Table structure for table `intern`
 --
 
 CREATE TABLE `intern` (
@@ -417,7 +417,7 @@ CREATE TABLE `intern` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `intern`
+-- Dumping data for table `intern`
 --
 
 INSERT INTO `intern` (`id`, `event_id`, `state`, `target`, `limit_num`, `skill`, `payment`, `conditions`, `treatment`) VALUES
@@ -435,7 +435,7 @@ INSERT INTO `intern` (`id`, `event_id`, `state`, `target`, `limit_num`, `skill`,
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `lesson`
+-- Table structure for table `lesson`
 --
 
 CREATE TABLE `lesson` (
@@ -446,7 +446,7 @@ CREATE TABLE `lesson` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `lesson`
+-- Dumping data for table `lesson`
 --
 
 INSERT INTO `lesson` (`id`, `event_id`, `skill`, `cost`) VALUES
@@ -455,7 +455,7 @@ INSERT INTO `lesson` (`id`, `event_id`, `skill`, `cost`) VALUES
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `stags`
+-- Table structure for table `stags`
 --
 
 CREATE TABLE `stags` (
@@ -466,7 +466,7 @@ CREATE TABLE `stags` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `stags`
+-- Dumping data for table `stags`
 --
 
 INSERT INTO `stags` (`id`, `name`, `created`, `modified`) VALUES
@@ -475,7 +475,7 @@ INSERT INTO `stags` (`id`, `name`, `created`, `modified`) VALUES
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `stags_students`
+-- Table structure for table `stags_students`
 --
 
 CREATE TABLE `stags_students` (
@@ -487,7 +487,7 @@ CREATE TABLE `stags_students` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- テーブルのデータのダンプ `stags_students`
+-- Dumping data for table `stags_students`
 --
 
 INSERT INTO `stags_students` (`id`, `stag_id`, `student_id`, `created`, `modified`) VALUES
@@ -496,7 +496,34 @@ INSERT INTO `stags_students` (`id`, `stag_id`, `student_id`, `created`, `modifie
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `students`
+-- Table structure for table `student_group`
+--
+
+CREATE TABLE `student_group` (
+`id` int(11) NOT NULL,
+  `event_id` int(11) DEFAULT NULL,
+  `represent` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `foundation` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `num_students` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `gender` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `frequency` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `major_univ` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `total_univ` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `student_group`
+--
+
+INSERT INTO `student_group` (`id`, `event_id`, `represent`, `foundation`, `num_students`, `gender`, `frequency`, `major_univ`, `total_univ`) VALUES
+(1, 35, '', '', '', '', '', '', ''),
+(2, 44, '○○○○', '2005年', '20人', '男子学生15人、女子学生5人', '週に1度のミーティング', '・立命館大学\r\n・同志社大学', '・関西大学\r\n・京都外国語大学'),
+(3, 45, '清光陽介', '2012年', '10人', '男9人、女1人', '週に一度程度のミーティングに加え、メンバーそれぞれがそれぞれの頻度で活動しています。', '・立命館大学', '・同志社大学\r\n・京都大学');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
 --
 
 CREATE TABLE `students` (
@@ -517,34 +544,7 @@ CREATE TABLE `students` (
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `student_group`
---
-
-CREATE TABLE `student_group` (
-`id` int(11) NOT NULL,
-  `event_id` int(11) DEFAULT NULL,
-  `represent` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `foundation` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `num_students` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `gender` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `frequency` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `major_univ` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `total_univ` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-
---
--- テーブルのデータのダンプ `student_group`
---
-
-INSERT INTO `student_group` (`id`, `event_id`, `represent`, `foundation`, `num_students`, `gender`, `frequency`, `major_univ`, `total_univ`) VALUES
-(1, 35, '', '', '', '', '', '', ''),
-(2, 44, '○○○○', '2005年', '20人', '男子学生15人、女子学生5人', '週に1度のミーティング', '・立命館大学\r\n・同志社大学', '・関西大学\r\n・京都外国語大学'),
-(3, 45, '清光陽介', '2012年', '10人', '男9人、女1人', '週に一度程度のミーティングに加え、メンバーそれぞれがそれぞれの頻度で活動しています。', '・立命館大学', '・同志社大学\r\n・京都大学');
-
--- --------------------------------------------------------
-
---
--- テーブルの構造 `study_abroad`
+-- Table structure for table `study_abroad`
 --
 
 CREATE TABLE `study_abroad` (
@@ -589,7 +589,7 @@ CREATE TABLE `study_abroad` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- テーブルのデータのダンプ `study_abroad`
+-- Dumping data for table `study_abroad`
 --
 
 INSERT INTO `study_abroad` (`id`, `event_id`, `skill`, `class`, `cost`, `stay_type`, `conditions`, `envirionment`, `deadline`, `value_title_a1`, `value_title_a2`, `value_title_a3`, `value_title_a4`, `value_title_a5`, `value_title_b1`, `value_title_b2`, `value_title_b3`, `value_title_b4`, `value_1-1`, `value_1-2`, `value_1-3`, `value_1-4`, `value_1-5`, `value_2-1`, `value_2-2`, `value_2-3`, `value_2-4`, `value_2-5`, `value_3-1`, `value_3-2`, `value_3-3`, `value_3-4`, `value_3-5`, `value_4-1`, `value_4-2`, `value_4-3`, `value_4-4`, `value_4-5`) VALUES
@@ -684,15 +684,15 @@ ALTER TABLE `stags_students`
  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `students`
---
-ALTER TABLE `students`
- ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `student_group`
 --
 ALTER TABLE `student_group`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `students`
+--
+ALTER TABLE `students`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -771,15 +771,15 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 ALTER TABLE `stags_students`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `students`
---
-ALTER TABLE `students`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT for table `student_group`
 --
 ALTER TABLE `student_group`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `students`
+--
+ALTER TABLE `students`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `study_abroad`
 --
