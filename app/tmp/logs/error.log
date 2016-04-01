@@ -67614,3 +67614,19 @@ Request URL: /kokokara/css/style.css
 Stack Trace:
 #0 /Applications/MAMP/htdocs/kokokara/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-04-01 09:38:03 Error: Fatal Error (64): Cannot use 'String' as class name as it is reserved in [C:\MAMP\htdocs\kokokara\lib\Cake\Utility\String.php, line 24]
+2016-04-01 09:38:04 Error: [FatalErrorException] Cannot use 'String' as class name as it is reserved
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot use 'Str...', 'C:\\MAMP\\htdocs\\...', 24)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): ErrorHandler::handleError(64, 'Cannot use 'Str...', 'C:\\MAMP\\htdocs\\...', 24, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2016-04-01 09:38:19 Error: Fatal Error (64): Cannot use 'String' as class name as it is reserved in [C:\MAMP\htdocs\kokokara\lib\Cake\Utility\String.php, line 24]
+2016-04-01 09:38:20 Error: [FatalErrorException] Cannot use 'String' as class name as it is reserved
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot use 'Str...', 'C:\\MAMP\\htdocs\\...', 24)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): ErrorHandler::handleError(64, 'Cannot use 'Str...', 'C:\\MAMP\\htdocs\\...', 24, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
