@@ -1,6 +1,6 @@
 <?echo $this->Html->script("user.js");?>
 <?echo $this->Html->script("readmore.min.js");?>
-<? $this->Html->css('event', null, array('inline' => false)) ?>
+<? $this->Html->css('event.min', null, array('inline' => false)) ?>
 <script type="text/javascript">
       $(function () {
         $('article').readmore({
@@ -10,7 +10,7 @@
           lessLink: '<a href="#">閉じる</a>'
         });
       });
-</script> 
+</script>
 <div id="main_container">
       <div id="event-container">
         <div id="event-picture">
@@ -25,7 +25,7 @@
         <div id="event-summary">
           <div class="container">
             <!-- サマリーヘッダー1 大枠 -->
-            <div class="raw"> 
+            <div class="raw">
               <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-0">
                 <div class="raw" style="padding-top:40px;">
                   <!--　サマリーヘッダー1 左側 -->
@@ -46,9 +46,9 @@
                   <div class="raw ev-sm-icons">
                     <div class="col-xs-3 col-sm-2">
                       <div class="icon-block"><p class="sample-font"></p></div>
-                      <p></p> 
+                      <p></p>
                     </div>
-                    <div class="col-xs-3 col-sm-2"> 
+                    <div class="col-xs-3 col-sm-2">
                       <div class="icon-block"><p class="sample-font"><i class="fa fa-users"></i></p></div>
                       <p>社員数</p>
                     </div>
@@ -56,7 +56,7 @@
                       <div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div>
                       <p>おかね</p>
                     </div>
-                    <div class="col-xs-3 col-sm-2"> 
+                    <div class="col-xs-3 col-sm-2">
                       <div class="icon-block"><p class="sample-font"><i class="fa fa-calendar"></i></p></div>
                       <p>期間</p>
                     </div>
@@ -75,12 +75,12 @@
                         <button type="button" class="btn btn-primary btn-lg btn-block">申し込む</button>
                       </div>
                     </div>
-                  </div>  
+                  </div>
                 </div>
                 <div class="raw">
                   <div class="col-sm-12 ev-sm-lower2 hidden-xs hidden-lg">
-                
-                  </div>  
+
+                  </div>
                 </div>
               </div>
 
@@ -94,11 +94,11 @@
           <div class="container-fluid ev-details"><div class="raw">
             <div class="container">
                <div class="raw">
-                <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-0"> 
+                <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-0">
                   <h3>このリスティングについて</h3>
                   <p>Have you heard about Váci street in Budapest? That's in the middle of the city. The apartment is located here in a modern Budapest style building. The flat is lovely, renovated, has a kitchen, a bathroom, a living room and in it a bed on the gallery.
                   </p>
-                  
+
                   <div class="raw ev-detail-table">
                     <hr>
                     <div class="col-sm-4 left"><p class="table-subtitle">サブタイトル</p></div>
@@ -200,10 +200,10 @@
         <div id="ev-review">
           <div class="container">
             <!-- サマリーヘッダー1 大枠 -->
-            <div class="raw"> 
+            <div class="raw">
               <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-0">
                 <div class="raw" style="padding-top:40px;">
-                  
+
                 </div>
               <div class="col-lg-3 visible-lg"></div>
             </div>
@@ -212,4 +212,4 @@
         </div>
       </div>
     </div>
-</div>  
+</div>

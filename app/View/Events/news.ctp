@@ -1,5 +1,5 @@
-<? $this->Html->css('event-list', null, array('inline' => false)); ?>
-<?php 
+<? $this->Html->css('event-list.min', null, array('inline' => false)); ?>
+<?php
   $list_image = $this->Html->webroot.IMAGES_URL . "urban.jpg";
   $list_thumb = $this->Html->webroot.IMAGES_URL . "face-sample.jpeg";
 ?>
@@ -7,7 +7,7 @@
       $(function() {
         // ポップオーバー文言
         $('.info-search').attr('data-content','フィルター検索');
-       
+
         // ポップオーバーアクション
         $("[data-toggle=popover]").popover({
           trigger: 'hover', // click,hover,focus,manualを選択出来る
@@ -49,9 +49,9 @@ $(window).resize(function(){
         <div id="lists-search">
           <div class="container-fluid nopadding">
             <div class="raw">
-              <div class="col-sm-3 visible-sm nopadding show" style="height:300px;overflow:scroll;"> 
+              <div class="col-sm-3 visible-sm nopadding show" style="height:300px;overflow:scroll;">
               <script type="text/javascript">document.write(w);</script>
-              
+
               </div>
               <div class="col-xs-12 col-sm-9 col-md-12 lists-search-area map_canvas nopadding">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12638578.77386511!2d138.2286848874999!3d39.34286198780445!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1456821884580" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -73,11 +73,11 @@ $(window).resize(function(){
                         echo $this->element('lists/event_inlist');
                         $i++;
                     }
-                  ?>  
+                  ?>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>  
+    </div>

@@ -26,10 +26,52 @@
 					'action'=>'main')
 					)
 			   ?>
-			  </li>
-	         </ul>
+			  	</li>
+	      </ul>
 	    </div>
-	    <div class="col-sm-4"></div>
-	    </div>
+	    <div class="col-sm-4">
+				<ul>
+				<h4 style="font-weight:bold;">☆開発用リンク集☆</h4>
+				 <li>
+					<?php echo $this->Html->link(
+							'Admin',
+						array('controller'=>'admin/index',
+							 'action'=>'index')
+						)
+					?>
+				 </li>
+				 <li>
+					 <?php echo $this->Html->link(
+ 							'イベント一覧(新着順)',
+							array('controller'=>'events',
+								 'action'=>'news')
+ 						)
+ 					?>
+				 </li>
+				 <li>
+					 <?php echo $this->Html->link(
+ 							'イベントページ(eventid=10)',
+							array('controller'=>'events?id=10')
+ 						)
+ 					?>
+				 <li>
+					<?php echo $this->Html->link(
+					'kokokara Groupとは',
+				array('controller'=>'pages/about',
+					 'action'=>'about-us')
+				)
+			?>
+				 </li>
+				 <li>
+					<?php echo $this->Html->link(
+					'ヘルプセンター',
+			array('controller'=>'pages/help',
+				'action'=>'main')
+				)
+			 ?>
+					</li>
+				</ul>
+			</div>
+	  </div>
 	</div>
 </footer>
