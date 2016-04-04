@@ -1,7 +1,7 @@
-<? $this->Html->css('index-style', null, array('inline' => false)); ?>
+<? $this->Html->css('index-style.min', null, array('inline' => false)); ?>
 <div class="container" style="margin-top:90px;margin-bottom:40px;">
 	<div class="row">
-			<?php 
+			<?php
 			if($this->here == '/events/category/1'){
 			echo '<div class="col-xs-12 incnts-belt" style="background:#d16b9a;"><h1>長期インターン</h1></div>';
 			}elseif($this->here == '/events/category/2'){
@@ -20,7 +20,7 @@
 			echo '<div class="col-xs-12 incnts-belt" style="background:#6b97d1;"><h1>学生団体</h1></div>';
 			}elseif($this->here == '/events/category/9'){
 			echo '<div class="col-xs-12 incnts-belt" style="background:#6e6bd1;"><h1>学生団体イベント</h1></div>';
-			}	
+			}
 			?>
 	</div>
 	<div class="row" >
@@ -32,7 +32,7 @@
 			$i = 0;
 			$kiji = 10;
 			rsort($events);
-			foreach ($events as $event){ 
+			foreach ($events as $event){
 			if($i >= $kiji){
 			break;
 		}else{ ?>
@@ -51,7 +51,7 @@
 							<div class="col-xs-6" style="border-right:1px solid #ededed;">
 								<!--
 								<p>場所:<font style="">
-									<?php 
+									<?php
 										if($event['Event']['state'] == 5){
 											echo $this->element('StudyAbroad_country');
 										}elseif($event['Event']['state'] == 3){
@@ -76,7 +76,7 @@
 							-->
 							</div>
 							<div class="col-xs-6">
-								
+
 							</div>
 						</div>
 					</div>

@@ -1,4 +1,4 @@
-<? $this->Html->css('style', null, array('inline' => false)) ?>
+<? $this->Html->css('style.min', null, array('inline' => false)) ?>
 <div class="row" style="background:#f3f3f3;padding-top:40px;padding-bottom:40px;">
 	<div class="col-sm-5 col-sm-offset-1 login-fb">
 		<h4>まだアカウントを持ってない方</h4>
@@ -31,5 +31,3 @@
 echo $this->Html->link('Facebookで簡単入学！', array('action' => 'signup'));
 ?>
 -->
-
-
