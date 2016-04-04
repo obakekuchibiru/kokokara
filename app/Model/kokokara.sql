@@ -21,6 +21,15 @@ INSERT INTO students(name, password, created, modified) VALUES ('user1', 'passwo
 INSERT INTO students(name, password, created, modified) VALUES ('user2', 'password2', now(), now());
 INSERT INTO students(name, password, created, modified) VALUES ('user3', 'password3', now(), now());
 
+/*企業データ追加*/
+create table company(
+  id int not null primary key auto_increment,
+  name VARCHAR (255),
+  email VARCHAR (255),
+  password VARCHAR (255),
+  created datetime DEFAULT null,
+  modified datetime DEFAULT null
+);
 
 
 #model
@@ -247,7 +256,6 @@ create table student_group_info(
   created datetime DEFAULT null,
   modified datetime DEFAULT null
 );
-
 
 
 
