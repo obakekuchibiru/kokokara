@@ -61,7 +61,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	echo $this->Html->css('bootstrap.min.css');
 	echo $this->Html->css('font-awesome.min.css');
 
-	echo $this->Html->css('style.css')
+	echo $this->Html->css('style.min.css')
 	?>
 </head>
 <body>
@@ -76,7 +76,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</script>
 	<div id="container">
 		<!-- header -->
-		<?php 
+		<?php
 			$current = Router::url();
 			if($current == '/kokokara/'){
 				echo $this->element('header/header-top');
@@ -97,6 +97,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 	<?php debug($events); ?>
-	
+
 </body>
 </html>

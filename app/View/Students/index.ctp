@@ -1,4 +1,4 @@
-<? $this->Html->css('style', null, array('inline' => false)) ?>
+<? $this->Html->css('style.min', null, array('inline' => false)) ?>
 <script type="text/javascript">
     jQuery(function($) {
         $('#top-1').bgSwitcher({
@@ -22,7 +22,7 @@
           </div>
           <div class="raw">
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-              
+
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
       <div id="top-4">
         <div class="container-fluid nopadding">
