@@ -1,5 +1,5 @@
-<? $this->Html->css('event-list', null, array('inline' => false)); ?>
-<? $this->Html->css('pages', null, array('inline' => false)); ?>
+<? $this->Html->css('event-list.min', null, array('inline' => false)); ?>
+<? $this->Html->css('pages.min', null, array('inline' => false)); ?>
 	<div id="main">
       <div id="help-container">
         <div id="lists-search">
@@ -97,7 +97,7 @@
                       <p>kokokaraを<br>退会したい</p>
                     </div>
                     <a href="#"></a>
-                  </div> 
+                  </div>
                 </div>
                 <!-- 人気のトピック終 -->
 
