@@ -22,6 +22,16 @@ INSERT INTO students(name, password, created, modified) VALUES ('user2', 'passwo
 INSERT INTO students(name, password, created, modified) VALUES ('user3', 'password3', now(), now());
 
 
+create table companies(
+  id int not null primary key auto_increment,
+  name VARCHAR (255),
+  email VARCHAR (255),
+  password VARCHAR (255),
+  created datetime DEFAULT NULL ,
+  modified datetime DEFAULT NULL
+);
+
+
 
 #model
 
