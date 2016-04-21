@@ -7,7 +7,7 @@ App::uses('Security', 'Utility');
 class Company extends AppModel{
 	//タグアソシエーション
 	//アソシエーション
-	public $hasAndBelongsToMany = array(
+/*	public $hasAndBelongsToMany = array(
 		//'Ctag',
 		'Apply' => array(
 			'className'              => 'Event',
@@ -40,7 +40,7 @@ class Company extends AppModel{
 			'insertQuery'            => ''
 		)
 	);
-
+*/
 	
 	//validation
 	public $validate = array(
