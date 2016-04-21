@@ -20,6 +20,15 @@ class CompaniesController extends AppController{
 		}
 	}
 
+	public function index(){
+		$this->loadModel("Event");
+		$this->set('events', $this->Event->find("all"));
+		//Session が空じゃなかったら
+		if($this->Session->read('myData')){
+			//$id=$this->Session->read("myData")['Student']['id'];
+			$this->set('myData', $this->Session->read('myData'));
+		}
+	}
 
 	#新規登録処理
 	public function signup(){
@@ -40,11 +49,12 @@ class CompaniesController extends AppController{
 				));
 				if(!$user){ //新規ユーザだったら
 					if($this->Company->save($this->request->data)){
-						$this->Session->setFlash('ユーザ登録に成功しました');
-						$this->Session->write('myData', $this->Company->findById($this->Company->getLastInsertID()));
+						$this->Session->setFlash('登録が完了しました');
+						$this->Session->write('myData');
+						//$this->Session->write('myData', $this->Company->findById($this->Company->getLastInsertID()));
 						$this->redirect(array('action' => 'index'));
 					}else{
-						$this->Session->setFlash('ユーザ登録に失敗しました');
+						$this->Session->setFlash('登録に失敗しました');
 					}
 				} else{ //既存のユーザがいたら
 					$this->Session->setFlash('このメールアドレスは既に登録されています');
