@@ -70423,3 +70423,1594 @@ Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
 Stack Trace:
 #0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-04-22 17:59:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 17:59:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 17:59:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 17:59:56 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 17:59:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 17:59:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:02:44 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:02:45 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:02:45 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:02:56 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:02:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:02:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:04:09 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:04:09 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:04:10 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:05:11 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:05:11 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:05:12 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:17:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:17:59 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:17:59 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:18:12 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:18:12 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:18:13 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:18:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:18:17 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-22 18:18:17 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 19:32:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 19:32:27 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 19:32:27 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:36:29 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:36:30 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:36:30 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:36:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:36:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:36:48 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:37:51 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:37:51 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:37:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:38:00 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:38:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-25 20:38:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 16:40:45 Error: Fatal Error (1): Call to undefined method CompaniesController::updateLogin() in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 82]
+2016-04-28 16:40:45 Error: [FatalErrorException] Call to undefined method CompaniesController::updateLogin()
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 82)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 82, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 82, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 16:43:41 Error: Fatal Error (1): Call to undefined method CompaniesController::updateLogin() in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 19]
+2016-04-28 16:43:42 Error: [FatalErrorException] Call to undefined method CompaniesController::updateLogin()
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 16:43:47 Error: Fatal Error (1): Call to undefined method CompaniesController::updateLogin() in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 19]
+2016-04-28 16:43:48 Error: [FatalErrorException] Call to undefined method CompaniesController::updateLogin()
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 16:44:27 Error: Fatal Error (1): Call to undefined method CompaniesController::updateLogin() in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 19]
+2016-04-28 16:44:27 Error: [FatalErrorException] Call to undefined method CompaniesController::updateLogin()
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 16:44:30 Error: Fatal Error (1): Call to undefined method CompaniesController::updateLogin() in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 19]
+2016-04-28 16:44:30 Error: [FatalErrorException] Call to undefined method CompaniesController::updateLogin()
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 16:44:41 Error: Fatal Error (1): Call to undefined method CompaniesController::updateLogin() in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 19]
+2016-04-28 16:44:41 Error: [FatalErrorException] Call to undefined method CompaniesController::updateLogin()
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\MAMP\\htdocs\\...', 19, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-04-28 16:44:54 Error: [MissingViewException] View file "C:\MAMP\htdocs\kokokara\app\View\Companies\welcome.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\MAMP\\htdocs\\kokokara\\app\\View\\Companies\\welcome.ctp',
+)
+Request URL: /kokokara/companies/welcome
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-04-28 16:46:09 Error: [MissingActionException] Action CompaniesController::welcome() could not be found.
+Exception Attributes: array (
+  'controller' => 'CompaniesController',
+  'action' => 'welcome',
+)
+Request URL: /kokokara/companies/welcome
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:15:53 Error: [MissingActionException] Action CompaniesController::companies() could not be found.
+Exception Attributes: array (
+  'controller' => 'CompaniesController',
+  'action' => 'companies',
+)
+Request URL: /kokokara/companies/companies/index
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:16:47 Error: [MissingActionException] Action CompaniesController::companies() could not be found.
+Exception Attributes: array (
+  'controller' => 'CompaniesController',
+  'action' => 'companies',
+)
+Request URL: /kokokara/companies/companies/index
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:27:14 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:27:14 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:27:15 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:16 Error: [MissingControllerException] Controller class StundentsController could not be found.
+Exception Attributes: array (
+  'class' => 'StundentsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/stundents/index
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:17 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:17 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:32 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:34 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample1.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:35 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample2.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:37 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample6.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:38 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample3.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:40 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample4.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:41 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:42 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample5.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:44 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample9.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:45 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample3.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:47 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /kokokara/students/img/sample4.jpg
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-04-28 17:28:49 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-28 17:28:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 03:38:05 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 03:38:06 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 03:38:06 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 17:46:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 17:46:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 17:46:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 17:46:22 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 35]
+2016-05-06 17:46:22 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 17:46:55 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 35]
+2016-05-06 17:46:56 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 17:46:59 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 35]
+2016-05-06 17:46:59 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 35, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 17:47:26 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 112]
+2016-05-06 17:47:26 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 112)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 112, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 112, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 17:48:06 Error: [MissingComponentException] Component class loginActionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginActionComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginAction', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:48:46 Error: [MissingComponentException] Component class loginActionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginActionComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginAction', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:48:49 Error: [MissingComponentException] Component class loginActionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginActionComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginAction', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:49:01 Error: [MissingComponentException] Component class loginActionComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginActionComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginAction', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:49:36 Error: [MissingComponentException] Component class loginRedirectComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginRedirectComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginRedirect', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:51:14 Error: Fatal Error (4): syntax error, unexpected '$components' (T_VARIABLE), expecting ',' or ';' in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 13]
+2016-05-06 17:51:14 Error: [FatalErrorException] syntax error, unexpected '$components' (T_VARIABLE), expecting ',' or ';'
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 13, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 13, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 17:51:28 Error: Fatal Error (4): syntax error, unexpected '$components' (T_VARIABLE), expecting function (T_FUNCTION) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 13]
+2016-05-06 17:51:29 Error: [FatalErrorException] syntax error, unexpected '$components' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 13, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 13, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 17:52:01 Error: [MissingComponentException] Component class loginRedirectComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginRedirectComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginRedirect', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:52:19 Error: [MissingComponentException] Component class loginRedirectComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginRedirectComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginRedirect', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:52:21 Error: [MissingComponentException] Component class loginRedirectComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginRedirectComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginRedirect', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:52:30 Error: [MissingComponentException] Component class loginRedirectComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginRedirectComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginRedirect', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 17:52:34 Error: [MissingComponentException] Component class loginRedirectComponent could not be found.
+Exception Attributes: array (
+  'class' => 'loginRedirectComponent',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('loginRedirect', Array)
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(CompaniesController))
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#4 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-05-06 18:06:48 Error: Fatal Error (4): syntax error, unexpected ''loginAction'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 20]
+2016-05-06 18:06:48 Error: [FatalErrorException] syntax error, unexpected ''loginAction'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /kokokara/companies
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 20, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 20, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 18:07:38 Error: [CakeException] Authentication adapter "userModel" was not found.
+Request URL: /kokokara/companies
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(677): AuthComponent->constructAuthenticate()
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(303): AuthComponent->_getUser()
+#2 [internal function]: AuthComponent->startup(Object(CompaniesController))
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Utility\ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\MAMP\htdocs\kokokara\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#8 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#9 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-05-06 18:08:51 Error: [CakeException] Authentication adapter "fields" was not found.
+Request URL: /kokokara/companies
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(677): AuthComponent->constructAuthenticate()
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(303): AuthComponent->_getUser()
+#2 [internal function]: AuthComponent->startup(Object(CompaniesController))
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Utility\ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\MAMP\htdocs\kokokara\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#8 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#9 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-05-06 18:08:54 Error: [CakeException] Authentication adapter "fields" was not found.
+Request URL: /kokokara/companies
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(677): AuthComponent->constructAuthenticate()
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(303): AuthComponent->_getUser()
+#2 [internal function]: AuthComponent->startup(Object(CompaniesController))
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Utility\ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\MAMP\htdocs\kokokara\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#8 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#9 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-05-06 18:09:00 Error: [CakeException] Authentication adapter "fields" was not found.
+Request URL: /kokokara/companies/
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(677): AuthComponent->constructAuthenticate()
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(303): AuthComponent->_getUser()
+#2 [internal function]: AuthComponent->startup(Object(CompaniesController))
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Utility\ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\MAMP\htdocs\kokokara\lib\Cake\Event\CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#8 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#9 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-05-06 18:09:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:09:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:09:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:11:44 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:11:45 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:11:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:11:51 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:11:51 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:11:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:18:20 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [C:\MAMP\htdocs\kokokara\app\Model\Company.php, line 89]
+2016-05-06 18:18:20 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /kokokara/companies/signup
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 18:18:21 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [C:\MAMP\htdocs\kokokara\app\Model\Company.php, line 89]
+2016-05-06 18:18:21 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /kokokara/companies/signup
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 18:18:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:18:23 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:18:23 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:18:59 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [C:\MAMP\htdocs\kokokara\app\Model\Company.php, line 89]
+2016-05-06 18:18:59 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+Request URL: /kokokara/Companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 89, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 18:36:08 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\MAMP\htdocs\kokokara\app\Model\Company.php, line 87]
+2016-05-06 18:36:08 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /kokokara/companies/signup
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\\MAMP\\htdocs\\...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\\MAMP\\htdocs\\...', 87, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\\MAMP\\htdocs\\...', 87, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 18:48:27 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:48:28 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:48:28 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:54:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:54:56 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 18:54:56 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 19:18:53 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 59]
+2016-05-06 19:18:54 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /kokokara/companies/signup
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 19:18:54 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 59]
+2016-05-06 19:18:55 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /kokokara/companies/signup
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 19:19:52 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 59]
+2016-05-06 19:19:52 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /kokokara/companies/signup
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 59, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 19:23:17 Error: Fatal Error (4): syntax error, unexpected 'elseif' (T_ELSEIF) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 58]
+2016-05-06 19:23:18 Error: [FatalErrorException] syntax error, unexpected 'elseif' (T_ELSEIF)
+Request URL: /kokokara/companies/signup
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 58, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 58, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-06 19:24:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 19:24:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-06 19:24:23 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-07 15:57:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-07 15:57:25 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-07 15:57:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-07 23:10:47 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 22]
+2016-05-07 23:10:47 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 22, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 22, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-07 23:17:07 Error: [MissingHelperException] Helper class FlashHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FlashHelper',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Flash')
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(841): HelperCollection->__isset('Flash')
+#2 C:\MAMP\htdocs\kokokara\app\View\Companies\login.ctp(1): View->__get('Flash')
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(954): include('C:\\MAMP\\htdocs\\...')
+#4 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(916): View->_evaluate('C:\\MAMP\\htdocs\\...', Array)
+#5 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(473): View->_render('C:\\MAMP\\htdocs\\...')
+#6 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#7 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#9 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-05-07 23:17:41 Error: [MissingHelperException] Helper class FlashHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FlashHelper',
+  'plugin' => false,
+)
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Flash')
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(841): HelperCollection->__isset('Flash')
+#2 C:\MAMP\htdocs\kokokara\app\View\Companies\login.ctp(1): View->__get('Flash')
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(954): include('C:\\MAMP\\htdocs\\...')
+#4 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(916): View->_evaluate('C:\\MAMP\\htdocs\\...', Array)
+#5 C:\MAMP\htdocs\kokokara\lib\Cake\View\View.php(473): View->_render('C:\\MAMP\\htdocs\\...')
+#6 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#7 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#9 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-05-08 16:37:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-08 16:37:27 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-08 16:37:27 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-08 21:43:04 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-08 21:43:04 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-08 21:43:05 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-08 21:45:34 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 16]
+2016-05-08 21:45:35 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 16, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 16, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-08 21:45:56 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 31]
+2016-05-08 21:45:56 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 31, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 31, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-08 21:46:50 Error: [CakeException] Authentication adapter "authenticate" was not found.
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(751): AuthComponent->constructAuthenticate()
+#1 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Component\AuthComponent.php(601): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#2 C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php(101): AuthComponent->login()
+#3 [internal function]: CompaniesController->login()
+#4 C:\MAMP\htdocs\kokokara\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CompaniesController), Array)
+#5 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\MAMP\htdocs\kokokara\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#7 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-05-08 21:47:55 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 33]
+2016-05-08 21:47:55 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /kokokara/companies/login
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 33, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\MAMP\\htdocs\\...', 33, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-10 15:18:38 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:18:39 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:18:39 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:18:40 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:18:40 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:18:41 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:18:59 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:19:00 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:19:00 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:22:23 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:22:23 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:22:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:22:49 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:26:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff2?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:26:48 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.woff?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-10 15:26:48 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

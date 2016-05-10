@@ -3,6 +3,8 @@
 
 
 App::uses('Security', 'Utility');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
+App::uses('AppModel', 'Model');
 
 class Company extends AppModel{
 	//タグアソシエーション
@@ -75,11 +77,25 @@ class Company extends AppModel{
 
 
 	#パスワードハッシュ化
-	public function beforeSave($options = array()){
-		if(isset($this->data['Company']['password'])){
-			$this->data['Company']['password'] = Security::hash($this->data['Company']['password'], 'sha1', true);
-		}
-		return true;
-	}
+	//public function beforeSave($options = array()){
+	//	if(isset($this->data['Company']['password'])){
+	//		$this->data['Company']['password'] = Security::hash($this->data['Company']['password'], 'sha1', true);
+	//	}
+	//	return true;
+	//}
 
-}
+	//public function beforeSave($options = array()) {
+    //	$this->data['Company']['password'] = AuthComponent::password($this->data['Company']['password']);
+    //	return true;
+  	//}
+
+  	public function beforeSave($options = array()) {
+    if (isset($this->data[$this->alias]['password'])) {
+        $passwordHasher = new BlowfishPasswordHasher();
+        $this->data[$this->alias]['password'] = $passwordHasher->hash(
+            $this->data[$this->alias]['password']
+        );
+    }
+    return true;
+	}
+  }
