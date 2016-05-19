@@ -37,6 +37,7 @@ create table companies(
 
 create table events(
 id int auto_increment primary key,
+company_id int,
 state int,
 title varchar(25),
 company_name varchar(255),
@@ -49,6 +50,14 @@ location VARCHAR (255),
 date datetime,
 created datetime DEFAULT null,
 modified datetime DEFAULT null
+);
+
+create table reviews(
+id int auto_increment primary key,
+event_id int.
+student_id int,
+created datetime DEFAULT null,
+modified datetime DEFAULT null,
 );
 
 

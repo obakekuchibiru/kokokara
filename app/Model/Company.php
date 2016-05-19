@@ -7,43 +7,7 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 App::uses('AppModel', 'Model');
 
 class Company extends AppModel{
-	//タグアソシエーション
-	//アソシエーション
-/*	public $hasAndBelongsToMany = array(
-		//'Ctag',
-		'Apply' => array(
-			'className'              => 'Event',
-			'joinTable'              => 'applies_events',
-			'foreignKey'             => 'company_id',
-			'associationForeignKey'  => 'event_id',
-			'unique'                 => false,
-			'conditions'             => '',
-			'fields'                 => '',
-			'order'                  => '',
-			'limit'                  => '',
-			'offset'                 => '',
-			'finderQuery'            => '',
-			'deleteQuery'            => '',
-			'insertQuery'            => ''
-		),
-		'Log' => array(
-			'className'              => 'Event',
-			'joinTable'              => 'events_logs',
-			'foreignKey'             => 'company_id',
-			'associationForeignKey'  => 'event_id',
-			'unique'                 => false,
-			'conditions'             => '',
-			'fields'                 => '',
-			'order'                  => '',
-			'limit'                  => '',
-			'offset'                 => '',
-			'finderQuery'            => '',
-			'deleteQuery'            => '',
-			'insertQuery'            => ''
-		)
-	);
-*/
-	
+
 	//validation
 	public $validate = array(
 		'name' => array(

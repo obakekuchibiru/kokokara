@@ -8,6 +8,8 @@
 class Event extends AppModel{
     public $useTable="events";
 
+    public $belongsTo = 'Company';
+
     //イベントタグアソ
     public $hasAndBelongsToMany = array(
 

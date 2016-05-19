@@ -37,13 +37,13 @@ class CompaniesController extends AppController{
 	}
 
 	public function index(){
-		$this->loadModel("Event");
-		$this->set('events', $this->Event->find("all"));
-		//Session が空じゃなかったら
-		if($this->Session->read('myData')){
+	//	$this->loadModel("Event");
+	//	$this->set('events', $this->Event->find("all"));
+	//	//Session が空じゃなかったら
+	//	if($this->Session->read('myData')){
 			//$id=$this->Session->read("myData")['Student']['id'];
-			$this->set('myData', $this->Session->read('myData'));
-		}
+	//		$this->set('myData', $this->Session->read('myData'));
+	//	}
 	}
 
 	#新規登録処理
@@ -127,8 +127,13 @@ class CompaniesController extends AppController{
 
 	#ログアウト処理
 	public function logout() {
-		$this->redirect($this->Auth->logout());
-		$this->Session->setFlash('ログアウトしました');
+		if($this->Auth->logout($this->request->data)){
+			$this->Session->setFlash('ログアウトしました');
+			return $this->redirect($this->Auth->logout());
+		}
+	//	$this->redirect($this->Auth->logout());
+	//	$this->Session->setFlash('ログアウトしました');
+	//	ログアウトメッセージ表示されなかった。。
 	}
 
 	#更新処理
@@ -155,5 +160,20 @@ class CompaniesController extends AppController{
 		}
 	}
 	*/
+
+	public function addevent(){
+		if($this->request->is('post')){
+			if($this->Event->save($this->request->data)){
+				$this->Session->setFlash('登録が完了しました。');
+				$this->redirect('index');
+			}else{
+				$this->Session->setFlash('登録に失敗しました。');
+			}
+
+		}
+
+
+	}
+
 
 }
