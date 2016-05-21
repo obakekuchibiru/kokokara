@@ -162,15 +162,6 @@ class CompaniesController extends AppController{
 	*/
 
 	public function addevent(){
-		if($this->request->is('post')){
-			if($this->Event->save($this->request->data)){
-				$this->Session->setFlash('登録が完了しました。');
-				$this->redirect('index');
-			}else{
-				$this->Session->setFlash('登録に失敗しました。');
-			}
-
-		}
 
 
 	}

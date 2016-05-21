@@ -72668,3 +72668,13 @@ Request URL: /kokokara/fonts/fontawesome-webfont.ttf?v=4.5.0
 Stack Trace:
 #0 C:\MAMP\htdocs\kokokara\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-05-19 18:48:59 Error: Fatal Error (1): Call to a member function save() on null in [C:\MAMP\htdocs\kokokara\app\Controller\CompaniesController.php, line 166]
+2016-05-19 18:48:59 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /kokokara/companies/addevent
+Stack Trace:
+#0 C:\MAMP\htdocs\kokokara\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\MAMP\\htdocs\\...', 166)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\MAMP\\htdocs\\...', 166, Array)
+#2 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\MAMP\\htdocs\\...', 166, Array)
+#3 C:\MAMP\htdocs\kokokara\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
