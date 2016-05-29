@@ -8,13 +8,13 @@ class CompaniesController extends AppController{
 	#フォームヘルパー
 	public $helpers = array('Html', 'Form');
 
-	public	$uses = Array('Company');
+	public	$uses = Array('Company', 'Event');
 
 	public	$components = array(
 		'Session',
 		'Auth' => array(
 			'authenticate' => array('Form' => array(
-				'userModel' => 'Companies',
+				'userModel' => 'Company',
 				'fields' => array('username' => 'email', 'password' => 'password'))
 				),
 			'loginAction' => array('controller' => 'Companies', 'action' => 'login'),
@@ -37,6 +37,7 @@ class CompaniesController extends AppController{
 	}
 
 	public function index(){
+		debug($this->Auth->user());
 	//	$this->loadModel("Event");
 	//	$this->set('events', $this->Event->find("all"));
 	//	//Session が空じゃなかったら
@@ -96,13 +97,13 @@ class CompaniesController extends AppController{
 	#ログイン処理
 	public function login(){
 		if($this->request->is('post')){
-			if($this->Auth->login($this->request->data)){
+			if($this->Auth->login($this->request->data['Company'])){
 				$this->Session->setFlash('ログイン完了です');
 				return $this->redirect($this->Auth->redirect('index'));
 			}else{
 			$this->Session->setFlash('ログインに失敗しました')	;
 		}
-
+		
 
 	/*	//debug($this->Session->read('apply'));
 		if($this->request->is('post')){
@@ -162,6 +163,16 @@ class CompaniesController extends AppController{
 	*/
 
 	public function addevent(){
+		debug($this->Auth->user());
+		if($this->request->is('post')){
+			if($this->Company->Event->save($this->request->data)){
+				$this->Session->setFlash('イベント登録が完了	しました。');
+				$this->redirect('index');
+			}else{
+				$this->Session->setFlash('登録に失敗しました。');
+			}
+
+		}
 
 
 	}

@@ -8,6 +8,17 @@ App::uses('AppModel', 'Model');
 
 class Company extends AppModel{
 
+	public $useTable = 'companies';
+
+	public $hasMany = array(
+		'Event' => array(
+			'className' => 'Event',
+			'foreignKey'=> 'companies_id'
+		));
+
+	
+
+
 	//validation
 	public $validate = array(
 		'name' => array(
@@ -62,4 +73,17 @@ class Company extends AppModel{
     }
     return true;
 	}
+  
+	protected function _getCurrentUser() {
+    App::uses('AuthComponent',  'Controller/Component');
+    return AuthComponent::user();
+	}
+
+
+  public function addevent(){
+
+  
   }
+
+
+ }

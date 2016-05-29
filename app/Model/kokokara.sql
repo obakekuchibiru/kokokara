@@ -11,6 +11,7 @@ create table students(
   university VARCHAR (255),
   year int,
   faculty VARCHAR (255),
+  thumbnail VARCHAR(255),
   created datetime DEFAULT NULL ,
   modified datetime DEFAULT NULL
 );
@@ -27,35 +28,65 @@ create table companies(
   name VARCHAR (255),
   email VARCHAR (255),
   password VARCHAR (255),
+  member_num int,
+  contory  enum,
+  state enum,
+  duties text,
+  phone int,
+  url VARCHAR(255),
+  industry_type enum,
+  thumbnail VARCHAR(255),
+  facebook VARCHAR(255),
+  twitter VARCHAR(255),
   created datetime DEFAULT NULL ,
   modified datetime DEFAULT NULL
 );
 
 
 
-#model
+#Model
 
 create table events(
 id int auto_increment primary key,
-company_id int,
-state int,
+companies_id int not null,
+reviews_id int
 title varchar(25),
-company_name varchar(255),
-company_info text,
-body text,
+about text,
 detail text,
-period VARCHAR (50),
 thumbnail VARCHAR (255),
-location VARCHAR (255),
-date datetime,
+period enum,
+frequency enum,
+reward enum,
+residence enum,
+trnsportation_expense enum,
+salary VARCHAR(255),
+skill1 VARCHAR(13),
+skill2 VARCHAR(13),
+skill3 VARCHAR(13),
+skill4 VARCHAR(13),
+skill_required text,
+recruit1 VARCHAR(13),
+recruit2 VARCHAR(13),
+recruit3 VARCHAR(13),
+recruit4 VARCHAR(13),
+contents text,
+profile text,
+staff_photo VARCHAR(255),
+staff_message VARCHAR(140),
 created datetime DEFAULT null,
 modified datetime DEFAULT null
 );
+
 
 create table reviews(
 id int auto_increment primary key,
 event_id int.
 student_id int,
+body text,
+period enum('1ヶ月未満','1-2ヶ月','3ヶ月以上'),
+cost int
+busyness int,
+severity int,
 created datetime DEFAULT null,
 modified datetime DEFAULT null,
 );

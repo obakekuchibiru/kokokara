@@ -5,10 +5,17 @@
  * Date: 2015/02/28
  * Time: 13:35
  */
-class Event extends AppModel{
-    public $useTable="events";
 
-    public $belongsTo = 'Company';
+
+class Event extends AppModel{
+    public $useTable= 'events';
+
+    public $belongsTo = array(
+        'Company' => array(
+            'classname' =>'Company',
+            'foreignKey'=>'companies_id'
+            )
+        );
 
     //イベントタグアソ
     public $hasAndBelongsToMany = array(
