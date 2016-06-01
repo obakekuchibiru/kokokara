@@ -13,7 +13,6 @@ class Company extends AppModel{
 	public $hasMany = array(
 		'Event' => array(
 			'className' => 'Event',
-			'foreignKey'=> 'companies_id'
 		));
 
 	
