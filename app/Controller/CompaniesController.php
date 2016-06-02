@@ -135,6 +135,7 @@ class CompaniesController extends AppController{
 
 	public function addevent(){
 		debug($this->Auth->user());
+		$this->set('company', $this->Auth->user('id'));
 		if($this->request->is('post')){
 			if($this->Company->Event->save($this->request->data)){
 				$this->Session->setFlash('イベント登録が完了	しました。');

@@ -79,8 +79,15 @@ class Company extends AppModel{
 	}
 
 
-  public function addevent(){
+  	public function addEvent(){
+  		if(!empty($this->request->data)){
+  			$company = $this->_getCurrentUser();
 
+  			if(!empty($company)){
+  				$this->request->data['Event']['companies_id'] = $this->Company->id;
+  				$this->Company->Event->Save($this->request->data);
+  			}
+  		}
   
   }
 
