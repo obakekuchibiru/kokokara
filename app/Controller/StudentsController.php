@@ -25,14 +25,14 @@ class StudentsController extends AppController{
 
 	#ユーザーインデックス
 	public function index(){
-		$this->loadModel("Event");
+		/*$this->loadModel("Event");
 		$this->set('events', $this->Event->find("all"));
 		//Session が空じゃなかったら
 		if($this->Session->read('myData')){
 			//$id=$this->Session->read("myData")['Student']['id'];
 			$this->set('myData', $this->Session->read('myData'));
 		}
-	}
+	*/}
 
 	//ログイン時間update
 	public function updateLogin(){

@@ -8,6 +8,16 @@ App::uses('AppModel', 'Model');
 
 class Company extends AppModel{
 
+	public $useTable = 'companies';
+
+	public $hasMany = array(
+		'Event' => array(
+			'className' => 'Event',
+		));
+
+	
+
+
 	//validation
 	public $validate = array(
 		'name' => array(
@@ -62,4 +72,24 @@ class Company extends AppModel{
     }
     return true;
 	}
+  
+	protected function _getCurrentUser() {
+    App::uses('AuthComponent',  'Controller/Component');
+    return AuthComponent::user();
+	}
+
+
+  	public function addEvent(){
+  		if(!empty($this->request->data)){
+  			$company = $this->_getCurrentUser();
+
+  			if(!empty($company)){
+  				$this->request->data['Event']['companies_id'] = $this->Company->id;
+  				$this->Company->Event->Save($this->request->data);
+  			}
+  		}
+  
   }
+
+
+ }

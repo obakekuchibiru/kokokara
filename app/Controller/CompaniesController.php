@@ -8,20 +8,22 @@ class CompaniesController extends AppController{
 	#フォームヘルパー
 	public $helpers = array('Html', 'Form');
 
-	public	$uses = Array('Company');
+	public	$uses = Array('Company', 'Event');
 
 	public	$components = array(
 		'Session',
 		'Auth' => array(
-			'authenticate' => array('Form' => array(
-				'userModel' => 'Companies',
-				'fields' => array('username' => 'email', 'password' => 'password'))
+			'authenticate' => array(
+				'Form' => array(
+					'userModel' => 'Company',
+					'fields' => array('username' => 'email', 'password' => 'password'),
+					'passwordHasher' => 'Blowfish')
 				),
-			'loginAction' => array('controller' => 'Companies', 'action' => 'login'),
-			'loginRedirect' => array('controller' => 'Companies', 'action' => 'index'),
-			'logoutRedirect' => array('controller' => 'Companies', 'action'=> 'login'),
-			'authError' => 'ログインしてください',
-			'passwordHasher' => 'Blowfish',
+				'loginAction' => array('controller' => 'Companies', 'action' => 'login'),
+				'loginRedirect' => array('controller' => 'Companies', 'action' => 'index'),
+				'logoutRedirect' => array('controller' => 'Companies', 'action'=> 'login'),
+				'authError' => 'ログインしてください',
+				
 			)
 		);
 	#共通スクリプト
@@ -29,6 +31,7 @@ class CompaniesController extends AppController{
 		#ページタイトル設定
 		$this->set('title_for_layout', 'kokokara');
 		$this->Auth->allow('login','logout','signup');
+		AuthComponent::$sessionKey = "Auth.Companies";
 		//最終ログイン処理
 		//$myData=$this->Session->read("myData");
 		//if($myData!=null){
@@ -37,6 +40,7 @@ class CompaniesController extends AppController{
 	}
 
 	public function index(){
+		debug($this->Auth->user());
 	//	$this->loadModel("Event");
 	//	$this->set('events', $this->Event->find("all"));
 	//	//Session が空じゃなかったら
@@ -59,44 +63,12 @@ class CompaniesController extends AppController{
               }
         }
     	
-
-	/*	//Session が入っていたら
-		if($this->Session->read('myData')){
-			$this->set('myData', $this->Session->read('myData'));
-		}else{
-			$this->set('myData', null);
-		}
-		//フォーム情報受信
-		if($this->request->is('post')){
-			//debug($this->request->data);
-			//emailがユニークかどうか
-			if(!isset($this->request->data['Company']['id'])){
-				//ノーマル新規登録
-				$user = $this->Company->find('first', array(
-					'conditions' => array('Company.email' => $this->request->data['Company']['email'])
-				));
-				if(!$user){ //新規ユーザだったら
-					if($this->Company->save($this->request->data)){
-						$this->Session->setFlash('登録が完了しました');
-						$this->Session->write('myData');
-						//$this->Session->write('myData', $this->Company->findById($this->Company->getLastInsertID()));
-						$this->redirect(array('action' => 'login'));
-					}else{
-						$this->Session->setFlash('登録に失敗しました');
-					}
-				} else{ //既存のユーザがいたら
-					$this->Session->setFlash('このメールアドレスは既に登録されています');
-				}
-			 
-
-			}
-		}
-	*/}
+	}
 
 	#ログイン処理
 	public function login(){
 		if($this->request->is('post')){
-			if($this->Auth->login($this->request->data)){
+			if($this->Auth->login()){
 				$this->Session->setFlash('ログイン完了です');
 				return $this->redirect($this->Auth->redirect('index'));
 			}else{
@@ -162,6 +134,17 @@ class CompaniesController extends AppController{
 	*/
 
 	public function addevent(){
+		debug($this->Auth->user());
+		$this->set('company', $this->Auth->user('id'));
+		if($this->request->is('post')){
+			if($this->Company->Event->save($this->request->data)){
+				$this->Session->setFlash('イベント登録が完了	しました。');
+				$this->redirect('index');
+			}else{
+				$this->Session->setFlash('登録に失敗しました。');
+			}
+
+		}
 
 
 	}
