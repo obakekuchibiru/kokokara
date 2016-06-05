@@ -210,4 +210,9 @@ class StudentsController extends AppController{
 	}
 
 
+	public function mypage(){
+		
+	}
+
+
 }
