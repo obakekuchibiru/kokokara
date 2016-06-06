@@ -47,14 +47,14 @@ create table companies(
 #Model
 
 create table events(
-id int auto_increment primary key,
+id int not null auto_increment primary key,
 companies_id int not null,
 reviews_id int
 title varchar(25),
 about text,
 detail text,
-thumbnail VARCHAR (255),
 period enum,
+thumbnail VARCHAR (255),
 frequency enum,
 reward enum,
 residence enum,
@@ -79,12 +79,12 @@ modified datetime DEFAULT null
 
 
 create table reviews(
-id int auto_increment primary key,
-event_id int.
-student_id int,
-body text,
-period enum('1ヶ月未満','1-2ヶ月','3ヶ月以上'),
-cost int
+id int not null auto_increment primary key,
+events_id int not null, 
+student_id int not null,
+body text not null,
+period enum('1ヶ月未満','1-2ヶ月','3ヶ月以上') not null,
+cost int,
 busyness int,
 severity int,
 created datetime DEFAULT null,

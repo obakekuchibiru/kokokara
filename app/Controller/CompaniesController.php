@@ -40,14 +40,7 @@ class CompaniesController extends AppController{
 	}
 
 	public function index(){
-		debug($this->Auth->user());
-	//	$this->loadModel("Event");
-	//	$this->set('events', $this->Event->find("all"));
-	//	//Session が空じゃなかったら
-	//	if($this->Session->read('myData')){
-			//$id=$this->Session->read("myData")['Student']['id'];
-	//		$this->set('myData', $this->Session->read('myData'));
-	//	}
+
 	}
 
 	#新規登録処理
@@ -76,23 +69,6 @@ class CompaniesController extends AppController{
 		}
 
 
-	/*	//debug($this->Session->read('apply'));
-		if($this->request->is('post')){
-			//password ハッシュ化
-			$password = Security::hash($this->request->data['Company']['password'], 'sha1', true);
-			//ログイン処理
-			$company = $this->Company->find('first', array(
-				'conditions' => array('Company.email' => $this->request->data['Company']['email'], 'Company.password' => $password),
-				'limit' => 1
-			));
-			if($company){
-				$this->Session->setFlash('ログイン完了です');
-				$this->Session->write('myData', $company);
-				$this->redirect('index');
-				//申請からログインに飛んだかどうか
-			} else{
-				$this->Session->setFlash('ユーザ名かパスワードが違います');
-			}*/
 		}
 	
 	}
@@ -103,9 +79,6 @@ class CompaniesController extends AppController{
 			$this->Session->setFlash('ログアウトしました');
 			return $this->redirect($this->Auth->logout());
 		}
-	//	$this->redirect($this->Auth->logout());
-	//	$this->Session->setFlash('ログアウトしました');
-	//	ログアウトメッセージ表示されなかった。。
 	}
 
 	#更新処理
@@ -144,10 +117,31 @@ class CompaniesController extends AppController{
 				$this->Session->setFlash('登録に失敗しました。');
 			}
 
+			}
+
+
 		}
 
+	public function editevent(){
 
 	}
 
+	public function reviewindex(){
+
+	}
+
+	public function addfeedback(){
+
+	}
+
+	public function feedbackindex(){
+
+	}
+
+	public function editfeedback(){
+
+	}
+
+	
 
 }

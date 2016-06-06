@@ -73,4 +73,22 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+
+
+	public function help(){
+
+	}
+
+	public function kokokara(){
+
+	}
+
+	public function tos(){
+		
+	}
+
+	public function privacy_policy(){
+		
+	}
+
 }
