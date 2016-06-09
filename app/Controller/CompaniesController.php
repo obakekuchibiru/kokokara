@@ -32,11 +32,6 @@ class CompaniesController extends AppController{
 		$this->set('title_for_layout', 'kokokara');
 		$this->Auth->allow('login','logout','signup');
 		AuthComponent::$sessionKey = "Auth.Companies";
-		//最終ログイン処理
-		//$myData=$this->Session->read("myData");
-		//if($myData!=null){
-		//	$id = $myData['Company']['id'];
-		//}
 	}
 
 	public function index(){
@@ -111,7 +106,7 @@ class CompaniesController extends AppController{
 		$this->set('company', $this->Auth->user('id'));
 		if($this->request->is('post')){
 			if($this->Company->Event->save($this->request->data)){
-				$this->Session->setFlash('イベント登録が完了	しました。');
+				$this->Session->setFlash('イベント登録が完了しました。');
 				$this->redirect('index');
 			}else{
 				$this->Session->setFlash('登録に失敗しました。');
