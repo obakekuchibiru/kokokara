@@ -8,7 +8,7 @@
 
 
 class Event extends AppModel{
-    public $useTable= 'events';
+    public $useTable = 'events';
 
     public $belongsTo = array(
         'Company' => array(
@@ -16,6 +16,8 @@ class Event extends AppModel{
             'foreignKey'=>'companies_id'
             )
         );
+
+    public $hasMany = 'Review';
 
     //イベントタグアソ
     public $hasAndBelongsToMany = array(
@@ -197,17 +199,6 @@ class Event extends AppModel{
     }
 
 
-    public $hasMany=array(
-        "Image"=>array(
-            "className"=>"Attachment",
-            'foreignKey' => 'foreign_key',
-            'conditions' => array(
-                'Image.model' => 'Event',
-            ),
-            'dependent'     => true
-
-        )
-    );
 
 
     public function createWithAttachments($data){
