@@ -33,19 +33,19 @@ class EventsController extends AppController{
 
     public function index(){
 
-        $this->loadModel('EventsLog');
-        $this->loadModel('Student');
-
-        $myData=$this->Session->read("myData");
+//        $this->loadModel('EventsLog');
+//        $this->loadModel('Student');
+//
+//        $myData=$this->Session->read("myData");
         //$this->updateLogin();
         /*if($myData==null){
             $this->redirect(array("controller"=>"Student","action"=>"login"));
         }*/
-        $id=$this->request->query["id"];
+//        $id=$this->request->query["id"];
 
         //ログ
-        $this->EventsLog->goEventsLog($myData['Student']['id'], $id);
-        $event=$this->Event->getOriginal($id);
+//        $this->EventsLog->goEventsLog($myData['Student']['id'], $id);
+//        $event=$this->Event->getOriginal($id);
 
         //もし不正なidなら404
         /*
@@ -53,9 +53,9 @@ class EventsController extends AppController{
 
         }
         */
-        if($event==null){
-            throw new NotFoundException();
-        }
+//        if($event==null){
+//            throw new NotFoundException();
+//        }
 
         //sessionのmyData更新
         /*
@@ -67,14 +67,14 @@ class EventsController extends AppController{
 
 
         //新着記事 by mark
-        $new_events = $this->Event->getEventsByCreated(10);
+//        $new_events = $this->Event->getEventsByCreated(10);
 
         //$comevent=$this->Event->getOriginal($id);
-        $this->set("myData",$myData);
-        $this->set("event",$event);
+//        $this->set("myData",$myData);
+//        $this->set("event",$event);
         //新着記事 by mark
-        $this->set('new_events', $new_events);
-        $this->render();
+//        $this->set('new_events', $new_events);
+//        $this->render();
 
 
     }

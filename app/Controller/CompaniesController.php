@@ -36,6 +36,7 @@ class CompaniesController extends AppController{
 
 	public function index(){
 
+		debug($this->Auth->user());
 	}
 
 	#新規登録処理
@@ -77,17 +78,20 @@ class CompaniesController extends AppController{
 	}
 
 	#更新処理
-	//public function edit(){
-	//	if($this->request->is('post')){
-	//		if($this->Company->save($this->request->data)){
-	//			$this->Session->setFlash('更新完了！');
-	//			$this->Session->write('myData', $this->company->findById($this->request->data['Company']['id']));
-	//			$this->redirect(array('controller' => 'companies', 'action' => 'index'));
-	//		}else{
-	//			$this->Session->setFlash('更新失敗！');
-	//		}
-	//	}
-	//}
+	public function edit($id = null){
+		$company = $this->Company->findByid($id);
+		Debugger::dump($id);
+		if($this->request->is('put')){
+			$this->Company->id=$id;
+			if($this->Company->save($this->request->data)){
+				$this->Session->setFlash('更新完了！');
+				$this->redirect(array('controller' => 'companies', 'action' => 'index'));
+			}else{
+				$this->request->data = $this->Company->findByid($id);
+				$this->Session->setFlash('更新失敗！');
+			}
+		}
+	}
 
 
 
@@ -103,7 +107,7 @@ class CompaniesController extends AppController{
 
 	public function addevent(){
 		debug($this->Auth->user());
-		$this->set('company', $this->Auth->user('id'));
+		$this->set('nowcompany', $this->Auth->user('id'));
 		if($this->request->is('post')){
 			if($this->Company->Event->save($this->request->data)){
 				$this->Session->setFlash('イベント登録が完了しました。');
