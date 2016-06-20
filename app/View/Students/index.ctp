@@ -15,8 +15,8 @@
         <div class="container-fluid top-1-cnts">
           <div class="raw">
             <div class="col-sm-8 col-sm-offset-2" style="text-align:center;">
-              <h1>おかえりっす。</h1>
-              <h3>ちょっと、ラッコかわいい。いってらっしゃい。</h3>
+              <h1>welcome-title</h1>
+              <h3>welcome-contents welcome-contents welcome-contents</h3>
               <p><button type="button" class="btn btn-secondary btn-on-img">ご利用方法</button></p>
             </div>
           </div>
