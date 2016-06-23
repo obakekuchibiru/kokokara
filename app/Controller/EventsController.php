@@ -176,7 +176,7 @@ class EventsController extends AppController{
     }
 
     public function consult(){
-        
+
     }
 
 }

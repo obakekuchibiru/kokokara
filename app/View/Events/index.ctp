@@ -39,7 +39,7 @@
                   <div class="raw">
                     <div class="col-sm-9 col-sm-offset-0 col-xs-12">
                       <div class="ev-sm-title">
-                        <h1>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h1>
+                        <h1><?echo $event['Event']['title']?></h1>
                       </div>
                     </div>
                   </div>
