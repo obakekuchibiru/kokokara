@@ -48,8 +48,8 @@ create table companies(
 
 create table events(
 id int not null auto_increment primary key,
-companies_id int not null,
-reviews_id int
+company_id int not null,
+review_id int
 title varchar(25),
 about text,
 detail text,
@@ -81,7 +81,7 @@ modified datetime DEFAULT null
 
 create table reviews(
 id int not null auto_increment primary key,
-events_id int not null, 
+event_id int not null, 
 student_id int not null,
 body text not null,
 period int not null,

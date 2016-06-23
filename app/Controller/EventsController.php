@@ -32,6 +32,7 @@ class EventsController extends AppController{
     }
 
     public function index(){
+        $this->set('events', $this->Event->find('all'));
 
 //        $this->loadModel('EventsLog');
 //        $this->loadModel('Student');
@@ -71,7 +72,7 @@ class EventsController extends AppController{
 
         //$comevent=$this->Event->getOriginal($id);
 //        $this->set("myData",$myData);
-//        $this->set("event",$event);
+//     $this->set("event",$event);
         //新着記事 by mark
 //        $this->set('new_events', $new_events);
 //        $this->render();
@@ -163,12 +164,15 @@ class EventsController extends AppController{
 
     //新着events取得 by mark
     public function news(){
-        $events = $this->Event->getEventsByCreated(10);
+        $this->set('events', $this->Event->find('all'));
+
+
+/*        $events = $this->Event->getEventsByCreated(10);
         if($events==null){
             throw new NotFoundException();
         }
         $this->set('events', $events);
-    }
+*/    }
 
     //2015/04/27 追加 by mark//////////
     public function thanks() {

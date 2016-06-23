@@ -37,6 +37,7 @@ class CompaniesController extends AppController{
 	public function index(){
 
 		debug($this->Auth->user());
+		$this->set('company', $this->Auth->user('id'));
 	}
 
 	#新規登録処理
@@ -75,24 +76,34 @@ class CompaniesController extends AppController{
 			$this->Session->setFlash('ログアウトしました');
 			return $this->redirect($this->Auth->logout());
 		}
+
 	}
 
 	#更新処理
-	public function edit($id = null){
-		$company = $this->Company->findByid($id);
-		Debugger::dump($id);
-		if($this->request->is('put')){
-			$this->Company->id=$id;
-			if($this->Company->save($this->request->data)){
-				$this->Session->setFlash('更新完了！');
-				$this->redirect(array('controller' => 'companies', 'action' => 'index'));
-			}else{
-				$this->request->data = $this->Company->findByid($id);
-				$this->Session->setFlash('更新失敗！');
-			}
-		}
-	}
+ 	public function edit($id =null) {
+        $company_data = $this->Company->find('first',array(
+            'conditions'=>array(
+                'id'=>$id,
+            )
+        ));
+        $this->set('company_data',$company_data);
 
+        $this->Company->id = $id;
+
+        
+        if($this->request->is('get')) {
+            	$this->request->data = $this->Company->read();            
+        }
+        if($this->request->is('post') || $this->request->is('put')){
+        	pr($this->request->data);
+		        if($this->Company->save($this->request->data)) {
+        	        $this->Session->setFlash('更新が完了しました');
+            	    $this->redirect(array('action'=>'index'));
+            			} else {
+                			$this->Session->setFlash('更新に失敗しました');
+            			  }        
+    	}
+    }
 
 
 	/*#2015/05/01 by mark

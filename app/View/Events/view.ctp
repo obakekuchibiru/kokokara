@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<h2>記事一覧</h2>
-
-<ul>
-<?php foreach ($events as $events) : ?>
-<li>
-<?php
-// debug($event);
-echo h($events['Event']['title']);
-?>
-</li>
-<?php endforeach; ?>
-</ul>
-=======
 <?echo $this->Html->script("user.js");?>
 <?echo $this->Html->script("readmore.min.js");?>
 <? $this->Html->css('event.min', null, array('inline' => false)) ?>
@@ -53,7 +39,7 @@ echo h($events['Event']['title']);
                   <div class="raw">
                     <div class="col-sm-9 col-sm-offset-0 col-xs-12">
                       <div class="ev-sm-title">
-                        <h1><?echo $event['Event']['title']?></h1>
+                        <h1>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h1>
                       </div>
                     </div>
                   </div>
@@ -227,4 +213,3 @@ echo h($events['Event']['title']);
       </div>
     </div>
 </div>
->>>>>>> e38df53d0ef1ca72f6a3c569f34d1b4d096ff24b
