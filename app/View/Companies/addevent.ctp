@@ -27,5 +27,5 @@ echo $this->Form->input('Event.contents', array('label' => '業務内容'));
 echo $this->Form->input('Event.profile', array('label' => '経営者プロフィール'));
 echo $this->Form->input('Event.staff_photo', array('label' => '担当者様の写真'));
 echo $this->Form->input('Event.staff_message', array('label' => '担当者様からの一言'));
-echo $this->Form->input('Event.companies_id', array('type'=>'hidden', 'value'=>$nowcompany));
+echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
 echo $this->Form->end('Save Event');

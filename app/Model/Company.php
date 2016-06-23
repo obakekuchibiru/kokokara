@@ -39,7 +39,7 @@ class Company extends AppModel{
 		'password' => array(
 			'rule' => 'alphaNumeric',
 			'message' => '有効なパスワードを入力してください',
-			'required' => true
+//			'required' => true
 		),
 		
 	);
@@ -48,6 +48,7 @@ class Company extends AppModel{
 		App::uses($model_name,'Model');
 		$this->{$model_name} = new $model_name();
 	}
+
 
 
 
