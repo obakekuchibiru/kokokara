@@ -193,7 +193,7 @@ fieldset fieldset div {
 	margin: 0 20px;
 }
 form div {
-	
+
 }
 form .input {
 	color: #444;
@@ -211,18 +211,8 @@ form div.submit {
 	clear: both;
 	margin-top: 10px;
 }
-label {
-	display: block;
-	font-size: 110%;
-	margin-bottom:3px;
-}
-input, textarea {
-	clear: both;
-	font-size: 140%;
-	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
-	padding: 1%;
-	width:100%;
-}
+
+
 select {
 	clear: both;
 	font-size: 120%;
@@ -261,10 +251,10 @@ input[type=submit] {
 	width: auto;
 }
 form .submit input[type=submit] {
-	
+
 }
 form .submit input[type=submit]:hover {
-	
+
 }
 /* Form errors */
 form .error {
@@ -407,11 +397,11 @@ p.error em {
 input[type=submit],
 .actions ul li a,
 .actions a {
-	
+
 }
 .actions ul li a:hover,
 .actions a:hover {
-	
+
 }
 input[type=submit]:active,
 .actions ul li a:active,
