@@ -164,6 +164,9 @@ class EventsController extends AppController{
 
     //新着events取得 by mark
     public function news(){
+        $this->set('events', $this->Event->find('all'));
+
+
 /*        $events = $this->Event->getEventsByCreated(10);
         if($events==null){
             throw new NotFoundException();

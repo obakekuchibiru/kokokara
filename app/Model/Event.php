@@ -13,7 +13,7 @@ class Event extends AppModel{
     public $belongsTo = array(
         'Company' => array(
             'classname' =>'Company',
-            'foreignKey'=>'companies_id'
+            'foreignKey'=>'company_id'
             )
         );
 

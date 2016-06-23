@@ -98,7 +98,6 @@ class CompaniesController extends AppController{
         	pr($this->request->data);
 		        if($this->Company->save($this->request->data)) {
         	        $this->Session->setFlash('更新が完了しました');
-        	        $this->Company->_update_session_auth_user();
             	    $this->redirect(array('action'=>'index'));
             			} else {
                 			$this->Session->setFlash('更新に失敗しました');
