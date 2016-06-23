@@ -95,7 +95,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	     echo $this->element('footer/footer');
 	    ?>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
 
+	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
