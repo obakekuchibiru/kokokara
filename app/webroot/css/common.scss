@@ -1,7 +1,17 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: 'takumis';
+  src: url('../font/TAKUMISFONT_L.ttf');
+}
+@font-face {
+  font-family: 'takumis_b';
+  src: url('../font/TAKUMISFONT_B.ttf');
+}
 $background-grey:#f5f5f5;
 $text-color:#565a5c;
 $text-note:#969a9c;
+$paper-note:#60392d;
 $title-bar:#edefed;
 $border-color:#dce0e0;
 $color-tb-sub:#82888a;
@@ -9,6 +19,8 @@ $kokokara-logo:#131626;
 $btn-color:#ff5a5f;
 $btn-border-color:#ff5a5f;
 $btn-bottom-color:#e00007;
+
+$tegaki-border:3em .7em 2em .7em/.7em 2em .7em 3em;
 
 $smartp: "only screen and (max-width:768px)";
 $smaller: "only screen and (min-width:769px) and (max-width:992px)";
@@ -110,6 +122,73 @@ hr{
 	i{
 		font-size:34px;
 	}
+}
+.lined-paper {
+  height: auto;
+    position: relative;
+    background-color: #ffffe7;
+    background-image:
+        linear-gradient(90deg, transparent 29px, #fcc 29px, #fcc 31px, transparent 31px),
+        linear-gradient(90deg, transparent 49px, #fcc 49px, #fcc 51px, transparent 51px),
+        linear-gradient(rgba(153,204,255,.3) .1em, transparent .1em);
+    background-size: 100% 1.5em;
+    h1{
+      line-height: 1.4em;
+      padding-top:22px;
+      padding-left:40px;
+      font-family:"takumis_b";
+      font-size:18px;
+      margin-top:20px;
+    }
+    p{
+      font-family:"takumis";
+      line-height: 1.4em;
+      margin: 0 0 1.5em;
+      padding-top:10px;
+      padding-left:40px;
+      padding-bottom:9px;
+      font-size: 15px;
+    }
+}
+.lined-paper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    background-color: #ffffe7;
+    background-image:
+        linear-gradient(90deg, transparent 29px, #fcc 29px, #fcc 31px, transparent 31px),
+        linear-gradient(90deg, transparent 49px, #fcc 49px, #fcc 51px, transparent 51px);
+}
+.dogear h1{
+	position: relative;
+	padding: 1em 4em 1em 1em;
+	-webkit-background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
+	background: linear-gradient(-155deg, rgba(0, 0, 0, 0) 1.5em, #f6f6f6 0%);
+	border-radius: 6px;
+}
+.dogear h1::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 1.65507em;
+  height: 3.5493em;
+  background: -webkit-linear-gradient(to left bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .2));
+  background: linear-gradient(to left bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .2));
+  border-bottom-left-radius: 6px;
+  box-shadow: -.2em .2em .3em -.1em rgba(0, 0, 0, .15);
+  -webkit-transform: translateY(-1.89424em) rotate(-40deg);
+  transform: translateY(-1.89424em) rotate(-40deg);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+.paper-bg{
+  background-size:100% 100%;
+  background-image:url('../img/paper-bg3.png');
+  background-repeat:no-repeat;
 }
 footer{
 	background:#322f2f;

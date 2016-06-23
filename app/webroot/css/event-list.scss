@@ -63,6 +63,21 @@
 		position:relative;
 	}
 }
+.in-list-fav{
+	position:relative;
+	float:right;
+	top:10px;
+	right:0;
+	i{
+		cursor:pointer;
+		color:#f3f3f3;
+		font-size:28px;
+		opacity:0.6;
+		&:hover{
+			opacity:1;
+		}
+	}
+}
 
 //sidebar
 .evlist-sidebar{
