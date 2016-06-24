@@ -7,7 +7,7 @@
  */
 
 class EventsController extends AppController{
-    public $uses=array("Event");
+    public $uses=array("Event", "Company");
     public $helpers = array('Html', 'Form');
 
 
@@ -33,7 +33,6 @@ class EventsController extends AppController{
 
     public function index(){
         $this->set('events', $this->Event->find('all'));
-
 //        $this->loadModel('EventsLog');
 //        $this->loadModel('Student');
 //
@@ -80,7 +79,10 @@ class EventsController extends AppController{
 
     }
 
-
+    public function view($id=null){
+        $this->Event->id = $id;
+        $this->set('event', $this->Event->read());
+    }
 
     public function apply(){
 
