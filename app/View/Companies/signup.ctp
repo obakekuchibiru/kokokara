@@ -69,6 +69,7 @@ echo $this->Form->create('Company', array('url' => 'signup'));
                             <p>ご登録される企業・団体名をご入力下さい</p>
                           </div>
                         </form>
+                        
                         <form class="row form-row" data-toggle="validator" role="form">
                           <div class="col-sm-3"><label for="email">メールアドレス <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
                           <div class="col-sm-9 form-group">
