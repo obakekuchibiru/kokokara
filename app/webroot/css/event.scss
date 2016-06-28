@@ -70,7 +70,10 @@
 		height:45px;
 		width:100%;
 		background:#555555;
-
+	}
+	@media #{$smartp}{
+		margin-bottom:0;
+		border-bottom:0;
 	}
 }
 .ev-sm-lower2{
@@ -96,11 +99,16 @@
 	@media #{$smartp}{
 		position:relative;
 	}
+	@media #{$large}{
+		margin-left:40px;
+	}
 }
+
 .ev-sm-lg-side{
-	float:left;
-	height:400px;
+	background:#ffffff;
+	position:absolute;
 	border:solid 1px $border-color;
+	margin-top:30px;
 }
 .ev-details{
 	width:100vw;
@@ -117,7 +125,13 @@
 		font-weight:bold;
 		margin-top:60px;
 		margin-bottom:20px;
+		margin-left:-15px;
 		color:$text-color;
+		@media #{$smartp}{
+			margin-top:0;
+			margin-bottom:10px;
+			margin-left:0;
+		}
 	}
 	@media #{$smartp}{
 		width:100%;
@@ -179,7 +193,6 @@
 }
 .ev-sm-review{
 	height:auto;
-	width:100%;
 	margin:0 auto;
 	padding-bottom:40px;
 	@media #{$middle}{
@@ -195,8 +208,21 @@
     border: 1px solid #c8c8c8;
     border-radius: 10px;
     font-size: 14px;
-    padding:3%;
 		margin-top:20px;
+		padding: 3%;
+		.fa-check-square-o{
+			color:#ff5a5f;
+		}
+		a{
+			text-align:center;
+			color:$btn-color;
+			padding-top:10px;
+			font-weight:bold;
+			&:hover{
+				text-decoration:none;
+				color:$btn-border-color;
+			}
+		}
 }
 .arrow_question {
 
@@ -253,4 +279,8 @@
 }
 .question_Box{
      width: 100%;
+}
+
+.icon-valued{
+	font-size:22px !important;
 }

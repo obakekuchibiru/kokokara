@@ -78,6 +78,18 @@
 		}
 	}
 }
+.in-list-tag{
+	position: relative;
+	float:left;
+	top:10px;
+	left:-15px;
+	padding:5px 10px;
+	background:rgba(255,255,255,0.8);
+	p{
+		margin-bottom:0;
+	}
+}
+
 
 //sidebar
 .evlist-sidebar{
