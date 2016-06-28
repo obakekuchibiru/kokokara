@@ -81,7 +81,8 @@ class EventsController extends AppController{
 
     public function view($id=null){
         $this->Event->id = $id;
-        $this->set('event', $this->Event->read());
+        $this->Event->recursive = 2;
+        $this->set('events', $this->Event->read());
     }
 
     public function apply(){
