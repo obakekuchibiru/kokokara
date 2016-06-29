@@ -29,6 +29,10 @@ class Attachment extends AppModel
         'Event' => array(
             'className' => 'Event',
             'foreignKey' => 'foreign_key',
+        ),
+        'Company' => array(
+            'className' => 'Company',
+            'foreignKey' => 'foreign_Key'
         )
     );
 

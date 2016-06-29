@@ -13,7 +13,14 @@ class Company extends AppModel{
 	public $hasMany = array(
 		'Event' => array(
 			'className' => 'Event',
-		));
+		),
+		'Image'=> array(
+			'className' => 'Attachment',
+            'foreignKey' => 'foreign_key',
+//            'conditions' => array(
+ //               'Attachment.model' => 'Company')
+            )
+	);
 
 	
 	
