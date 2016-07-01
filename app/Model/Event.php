@@ -17,7 +17,30 @@ class Event extends AppModel{
             )
         );
 
-    public $hasMany = 'Review';
+    public $hasMany = array(
+        'Review',
+        'Thumbnail' => array(
+            'className' => 'Attachment',
+            'foreignKey' => 'foreign_key',
+            'conditions' => array(
+                'Thumbnail.model'=>'Event',
+                'Thumbnail.purpose'=>'Thumbnail')
+            ),
+        'Photo' => array(
+            'className' => 'Attachment',
+            'foreignKey' => 'foreign_key',
+            'conditions' => array(
+                'Photo.model' =>'Event',
+                'Photo.purpose' =>'staff_photo')
+            )
+        );
+
+    public $actsAs = array(
+    "Upload.Upload" => array(
+      "staff_photo",
+      "Thumbnail" ,
+            ),
+        );
 
 /*
     //イベントタグアソ

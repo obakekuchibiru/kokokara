@@ -16,8 +16,8 @@ echo $this->Form->input('Company.duties', array('label'=>'会社概要（事業�
 echo $this->Form->input('Company.phone', array('label'=>'電話番号'));
 echo $this->Form->input('Company.url', array('label'=>'サイトURL'));
 echo $this->Form->input('Company.industry_type', array('label'=>'サービスの業種'));
-echo $this->Form->input('Image.0.attachment', array('type'=>'file', 'label'=>'企業ロゴ'));
-echo $this->Form->input('Image.0.model', array('type'=>'hidden', 'value'=>'Company'));
+echo $this->Form->input('Logo.0.attachment', array('type'=>'file', 'label'=>'企業ロゴ'));
+echo $this->Form->input('Logo.0.model', array('type'=>'hidden', 'value'=>'Company'));
 echo $this->Form->input('Company.facebook', array('label'=>'Facebookページのurl'));
 echo $this->Form->input('Company.twitter', array('label'=>'twitterアカウント'));
 echo $this->Form->end('内容更新');

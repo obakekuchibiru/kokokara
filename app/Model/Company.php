@@ -14,7 +14,7 @@ class Company extends AppModel{
 		'Event' => array(
 			'className' => 'Event',
 		),
-		'Image'=> array(
+		'Logo'=> array(
 			'className' => 'Attachment',
             'foreignKey' => 'foreign_key',
 //            'conditions' => array(

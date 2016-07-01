@@ -120,7 +120,7 @@ class CompaniesController extends AppController{
 		debug($this->Auth->user());
 		$this->set('nowcompany', $this->Auth->user('id'));
 		if($this->request->is('post')){
-			if($this->Company->Event->save($this->request->data)){
+			if($this->Company->Event->saveAll($this->request->data)){
 				$this->Session->setFlash('イベント登録が完了しました。');
 				$this->redirect('index');
 			}else{

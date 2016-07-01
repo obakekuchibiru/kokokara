@@ -3,7 +3,7 @@
 <? echo $this->Html->script("jquery.add-input-area.min.js");?>
 
 <?
-echo $this->Form->create('Event', array('url' => 'addevent'));
+echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
 ?>
 
 
@@ -200,7 +200,9 @@ echo $this->Form->create('Event', array('url' => 'addevent'));
                         <div class="row form-row">
                           <div class="col-sm-3"><label for="user-gender">トップ画 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
                           <div class="col-sm-3 form-group">
-                            <input type="file" name="example" size="30" style="margin-top:8px;">
+                          <? echo $this->Form->input('Thumbnail.0.attachment', array('type'=>'file','label'=>'トップ画像')); ?>
+                          <? echo $this->Form->input('Thumbnail.0.model', array('type'=>'hidden','value'=>'Event')); ?>
+                          <? echo $this->Form->input('Thumbnail.0.purpose', array('type'=>'hidden','value'=>'Thumbnail')); ?>
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
                             <p>こちらの画像はプログラムページのトップ画像としてだけでなく、プログラム一覧ページでは当プログラムのサムネイルとしても活用されます。</p>
@@ -280,26 +282,30 @@ echo $this->Form->create('Event', array('url' => 'addevent'));
                   //echo $this->Form->input('Event.detail', array('label' => '本文'));
                   //echo $this->Form->select('Event.period', array('1'=>'1ヶ月未満','2' =>'1-2ヶ月','3'=>'3ヶ月以上','4'=>'半年以上','5'=>'1年以上'), array('label'=>'false', 'empty'=>'期間'));
                   //echo $this->Form->select('Event.job_type', array('1'=>'マーケティング','2'=>'営業','3'=>'企画','4'=>'デザイン','5'=>'プログラミング','6'=>'サービス','8'=>'教育'), array('label'=>'false', 'empty'=>'職務系統'));
-                  echo $this->Form->input('Event.thumbnail', array('label' => 'サムネイル'));
+                  //echo $this->Form->input('Event.thumbnail', array('label' => 'サムネイル'));
                   //echo $this->Form->select('Event.frequency',array('1'=>'週1-2回','2' =>'週3回以上','3'=> '毎日'), array('label'=>'false', 'empty'=>'頻度'));
                   //echo $this->Form->input('Event.reward', array('type'=>'checkbox', 'label'=>'報酬'));
                   //echo $this->Form->input('Event.residence', array('type'=>'checkbox', 'label'=>'住居'));
                   //echo $this->Form->input('Event.transportation_expense', array('type'=>'checkbox', 'label'=>'交通費'));
                   //echo $this->Form->input('Event.salary', array('label' => '1か月あたりの給料'));
-                  echo $this->Form->input('Event.skill1', array('label' => '身につくスキル１'));
-                  echo $this->Form->input('Event.skill2', array('label' => '身につくスキル２'));
-                  echo $this->Form->input('Event.skill3', array('label' => '身につくスキル３'));
-                  echo $this->Form->input('Event.skill4', array('label' => '身につくスキル４'));
-                  echo $this->Form->input('Event.skill_required', array('label' => '必要スキル'));
-                  echo $this->Form->input('Event.recruit1', array('label' => '募集対象１'));
-                  echo $this->Form->input('Event.recruit2', array('label' => '募集対象２'));
-                  echo $this->Form->input('Event.recruit3', array('label' => '募集対象３'));
-                  echo $this->Form->input('Event.recruit4', array('label' => '募集対象４'));
-                  echo $this->Form->input('Event.contents', array('label' => '業務内容'));
-                  echo $this->Form->input('Event.profile', array('label' => '経営者プロフィール'));
-                  echo $this->Form->input('Event.staff_photo', array('label' => '担当者様の写真'));
-                  echo $this->Form->input('Event.staff_message', array('label' => '担当者様からの一言'));
-                  echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
+                  //echo $this->Form->input('Event.skill1', array('label' => '身につくスキル１'));
+                  //echo $this->Form->input('Event.skill2', array('label' => '身につくスキル２'));
+                  //echo $this->Form->input('Event.skill3', array('label' => '身につくスキル３'));
+                 //echo $this->Form->input('Event.skill4', array('label' => '身につくスキル４'));
+                  //echo $this->Form->input('Event.skill_required', array('label' => '必要スキル'));
+                  //echo $this->Form->input('Event.recruit1', array('label' => '募集対象１'));
+                  //echo $this->Form->input('Event.recruit2', array('label' => '募集対象２'));
+                  //echo $this->Form->input('Event.recruit3', array('label' => '募集対象３'));
+                  //echo $this->Form->input('Event.recruit4', array('label' => '募集対象４'));
+                  //echo $this->Form->input('Event.contents', array('label' => '業務内容'));
+                  //echo $this->Form->input('Event.profile', array('label' => '経営者プロフィール'));
+                  //echo $this->Form->input('Event.staff_photo', array('type'=>'file', 'label'=>'担当者様のお写真'));
+                  //echo $this->Form->input('Event.dir', array('type'=>'hidden',));
+                  //echo $this->Form->input('Event.staff_message', array('label' => '担当者様からの一言'));
+                  //echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
+                    echo $this->Form->input('Photo.0.attachment', array('type'=>'file','label'=>'担当者様のお写真')); 
+                    echo $this->Form->input('Photo.0.model', array('type'=>'hidden','value'=>'Event')); 
+                    echo $this->Form->input('Photo.0.purpose', array('type'=>'hidden','value'=>'staff_photo')); 
 
                   ?>
                   <div class="raw clearfix dash-elm">

@@ -74,6 +74,7 @@ contents text,
 profile text,
 staff_photo VARCHAR(255),
 staff_message VARCHAR(140),
+dir VARCHAR(255),
 created datetime DEFAULT null,
 modified datetime DEFAULT null
 );
@@ -284,6 +285,7 @@ CREATE table attachments (
     attachment varchar(255) NOT NULL,
     dir varchar(255) NOT NULL,
     type  varchar(255) DEFAULT NULL,
+    purpose varchar(255) DEFAULT NULL,
     size int(11) DEFAULT 0,
     active tinyint(1) DEFAULT 1
 
