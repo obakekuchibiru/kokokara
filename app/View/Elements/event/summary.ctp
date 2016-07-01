@@ -2,7 +2,9 @@
   <div class="row" style="padding-top:40px;">
     <!--　サマリーヘッダー1 左側 -->
     <div class="col-sm-3 col-sm-offset-0 col-xs-12">
-      <div class="event-sm-suppier-thumb" style="background-image:url('img/cmp-sample.jpg');">
+      <div class="event-sm-suppier-thumb">
+        <!--Company_logo -->
+        <a href="#"></a>
       </div>
       <p style="text-align:center;padding-top:10px;font-size:14px;"><? echo $events['Company']['name']?></p>
     </div>
@@ -17,28 +19,35 @@
       <div class="col-xs-3 col-sm-2">
         <?
         if($events['Event']['job_type'] == 0){
-          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div><p>マーケティング</p>';
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-binoculars"></i></p></div><p>マーケティング</p>';
         }elseif($events['Event']['job_type'] == 1){
-          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div><p>営業</p>';
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-briefcase"></i></p></div><p>営業</p>';
         }elseif($events['Event']['job_type'] == 2){
-          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div><p>企画</p>';
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-hand-paper-o"></i></p></div><p>企画</p>';
         }elseif($events['Event']['job_type'] == 3){
-          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div><p>デザイン</p>';
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-paint-brush"></i></p></div><p>デザイン</p>';
         }elseif($events['Event']['job_type'] == 4){
-          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div><p>プログラミング</p>';
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-code"></i></p></div><p>プログラミング</p>';
         }elseif($events['Event']['job_type'] == 5){
-          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div><p>サービス</p>';
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-sign-language"></i></p></div><p>サービス</p>';
         }elseif($events['Event']['job_type'] == 6){
-          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-jpy"></i></p></div><p>教育</p>';
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-book"></i></p></div><p>教育</p>';
         }
         ?>
-
-        <div class="icon-block"><p class="sample-font"></p></div>
-        <p>マーケティング</p>
       </div>
       <div class="col-xs-3 col-sm-2">
-        <div class="icon-block"><p class="sample-font"><i class="fa fa-users"></i></p></div>
-        <p>頻度</p>
+        <div class="icon-block"><p class="sample-font"><i class="fa fa-building"></i></p></div>
+        <p>
+          <?php
+            if($events['Event']['frequency'] == 0){
+            	echo '週1~2日';
+            }elseif($events['Event']['frequency'] == 1){
+              echo '週3~5回';
+            }elseif($events['Event']['frequency'] == 2){
+              echo '週5回以上';
+            }
+          ?>
+        </p>
       </div>
       <div class="col-xs-3 col-sm-2">
         <?php
@@ -98,7 +107,7 @@
         <div class="col-sm-10">
           <div class="question_Box">
             <div class="arrow_question">
-                 <p style="margin-bottom:0;">プログラム担当者からの一言コメントを掲載します。文字数は140字までです。プログラム担当者からの一言コメントを掲載します。文字数は140字までです。プログラム担当者からの一言コメントを掲載します。文字数は140字までです。この文章が終わる頃、それはちょうど140字となっております</p>
+                 <p style="margin-bottom:0;"><? echo $events['Event']['staff_message'] ?></p>
 
             </div><!-- /.arrow_question -->
 

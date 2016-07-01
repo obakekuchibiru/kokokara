@@ -160,8 +160,8 @@ echo $this->Form->create('Event', array('url' => 'addevent'));
                             <?
                             echo $this->Form->select('Event.frequency', array(
                               '1'=>'週1-2回',
-                              '2' =>'週3回以上',
-                              '3'=>'毎日'),
+                              '2' =>'週3~5回',
+                              '3'=>'週5回以上'),
                               array(
                                 'label'=>false,
                                 'empty'=>'選択して下さい',

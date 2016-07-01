@@ -7,7 +7,19 @@
 <? $this->Html->css('remodal-default-theme', null, array('inline' => false)); ?>
 <? $this->Html->css('event.min', null, array('inline' => false)); ?>
 
+<?php
+  $event_thumb = $this->Html->webroot.IMAGES_URL . "urban.jpg";
+  $company_logo = $this->Html->webroot.IMAGES_URL . "cmp-sample.jpg";
+?>
 
+<style>
+.event-img{
+  background-image:url('<? echo $event_thumb ?>');
+}
+.event-sm-suppier-thumb{
+  background-image:url('<? echo $company_logo ?>');
+}
+</style>
 
 
 <script type="text/javascript">
@@ -31,8 +43,8 @@
     <div id="event-picture">
       <div class="container-fluid nopadding">
         <div class="row">
-          <div class="col-xs-12 event-img" style="background-image:url('img/urban.jpg')">
-
+          <div class="col-xs-12 event-img">
+            <!-- event-thumbnail -->
           </div>
         </div>
       </div>
