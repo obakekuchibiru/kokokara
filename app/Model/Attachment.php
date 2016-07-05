@@ -32,7 +32,7 @@ class Attachment extends AppModel
         ),
         'Company' => array(
             'className' => 'Company',
-            'foreignKey' => 'foreign_Key'
+            'foreignKey' => 'foreign_key'
         )
     );
 

@@ -11,16 +11,35 @@ class StudentsController extends AppController{
 	#フォームヘルパー
 	public $helpers = array('Html', 'Form');
 
+		public	$components = array(
+		'Session',
+		'Auth' => array(
+			'authenticate' => array(
+				'Form' => array(
+					'userModel' => 'Student',
+					'fields' => array('username' => 'email', 'password' => 'password'),
+					'passwordHasher' => 'Blowfish')
+				),
+				'loginAction' => array('controller' => 'Students', 'action' => 'login'),
+				'loginRedirect' => array('controller' => 'Students', 'action' => 'index'),
+				'logoutRedirect' => array('controller' => 'Students', 'action'=> 'login'),
+				'authError' => 'ログインしてください',
+				
+			)
+		);
+
 	#共通スクリプト
 	public function beforeFilter(){
 		#ページタイトル設定
 		$this->set('title_for_layout', 'kokokara');
 		//最終ログイン処理
-		$myData=$this->Session->read("myData");
-		if($myData!=null){
-			$id = $myData['Student']['id'];
-			$this->updateLogin($id);
-		}
+//		$myData=$this->Session->read("myData");
+//		if($myData!=null){
+//			$id = $myData['Student']['id'];
+//			$this->updateLogin($id);
+//	}
+		$this->Auth->allow('login','logout','signup');
+		AuthComponent::$sessionKey = "Auth.Students";
 	}
 
 	#ユーザーインデックス
@@ -46,6 +65,17 @@ class StudentsController extends AppController{
 
 	#新規登録処理
 	public function signup(){
+
+		if ($this->request->is('post')) {
+                $this->Student->create();
+                if ($this->Student->save($this->request->data)) {
+                        $this->Session->setFlash(__('登録が完了しました。'));
+                        return $this->redirect(array('action' => 'login'));
+                }else{
+                        $this->Session->setFlash(__('登録に失敗しました'));
+              }
+        }
+/*
 		//Session が入っていたら
 		if($this->Session->read('myData')){
 			$this->set('myData', $this->Session->read('myData'));
@@ -85,10 +115,20 @@ class StudentsController extends AppController{
 
 			}
 		}
+		*/
 	}
 
 	#ログイン処理
 	public function login(){
+		if($this->request->is('post')){
+			if($this->Auth->login()){
+				$this->Session->setFlash('ログイン完了です');
+				return $this->redirect($this->Auth->redirect('index'));
+			}else{
+				$this->Session->setFlash('ログインに失敗しました');
+			}
+		}
+		/*
 		//debug($this->Session->read('apply'));
 		if($this->request->is('post')){
 			//password ハッシュ化
@@ -114,13 +154,17 @@ class StudentsController extends AppController{
 				$this->Session->setFlash('ユーザ名かパスワードが違います');
 			}
 		}
-
+	*/
 	}
 
 	#ログアウト処理
 	public function logout(){
-		$this->Session->delete('myData');
-		$this->redirect(array('action' => 'index'));
+		if($this->Auth->logout($this->request->data)){
+			$this->Session->setFlash('ログアウトしました');
+			return $this->redirect($this->Auth->logout());
+		}
+//		$this->Session->delete('myData');
+//		$this->redirect(array('action' => 'index'));
 	}
 
 	#更新処理
@@ -210,7 +254,7 @@ class StudentsController extends AppController{
 	}
 
 
-	public function mypage(){
+	public function myNote(){
 		
 	}
 

@@ -302,7 +302,7 @@ echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
                   //echo $this->Form->input('Event.staff_photo', array('type'=>'file', 'label'=>'担当者様のお写真'));
                   //echo $this->Form->input('Event.dir', array('type'=>'hidden',));
                   //echo $this->Form->input('Event.staff_message', array('label' => '担当者様からの一言'));
-                  //echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
+                    echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
                     echo $this->Form->input('Photo.0.attachment', array('type'=>'file','label'=>'担当者様のお写真')); 
                     echo $this->Form->input('Photo.0.model', array('type'=>'hidden','value'=>'Event')); 
                     echo $this->Form->input('Photo.0.purpose', array('type'=>'hidden','value'=>'staff_photo')); 

@@ -17,8 +17,8 @@ class Company extends AppModel{
 		'Logo'=> array(
 			'className' => 'Attachment',
             'foreignKey' => 'foreign_key',
-//            'conditions' => array(
- //               'Attachment.model' => 'Company')
+            'conditions' => array(
+               'Logo.model' => 'Company')
             )
 	);
 
@@ -38,6 +38,7 @@ class Company extends AppModel{
 				'rule' => 'email',
 				'message' => '有効なメールアドレスを入力してください'
 			),
+
 			array(
 				'rule' => 'isUnique',
 				'message' => 'そのメールアドレスは既に使われています'
