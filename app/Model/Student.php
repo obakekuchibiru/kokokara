@@ -6,6 +6,7 @@
  * Time: 9:38
  */
 App::uses('Security', 'Utility');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class Student extends AppModel{
 	//タグアソシエーション
@@ -110,13 +111,22 @@ class Student extends AppModel{
 
 
 	#パスワードハッシュ化
-	public function beforeSave($options = array()){
-		if(isset($this->data['Student']['password'])){
-			$this->data['Student']['password'] = Security::hash($this->data['Student']['password'], 'sha1', true);
-		}
-		return true;
-	}
+//	public function beforeSave($options = array()){
+//		if(isset($this->data['Student']['password'])){
+//			$this->data['Student']['password'] = Security::hash($this->data['Student']['password'], 'sha1', true);
+//		}
+//		return true;
+//	}
 
+  	public function beforeSave($options = array()) {
+    if (isset($this->data[$this->alias]['password'])) {
+        $passwordHasher = new BlowfishPasswordHasher();
+        $this->data[$this->alias]['password'] = $passwordHasher->hash(
+            $this->data[$this->alias]['password']
+        );
+    }
+    return true;
+	}
 
 
 

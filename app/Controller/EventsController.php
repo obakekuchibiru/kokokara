@@ -33,6 +33,7 @@ class EventsController extends AppController{
 
     public function index(){
         $this->set('events', $this->Event->find('all'));
+        debug($events);
 //        $this->loadModel('EventsLog');
 //        $this->loadModel('Student');
 //
