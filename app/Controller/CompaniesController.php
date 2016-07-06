@@ -37,7 +37,7 @@ class CompaniesController extends AppController{
 	public function index(){
 
 		debug($this->Auth->user());
-		$this->set('company', $this->Auth->user('id'));
+		$this->set('company', $this->Auth->user());
 	}
 
 	#新規登録処理
