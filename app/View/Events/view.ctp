@@ -8,8 +8,9 @@
 <? $this->Html->css('event.min', null, array('inline' => false)); ?>
 
 <?php
-  $event_thumb = $this->Html->webroot.IMAGES_URL . "urban.jpg";
+  $event_thumb = $this->Html->url('/'.'files/thumbnail/attachment/'. $events['Thumbnail'][0]['dir'] . '/' . $events['Thumbnail'][0]['attachment']);
   $company_logo = $this->Html->webroot.IMAGES_URL . "cmp-sample.jpg";
+  $manager_thumb = $this->Html->url('/'.'files/photo/attachment/'. $events['Photo'][0]['dir'] . '/' . $events['Photo'][0]['attachment']);
 ?>
 
 <style>
@@ -18,6 +19,9 @@
 }
 .event-sm-suppier-thumb{
   background-image:url('<? echo $company_logo ?>');
+}
+.person-in-charge{
+  background-image:url('<? echo $manager_thumb ?>');
 }
 </style>
 

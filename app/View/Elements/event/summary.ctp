@@ -101,7 +101,7 @@
     <div class="col-sm-12 ev-sm-lower2 hidden-xs">
       <div class="row">
         <div class="col-sm-2" style="text-align:center;">
-          <div class="person-in-charge" style="background-image:url('img/gagamaru.jpg');"></div>
+          <div class="person-in-charge"></div>
           <p class="person-in-charge-name hidden-lg">担当者より</p>
         </div>
         <div class="col-sm-10">
