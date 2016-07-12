@@ -12,7 +12,7 @@
   $company_logo = $this->Html->webroot.IMAGES_URL . "cmp-sample.jpg";
   $manager_thumb = $this->Html->url('/'.'files/photo/attachment/'. $events['Photo'][0]['dir'] . '/' . $events['Photo'][0]['attachment']);
 ?>
-
+<?echo $this->Html->link('レビュー投稿テスト',array('action'=>'addreview', $events['Event']['id'])); ?>
 <style>
 .event-img{
   background-image:url('<? echo $event_thumb ?>');

@@ -10,8 +10,25 @@ class EventsController extends AppController{
     public $uses=array("Event", "Company");
     public $helpers = array('Html', 'Form');
 
+    public  $components = array(
+        'Session',
+        'Auth' => array(
+            'authenticate' => array(
+                'Form' => array(
+                    'userModel' => 'Student',
+                    'fields' => array('username' => 'email', 'password' => 'password'),
+                    'passwordHasher' => 'Blowfish')
+                ),
+                'loginAction' => array('controller' => 'Students', 'action' => 'login'),
+                'loginRedirect' => array('controller' => 'Events', 'action' => 'news'),
+                'logoutRedirect' => array('controller' => 'Students', 'action'=> 'login'),
+                'authError' => 'ログインしてください',            
+            )
+        );    
+
 
     public function beforeFilter(){
+        AuthComponent::$sessionKey = "Auth.Students";
         //最終ログイン処理
         $myData=$this->Session->read("myData");
         if($myData!=null){
@@ -84,6 +101,20 @@ class EventsController extends AppController{
         $this->Event->id = $id;
         $this->Event->recursive = 2;
         $this->set('events', $this->Event->read());
+    }
+
+    public function addreview($id=null){
+        $this->set('user', $this->Auth->user('id'));
+        $this->Event->id = $id;
+        $this->set('events', $this->Event->read());
+        if($this->request->is('post')){
+            if($this->Event->Review->save($this->request->data)){
+                $this->Session->setFlash('レビューを送信しました。企業の承認後、掲載されます。');
+                $this->redirect(array('controller'=>'Events', 'action'=>'view',$this->data['Review']['event_id']));
+            }else{
+                $this->Session->setFlash('レビューの投稿に失敗しました。');
+            }
+        }
     }
 
     public function apply(){
