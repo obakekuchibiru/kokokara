@@ -19,7 +19,9 @@ class Company extends AppModel{
             'foreignKey' => 'foreign_key',
             'conditions' => array(
                'Logo.model' => 'Company')
-            )
+            ),
+		'Review' => array(
+			'className' => 'Review'),
 	);
 
 	

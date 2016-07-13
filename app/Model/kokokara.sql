@@ -83,6 +83,7 @@ modified datetime DEFAULT null
 create table reviews(
 id int not null auto_increment primary key,
 event_id int not null, 
+company_id int not null,
 student_id int not null,
 body text not null,
 period int not null,
