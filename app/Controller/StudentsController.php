@@ -11,7 +11,7 @@ class StudentsController extends AppController{
 	#フォームヘルパー
 	public $helpers = array('Html', 'Form');
 
-		public	$components = array(
+	public	$components = array(
 		'Session',
 		'Auth' => array(
 			'authenticate' => array(
@@ -21,10 +21,9 @@ class StudentsController extends AppController{
 					'passwordHasher' => 'Blowfish')
 				),
 				'loginAction' => array('controller' => 'Students', 'action' => 'login'),
-				'loginRedirect' => array('controller' => 'Students', 'action' => 'index'),
+				'loginRedirect' => array('controller' => 'Events', 'action' => 'news'),
 				'logoutRedirect' => array('controller' => 'Students', 'action'=> 'login'),
-				'authError' => 'ログインしてください',
-				
+				'authError' => 'ログインしてください',			
 			)
 		);
 
@@ -123,7 +122,7 @@ class StudentsController extends AppController{
 		if($this->request->is('post')){
 			if($this->Auth->login()){
 				$this->Session->setFlash('ログイン完了です');
-				return $this->redirect($this->Auth->redirect('index'));
+				return $this->redirect($this->Auth->redirect(array('controller'=>'Events','action'=>'news')));
 			}else{
 				$this->Session->setFlash('ログインに失敗しました');
 			}

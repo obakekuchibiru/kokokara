@@ -20,7 +20,7 @@ class FbconnectController extends AppController{
 		$user = $this->facebook->getUser();		//ユーザ情報取得
 		if($user){//認証後
 			$me = $this->facebook->api('/me','GET',array('locale'=>'ja_JP')); //【5】ユーザ情報を日本語で取得
-
+			
 			////////////追加分 by Mark/////////////////////
 			if(isset($me['education'])){
 				foreach($me['education'] as $education){    //大学名and学部
@@ -90,7 +90,7 @@ class FbconnectController extends AppController{
 
 		}else{//認証前
 			$url = $this->facebook->getLoginUrl(array(
-				'scope' => 'email,user_friends,user_birthday,user_education_history','canvas' => 1,'fbconnect' => 0,'req_perms' => 'status_update,publish_stream' ));   //スコープの確認
+				'scope' => 'email,user_friends,user_photos,user_birthday,user_education_history','canvas' => 1,'fbconnect' => 0,'req_perms' => 'status_update,publish_stream' ));   //スコープの確認
 			$this->redirect($url);
 		}
 	}

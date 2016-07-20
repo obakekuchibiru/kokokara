@@ -137,11 +137,26 @@ class CompaniesController extends AppController{
 	}
 
 	public function reviewindex(){
+		$conditions = array("Review.company_id" => $this->Auth->user('id'));
+		$this->loadModel('Review');
+		$this->set('review', $this->Review->find('all', array('conditions' => $conditions)));
+	}
 
+	public function reviewconfirm($id){
+		$this->loadModel('Review');
+		$data = array('Review' => array('id' => $id, 'active' => 1));
+		$fields = array('active');
+		if($this->request->is('get')){
+			throw new MethodNotAlloewdExeption();
+		}
+		if($this->Review->save($data, 'false', $fields)){
+			$this->Session->setFlash('レビューを承認しました。');
+			$this->redirect(array('action'=>'reviewindex'));
+		}
 	}
 
 	public function addfeedback(){
-
+		
 	}
 
 	public function feedbackindex(){
