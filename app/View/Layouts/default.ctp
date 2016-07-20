@@ -80,7 +80,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			$current = Router::url();
 			if($current == '/kokokara/'){
 				echo $this->element('header/header-top');
-			}elseif($current == '/kokokara/students/login'){
+			}elseif($current == '/kokokara/students/login' || $current == '/kokokara/Students/login' ){
 				null;
 			}else{
 				echo $this->element('header/header');
@@ -95,7 +95,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<!-- footer -->
 	    <?
 			$current = Router::url();
-			if($current == '/kokokara/students/login'){
+			if($current == '/kokokara/students/login' || $current == '/kokokara/Students/login' ){
 				null;
 			}else{
 	     echo $this->element('footer/footer');

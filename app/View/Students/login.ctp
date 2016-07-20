@@ -23,7 +23,7 @@ $('#main-container').css("height",h + "px");
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1 login-menu">
 				<a href="signup">ハジメカラ</a><br>
-				<?php echo $this->Html->link('ツヅキカラ', array("action" => "login")); ?>
+				<?php echo $this->Html->link('ツヅキカラ', array("action" => "login")); ?><br>
 				<a href="#">kokokaraとは</a>
 			</div>
 		</div>
@@ -37,14 +37,12 @@ $('#main-container').css("height",h + "px");
 					<p>ログイン</p>
 				</div>
 				<div class="col-xs-9">
-					<input tyle="text">
+					<?php echo $this->Form->input('Student.email'); ?>
+					<?php echo $this->Form->input('Student.password'); ?>
+					<?php echo $this->Form->end(__('ログイン')); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 	<a href="#!" class="modal-close">&times;</a>
 </section>
-
-<?php echo $this->Form->input('Student.email'); ?>
-<?php echo $this->Form->input('Student.password'); ?>
-<?php echo $this->Form->end(__('ログイン')); ?>

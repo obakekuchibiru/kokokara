@@ -1,4 +1,3 @@
-<?php echo $this->Session->flash('auth'); ?>
 <? $this->Html->css('user-page.min', null, array('inline' => false)); ?>
 
 <div id="main-container" style="background:#f3f3f3;">
@@ -16,7 +15,7 @@
 
                       </div>
                       <div class="main-profile-name">
-                        <p><? echo $company['companies']['name']?></p>
+                        <p><? echo $company['name']?></p>
                         <a href="#">プロフィールを見る</a><br>
 
                       </div>
@@ -27,7 +26,7 @@
                       <p>ポイント</p>
                     </div>
                     <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;">
-                      <p>○○さんのポイントは、</p>
+                      <p><? echo $company['facebook']?></p>
                     </div>
 
                   </div>
@@ -38,23 +37,23 @@
                 <div class="col-sm-9 dashboard-mainbar">
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p>○○さん、Kokokaraにようこそ！</p>
+                      <p><? echo $company['name']?>様、kokokaraへようこそ！</p>
                     </div>
                     <div class="col-xs-12 dash-article">
                       <p>
-                        こんにちは。このマイページでは○○さんへのメッセージや、kokokaraと歩んだ軌跡など、あらゆる事を管理することができます。でもその前に、まずは次のことを確認して下さい。
+                        こんにちは。このマイページでは<? echo $company['name']?>様宛のメッセージや、プログラムの新規登録・編集なども行って頂くことができます。でもその前に、まずは次のことを確認して下さい。
                       </p>
                       <p>
-                        <a href="#">プロフィールをつくろう</a>
-                        <br>写真をアップロードしたり、略歴を書いて、たくさんの人達に自分のことを知ってもらおう。
+                        <a href="#">プロフィールの編集</a>
+                        <br>サムネイル写真の登録や、FacebookやTwitterアカウントを追加する事で、多くのユーザーに<? echo $company['name']?>様のことをより深く知ってもらう事ができます。
                       </p>
                       <p>
-                        <a href="#">二人の若い紳士が</a>
-                        <br>すっかりイギリスの兵隊のかたちをして、ぴかぴかする鉄砲をかついで、白熊のような犬を二疋ひきつれて
+                        <a href="#">プログラムページの作成</a>
+                        <br>実際にプログラムページを作成して頂くことができます。
                       </p>
                       <p>
-                        <a href="#">ポイントについて</a>
-                        <br>知っておこう。
+                        <a href="#">応募状況やレビューの確認</a>
+                        <br>投稿したプログラムに対して、ユーザーが応募したり、レビューが投稿されたりすると先ず<? echo $company['name']?>様に通知されます。<br>レビューなどは随時「承認」ボタンを押して頂くことで、プログラムページに反映させることができます。
                       </p>
                     </div>
                   </div>
@@ -80,10 +79,6 @@
                       </p>
                     </div>
                   </div>
-
-
-
-
                 </div>
                  <!-- メインバー終了 -->
               </div>
@@ -99,6 +94,8 @@
 
 
 <?php
+echo $this->Session->flash('auth');
+echo debug($company);
 echo $this->Html->link('企業情報編集',array('action'=>'edit', $company['id']));
 echo $this->Html->link('新規イベント登録','/companies/addevent'); ?>
 <br><a href="#">イベント編集</a><br>

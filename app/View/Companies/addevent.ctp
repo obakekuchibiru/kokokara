@@ -271,10 +271,39 @@ echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
                             <p>報酬にチェックが入っていない場合、「報酬無し」と表示されます。</p>
                           </div>
                         </div>
-
+                        <div class="row form-row">
+                          <div class="col-sm-3"><label for="place">担当者様のお写真 </label></div>
+                          <div class="col-sm-9 form-group">
+                            <?
+                            echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
+                            echo $this->Form->input('Photo.0.attachment', array('type'=>'file','label'=>null));
+                            echo $this->Form->input('Photo.0.model', array('type'=>'hidden','value'=>'Event'));
+                            echo $this->Form->input('Photo.0.purpose', array('type'=>'hidden','value'=>'staff_photo'));
+                            ?>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p></p>
+                          </div>
+                        </div>
+                        <div class="row form-row">
+                          <div class="col-sm-3"><label for="place">担当者様からの一言 </label></div>
+                          <div class="col-sm-9 form-group">
+                            <? echo $this->Form->input('Event.staff_message', array('label' => '担当者様からの一言')); ?>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p>報酬にチェックが入っていない場合、「報酬無し」と表示されます。</p>
+                          </div>
+                        </div>
+                        <div class="raw clearfix dash-elm">
+                          <div class="col-sm-4 col-sm-offset-4">
+                            <? echo $this->Form->end('投稿する'); ?>
+                          </div>
+                        </div>
                       </div>
                   </div>
                   <!-- 必須項目終了 -->
+                  <!-- 任意項目開始-->
+
                   <?
                   //echo $this->Form->create('Event', array('url' => 'addevent'));
                   //echo $this->Form->input('Event.title', array('label' => 'タイトル'));
@@ -302,17 +331,13 @@ echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
                   //echo $this->Form->input('Event.staff_photo', array('type'=>'file', 'label'=>'担当者様のお写真'));
                   //echo $this->Form->input('Event.dir', array('type'=>'hidden',));
                   //echo $this->Form->input('Event.staff_message', array('label' => '担当者様からの一言'));
-                    echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
-                    echo $this->Form->input('Photo.0.attachment', array('type'=>'file','label'=>'担当者様のお写真')); 
-                    echo $this->Form->input('Photo.0.model', array('type'=>'hidden','value'=>'Event')); 
-                    echo $this->Form->input('Photo.0.purpose', array('type'=>'hidden','value'=>'staff_photo')); 
+                  //  echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
+                  //  echo $this->Form->input('Photo.0.attachment', array('type'=>'file','label'=>'担当者様のお写真'));
+                  //  echo $this->Form->input('Photo.0.model', array('type'=>'hidden','value'=>'Event'));
+                  //  echo $this->Form->input('Photo.0.purpose', array('type'=>'hidden','value'=>'staff_photo'));
 
                   ?>
-                  <div class="raw clearfix dash-elm">
-                    <div class="col-sm-4 col-sm-offset-4">
-                      <? echo $this->Form->end('投稿する'); ?>
-                    </div>
-                  </div>
+
                 </div>
                  <!-- メインバー終了 -->
               </div>
