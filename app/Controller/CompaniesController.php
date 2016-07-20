@@ -156,7 +156,7 @@ class CompaniesController extends AppController{
 	}
 
 	public function addfeedback(){
-
+		
 	}
 
 	public function feedbackindex(){
