@@ -1,5 +1,6 @@
 <?echo $this->Html->script("user.js");?>
 <?echo $this->Html->script("readmore.min.js");?>
+<? echo $this->Html->script('remodal.js');?>
 
 <? $this->Html->css('remodal', null, array('inline' => false)) ?>
 <? $this->Html->css('remodal-default-theme', null, array('inline' => false)) ?>
@@ -448,6 +449,6 @@
       </table>
     </div>
   </div>
-<button data-remodal-action="cancel" class="remodal-cancel">やめておく</button>
-<button data-remodal-action="confirm" class="remodal-confirm">応募する</button>
+<button data-remodal-action="cancel" class="remodal-cancel">戻る</button>
+<button data-remodal-action="confirm" class="remodal-confirm">ログイン</button>
 </div>

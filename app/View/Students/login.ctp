@@ -1,4 +1,4 @@
-<?php echo $this->Session->flash('auth'); ?>
+
 <?php echo $this->Form->create('Student', Array('url'=>'/students/login')); ?>
 <? $this->Html->css('specialhome/animate.min', null, array('inline' => false)) ?>
 <? $this->Html->css('specialhome/et-line-font', null, array('inline' => false)) ?>
@@ -9,6 +9,7 @@
 <? $this->Html->css('remodal', null, array('inline' => false)) ?>
 <? $this->Html->css('remodal-default-theme', null, array('inline' => false)) ?>
 
+<? echo $this->Html->script('remodal.js');?>
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
@@ -51,27 +52,26 @@ $('#main-container').css("height",h + "px");
 				<hr>
 				<a class="smoothScroll btn btn-danger" data-remodal-target="modal" >登校</a>
 				<a href="#contact" class="smoothScroll btn btn-default">当校について</a>
+				<?php echo $this->Session->flash('auth'); ?>
 			</div>
 		</div>
 	</div>
 </section>
+
 
 <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
 <button data-remodal-action="close" class="remodal-close"></button>
 <h1>こんにちは、今日は何をしますか？</h1>
 <p><i>The only impossible journey is the one you never begin. <br>ーAnthony Robbins</i></p>
   <div class="row" style="text-align:left;">
-    <div class="col-sm-6">
-      <img src="img/zeppelin.jpg" style="width:100%;padding-bottom:20px;">
-    </div>
-    <div class="col-sm-6">
-      <table>
-
-      </table>
-    </div>
+		<div class="col-xs-12">
+			<?php echo $this->Form->input('Student.email'); ?>
+			<?php echo $this->Form->input('Student.password'); ?>
+			<?php echo $this->Form->end(__('ログイン')); ?>
+		</div>
   </div>
 <button data-remodal-action="cancel" class="remodal-cancel">やめておく</button>
-<button data-remodal-action="confirm" class="remodal-confirm">応募する</button>
+
 </div>
 
 <? echo $this->Html->script('specialhome/smoothscroll.js');?>
