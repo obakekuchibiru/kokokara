@@ -14,7 +14,7 @@
                   <div class="raw clearfix dash-elm">
                     <div class="col-sm-12 main-profile">
                       <div class="profile-pic" >
-
+                        
                       </div>
                       <div class="main-profile-name">
                         <p><? echo $company['name']?></p>
