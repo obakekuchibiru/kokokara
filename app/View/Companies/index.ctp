@@ -1,5 +1,11 @@
 <? $this->Html->css('user-page.min', null, array('inline' => false)); ?>
+<<<<<<< HEAD
 <?php debug($company_logo); ?>
+=======
+
+
+
+>>>>>>> 7ded9c82573a11477587555dd055006b0814aa46
 <div id="main-container" style="background:#f3f3f3;">
     <?php echo $this->element('header/mypage-tags'); ?>
     <div id="mypage-cnts-dashboard">
@@ -16,17 +22,32 @@
                       </div>
                       <div class="main-profile-name">
                         <p><? echo $company['name']?></p>
-                        <a href="#">プロフィールを見る</a><br>
+                        <? echo $this->Html->link('プロフィールを編集する',array('action'=>'edit', $company['id']));?>
 
                       </div>
                     </div>
                   </div>
                   <div class="raw clearfix dash-elm" style="padding-left:15px;padding-right:15px;">
                     <div class="col-sm-12 title-bar">
-                      <p>ポイント</p>
+                      <p>SNS</p>
                     </div>
-                    <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;">
-                      <p><? echo $company['facebook']?></p>
+                    <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;text-align:center;">
+                      <ul class="social-link">
+                        <? if($company['facebook'] == null){
+                          echo null;
+                        }else{
+                          echo $this->element('branches/fbbranch');
+                        }
+                        ?>
+                        <?
+                        if($company['twitter'] == null){
+                          echo null;
+                        }else{
+                          echo $this->element('branches/twitterbranch');
+                        }
+                        ?>
+                      </ul>
+                      <? echo $this->Html->link('追加・編集する',array('action'=>'edit', $company['id']));?>
                     </div>
 
                   </div>
@@ -44,7 +65,7 @@
                         こんにちは。このマイページでは<? echo $company['name']?>様宛のメッセージや、プログラムの新規登録・編集なども行って頂くことができます。でもその前に、まずは次のことを確認して下さい。
                       </p>
                       <p>
-                        <a href="#">プロフィールの編集</a>
+                        <? echo $this->Html->link('プロフィールの編集',array('action'=>'edit', $company['id']));?>
                         <br>サムネイル写真の登録や、FacebookやTwitterアカウントを追加する事で、多くのユーザーに<? echo $company['name']?>様のことをより深く知ってもらう事ができます。
                       </p>
                       <p>
@@ -59,12 +80,12 @@
                   </div>
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p>通知</p>
+                      <p>承認待ちレビュー</p>
                     </div>
                     <div class="col-xs-12 dash-article">
                       <div style="height:200px;">
                         <p>
-                          通知とか、来るのでしょうか？
+                          現在承認待ちのレビューはありません
                         </p>
                       </div>
                     </div>
