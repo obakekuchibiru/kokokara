@@ -29,8 +29,19 @@
                     </div>
                     <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;">
                       <ul class="social-link">
-                        <li class="facebook"><a href="<? echo $company['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
-                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <? if($company['facebook'] = null){
+                          echo null;
+                        }else{
+                          echo $this->element('branches/fbbranch');
+                        }
+                        ?>
+                        <?
+                        if($company['twitter'] = null){
+                          echo null;
+                        }else{
+                          echo $this->element('branches/twitterbranch');
+                        }
+                        ?>
                       </ul>
                     </div>
 

@@ -1,10 +1,18 @@
 <h2>企業様情報編集ページ</h2>
 
 <?php
-
 debug($company_data);
+?>
 
 
+
+
+
+
+
+
+
+<?
 echo $this->Form->create('Company', array('url'=>'edit', 'type'=>'file'));
 echo $this->Form->input('Company.id',array('type'=>'hidden','value'=>$company_data['Company']['id']));
 echo $this->Form->input('Company.name', array('label'=>'企業名'));
