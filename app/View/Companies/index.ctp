@@ -1,5 +1,5 @@
 <? $this->Html->css('user-page.min', null, array('inline' => false)); ?>
-
+<?php debug($company_logo); ?>
 <div id="main-container" style="background:#f3f3f3;">
     <?php echo $this->element('header/mypage-tags'); ?>
     <div id="mypage-cnts-dashboard">

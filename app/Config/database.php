@@ -64,7 +64,18 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
+/*	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'mysql467.db.sakura.ne.jp',
+		'login' => 'kokokaragroup',
+		'password' => 'kokokara2016',
+		'database' => 'kokokaragroup_kokokara',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+*/
+		public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',

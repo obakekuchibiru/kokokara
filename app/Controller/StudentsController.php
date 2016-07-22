@@ -6,13 +6,10 @@
  * Time: 9:41
  */
 App::uses('Security', 'Utility');
-App::import('vendor', 'facebook/php-sdk/src/facebook');
 
 class StudentsController extends AppController{
 	#フォームヘルパー
 	public $helpers = array('Html', 'Form');
-
-	public $Facebook;
 
 	public	$components = array(
 		'Session',
@@ -32,11 +29,6 @@ class StudentsController extends AppController{
 
 	#共通スクリプト
 	public function beforeFilter(){
-		$this->Facebook = new Facebook(array(
-            'appId' => '145786039184605',
-            'secret' => '264c41c7cf04fc977d7dd95791ef6abd',
-            'cookie' => true,
-        ));
 		#ページタイトル設定
 		$this->set('title_for_layout', 'kokokara');
 		//最終ログイン処理
@@ -72,7 +64,7 @@ class StudentsController extends AppController{
 
 	#新規登録処理
 	public function signup(){
-		/* backup 0722
+
 		if ($this->request->is('post')) {
                 $this->Student->create();
                 if ($this->Student->save($this->request->data)) {
@@ -81,31 +73,6 @@ class StudentsController extends AppController{
                 }else{
                         $this->Session->setFlash(__('登録に失敗しました'));
               }
-        */
-              $this->autoRender = false;
- 
-        $facebookInfo = $this->Facebook->api('/me', 'GET');
-        $student = array(
-            'Student' => [
-                'id' => $facebookInfo['id'],
-                'name' => $facebookInfo['name'],
-/** createdとmodifiedというカラムがある場合、
-.*. 下記のように記述しなくても、作成時と更新時に自動で現在時刻が挿入される。
-.*. よって'created'、'modified'は削除してもOK
-.*/
-                'created' => date('Y-m-d H:i:s'),
-                'modified' => date('Y-m-d H:i:s'),
-                'link' => $facebookInfo['link'],
-            ]
-        );
-        $this->Student->create();
-        if ($this->Student->save($student)) {
-            $this->Session->setFlash(__('登録が完了しました。'));
-        } else {
-            $this->Session->setFlash(__('登録てきません.'));
-        }
- 
-        $this->redirect(['action' => 'index']);
         }
 /*
 		//Session が入っていたら
@@ -152,7 +119,6 @@ class StudentsController extends AppController{
 
 	#ログイン処理
 	public function login(){
-		/* backup 0722
 		if($this->request->is('post')){
 			if($this->Auth->login()){
 				$this->Session->setFlash('ログイン完了です');
@@ -161,25 +127,6 @@ class StudentsController extends AppController{
 				$this->Session->setFlash('ログインに失敗しました');
 			}
 		}
-		*/
-		$this->autoRender = false;
-        // facebook OAuth login
-        $facebookId = $this->Facebook->getUser();
-        if (!$facebookId) {
-            $this->_authFacebook();
-        }
- 
-        $student = $this->Student->find('first', ['conditions' => ['Student.id' => $facebookId]]);
-        if (!empty($student['Student'])) {
-            if ($this->Auth->login($student['Student'])) {
-                $this->redirect(['action' => 'index']);
-            }
-        } else {
-            $this->signup();
-        }
- 
-        $this->redirect(['action' => 'logout']);
-
 		/*
 		//debug($this->Session->read('apply'));
 		if($this->request->is('post')){
@@ -209,20 +156,11 @@ class StudentsController extends AppController{
 	*/
 	}
 
-	protected function _authFacebook() {
-        $loginUrl = $this->Facebook->getLoginUrl(['redirect_uri' => Router::fullBaseUrl() . Router::url(['controller' => 'students', 'action' => 'login'])]);
-        return $this->redirect($loginUrl);
-    }
-
 	#ログアウト処理
 	public function logout(){
-		/* backup 0722
 		if($this->Auth->logout($this->request->data)){
 			$this->Session->setFlash('ログアウトしました');
 			return $this->redirect($this->Auth->logout());
-		*/
-		$this->Facebook->destroySession();
-        $this->redirect($this->Auth->logout());
 		}
 //		$this->Session->delete('myData');
 //		$this->redirect(array('action' => 'index'));

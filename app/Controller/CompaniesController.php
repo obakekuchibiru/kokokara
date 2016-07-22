@@ -35,9 +35,10 @@ class CompaniesController extends AppController{
 	}
 
 	public function index(){
-
+		$this->loadModel('Attachment');
 		debug($this->Auth->user());
 		$this->set('company', $this->Auth->user());
+		$this->set('company_logo', $this->Attachment->findAllByForeign_keyAndModel($this->Auth->user('id'),'company'));
 	}
 
 	#新規登録処理
