@@ -97,8 +97,8 @@ class FbconnectController extends AppController{
 
 	private function createFacebook() {        //appID, secretを記述
 		return new Facebook(array(
-			'appId' => '372537352928242',
-			'secret' => 'f92baaffb5b846acd8986cdbf10b84bd'
+			'appId' => '145786039184605',
+			'secret' => '264c41c7cf04fc977d7dd95791ef6abd'
 		));
 	}
 

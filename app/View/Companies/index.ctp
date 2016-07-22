@@ -1,7 +1,11 @@
 <? $this->Html->css('user-page.min', null, array('inline' => false)); ?>
+<<<<<<< HEAD
+<?php debug($company_logo); ?>
+=======
 
 
 
+>>>>>>> 7ded9c82573a11477587555dd055006b0814aa46
 <div id="main-container" style="background:#f3f3f3;">
     <?php echo $this->element('header/mypage-tags'); ?>
     <div id="mypage-cnts-dashboard">
