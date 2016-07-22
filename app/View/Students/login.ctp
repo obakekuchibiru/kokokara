@@ -57,7 +57,9 @@ $('#main-container').css("height",h + "px");
 		</div>
 	</div>
 </section>
-
+<?php echo $this->Form->input('Student.email'); ?>
+<?php echo $this->Form->input('Student.password'); ?>
+<?php echo $this->Form->end(__('ログイン')); ?>
 
 <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking:false">
 <button data-remodal-action="close" class="remodal-close"></button>

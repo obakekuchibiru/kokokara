@@ -1,5 +1,7 @@
 <? $this->Html->css('user-page.min', null, array('inline' => false)); ?>
 
+
+
 <div id="main-container" style="background:#f3f3f3;">
     <?php echo $this->element('header/mypage-tags'); ?>
     <div id="mypage-cnts-dashboard">
@@ -23,10 +25,13 @@
                   </div>
                   <div class="raw clearfix dash-elm" style="padding-left:15px;padding-right:15px;">
                     <div class="col-sm-12 title-bar">
-                      <p>ポイント</p>
+                      <p>SNS</p>
                     </div>
                     <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;">
-                      <p><? echo $company['facebook']?></p>
+                      <ul class="social-link">
+                        <li class="facebook"><a href="<? echo $company['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      </ul>
                     </div>
 
                   </div>
@@ -59,12 +64,12 @@
                   </div>
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p>通知</p>
+                      <p>承認待ちレビュー</p>
                     </div>
                     <div class="col-xs-12 dash-article">
                       <div style="height:200px;">
                         <p>
-                          通知とか、来るのでしょうか？
+                          現在承認待ちのレビューはありません
                         </p>
                       </div>
                     </div>
