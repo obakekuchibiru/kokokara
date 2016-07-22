@@ -18,7 +18,7 @@
                       </div>
                       <div class="main-profile-name">
                         <p><? echo $company['name']?></p>
-                        <a href="#">プロフィールを見る</a><br>
+                        <? echo $this->Html->link('プロフィールを編集する',array('action'=>'edit', $company['id']));?>
 
                       </div>
                     </div>
@@ -27,22 +27,23 @@
                     <div class="col-sm-12 title-bar">
                       <p>SNS</p>
                     </div>
-                    <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;">
+                    <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;text-align:center;">
                       <ul class="social-link">
-                        <? if($company['facebook'] = null){
+                        <? if($company['facebook'] == null){
                           echo null;
                         }else{
                           echo $this->element('branches/fbbranch');
                         }
                         ?>
                         <?
-                        if($company['twitter'] = null){
+                        if($company['twitter'] == null){
                           echo null;
                         }else{
                           echo $this->element('branches/twitterbranch');
                         }
                         ?>
                       </ul>
+                      <? echo $this->Html->link('追加・編集する',array('action'=>'edit', $company['id']));?>
                     </div>
 
                   </div>
@@ -60,7 +61,7 @@
                         こんにちは。このマイページでは<? echo $company['name']?>様宛のメッセージや、プログラムの新規登録・編集なども行って頂くことができます。でもその前に、まずは次のことを確認して下さい。
                       </p>
                       <p>
-                        <a href="#">プロフィールの編集</a>
+                        <? echo $this->Html->link('プロフィールの編集',array('action'=>'edit', $company['id']));?>
                         <br>サムネイル写真の登録や、FacebookやTwitterアカウントを追加する事で、多くのユーザーに<? echo $company['name']?>様のことをより深く知ってもらう事ができます。
                       </p>
                       <p>
