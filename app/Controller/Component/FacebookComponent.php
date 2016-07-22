@@ -11,8 +11,8 @@ class FacebookComponent extends Component {
 	public function __construct() {
 
 		$config = array();
-		$config['appId'] = FACEBOOK_APPLICATION_KEY;
-		$config['secret'] = FACEBOOK_SECRET_KEY;
+		$config['appId'] = 145786039184605;
+		$config['secret'] = 264c41c7cf04fc977d7dd95791ef6abd;
 		$config['fileUpload'] = false; // optional
 
 		$this->facebookInstance = new Facebook($config);

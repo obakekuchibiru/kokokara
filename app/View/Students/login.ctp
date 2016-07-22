@@ -23,7 +23,7 @@ $('#main-container').css("height",h + "px");
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1 login-menu">
 				<a href="signup">ハジメカラ</a><br>
-				<?php echo $this->Html->link('ツヅキカラ', array("controller" => "fbconnect", "action" => "facebook")); ?>
+				<?php echo $this->Html->link('ツヅキカラ', array("controller" => "Students", "action" => "login")); ?>
 				<a href="#">kokokaraとは</a>
 			</div>
 		</div>

@@ -100,7 +100,15 @@ class Student extends AppModel{
 			'rule' => 'numeric',
 			'message' => '学年を入力してください',
 			'required' => true
-		)
+		),
+		'link' => array(
+			'url' => array(
+                'rule' => array('url'),
+            ),
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+                )
+            )
 	);
 
 	public function loadModel($model_name) {
