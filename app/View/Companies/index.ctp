@@ -22,7 +22,7 @@
                   </div>
                   <div class="raw clearfix dash-elm" style="padding-left:15px;padding-right:15px;">
                     <div class="col-sm-12 title-bar">
-                      <p>SNS</p>
+                      <p><i class="fa fa-link" aria-hidden="true"></i> SNS</p>
                     </div>
                     <div class="col-sm-12 sidebar-point" style="background:#ffffff;height:100px;text-align:center;">
                       <ul class="social-link">
@@ -73,7 +73,7 @@
                   </div>
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p>承認待ちレビュー</p>
+                      <p><i class="fa fa-check-square-o" aria-hidden="true"></i> 承認待ちレビュー</p>
                     </div>
                     <div class="col-xs-12 dash-article">
                       <? echo $this->element('lists/waiting-reviews'); ?>
@@ -81,7 +81,7 @@
                   </div>
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p>メッセージ</p>
+                      <p><i class="fa fa-envelope-o" aria-hidden="true"></i> メッセージ</p>
                     </div>
                     <div class="col-xs-12 dash-article" style="height:300px;">
                       <p>

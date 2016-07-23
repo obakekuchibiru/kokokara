@@ -18,7 +18,7 @@
 	text-align:center;
 	line-height:40px;
 	font-size:25px;
-	padding-top:8px;
+	padding-top:9px;
 	color:#fff;
 	background:#a0a0a0;
 	border-radius:50%;
@@ -142,7 +142,7 @@
 	tr{
 		cursor:pointer;
 		&:hover{
-			background:$btn-color !important;
+			background:#fff4f4 !important;
 		}
 	}
 

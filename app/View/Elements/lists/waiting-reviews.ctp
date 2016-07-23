@@ -11,7 +11,7 @@ jQuery( function($) {
 	});
 });
 </script>
-<table class="table table-hover">
+<table class="table">
   <thead>
     <tr>
       <th style="font-weight:light;">ユーザー</th>
