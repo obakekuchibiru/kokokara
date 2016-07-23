@@ -152,6 +152,7 @@ echo $this->Form->input('Company.id',array('type'=>'hidden','value'=>$company_da
                             <?
                             echo $this->Form->input('Logo.0.attachment', array('type'=>'file', 'label'=>false));
                             echo $this->Form->input('Logo.0.model', array('type'=>'hidden', 'value'=>'Company'));
+                            echo $this->Form->input('Logo.0.purpose', array('type'=>'hidden', 'value'=>'Logo'));
                             ?>
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
