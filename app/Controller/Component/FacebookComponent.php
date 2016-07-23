@@ -1,6 +1,6 @@
 <?php
 
-App::import('Vendor', 'facebookSdk',array('file' => 'facebookSdk' . DS . 'facebook.php'));
+App::import('Vendor', 'facebook',array('file' => 'facebook' . DS . 'src' . 'facebook.php'));
  
 class FacebookComponent extends Component {
  
@@ -11,8 +11,8 @@ class FacebookComponent extends Component {
 	public function __construct() {
 
 		$config = array();
-		$config['appId'] = 145786039184605;
-		$config['secret'] = 264c41c7cf04fc977d7dd95791ef6abd;
+		$config['appId'] = '145786039184605';
+		$config['secret'] = '264c41c7cf04fc977d7dd95791ef6abd';
 		$config['fileUpload'] = false; // optional
 
 		$this->facebookInstance = new Facebook($config);
@@ -28,7 +28,7 @@ class FacebookComponent extends Component {
 	
 	public function getLoginUrl() {
 		$params = array('display'=>'popup',
-			'redirect_uri'=> 'http://' . $_SERVER['HTTP_HOST'] . '/account/callback/facebook/',
+			'redirect_url'=> 'http://' . $_SERVER['HTTP_HOST'] . '/account/callback/facebook/',
 			// 'scope'=>'${カンマ区切りでのパーミッション}',
 			);
 		return $this->facebookInstance->getLoginUrl($params);
