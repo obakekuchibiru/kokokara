@@ -76,16 +76,12 @@
                       <p>承認待ちレビュー</p>
                     </div>
                     <div class="col-xs-12 dash-article">
-                      <div style="height:200px;">
-                        <p>
-                          現在承認待ちのレビューはありません
-                        </p>
-                      </div>
+                      <? echo $this->element('lists/waiting-reviews'); ?>
                     </div>
                   </div>
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p>メッセージ (新着:○件)</p>
+                      <p>メッセージ</p>
                     </div>
                     <div class="col-xs-12 dash-article" style="height:300px;">
                       <p>

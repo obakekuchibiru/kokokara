@@ -138,6 +138,15 @@
 	}
 
 }
+.dashboard-lists{
+	tr{
+		cursor:pointer;
+		&:hover{
+			background:$btn-color !important;
+		}
+	}
+
+}
 
 //sidebar
 .profile-pic{
