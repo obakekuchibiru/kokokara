@@ -1,6 +1,6 @@
 <?php
 
-App::import('Vendor', 'facebookSdk',array('file' => 'facebookSdk' . DS . 'facebook.php'));
+App::import('Vendor', 'facebook',array('file' => 'facebook' . DS . 'src' . 'facebook.php'));
  
 class FacebookComponent extends Component {
  
@@ -28,7 +28,7 @@ class FacebookComponent extends Component {
 	
 	public function getLoginUrl() {
 		$params = array('display'=>'popup',
-			'redirect_uri'=> 'http://' . $_SERVER['HTTP_HOST'] . '/account/callback/facebook/',
+			'redirect_url'=> 'http://' . $_SERVER['HTTP_HOST'] . '/account/callback/facebook/',
 			// 'scope'=>'${カンマ区切りでのパーミッション}',
 			);
 		return $this->facebookInstance->getLoginUrl($params);
