@@ -11,13 +11,12 @@
                 <div class="col-sm-3 dashboard-sidebar hidden-xs nopadding">
                   <div class="raw clearfix dash-elm">
                     <div class="col-sm-12 main-profile">
-                      <div class="profile-pic" >
+                      <div class="profile-pic">
 
                       </div>
                       <div class="main-profile-name">
                         <p><? echo $company['name']?></p>
                         <? echo $this->Html->link('プロフィールを編集する',array('action'=>'edit', $company['id']));?>
-
                       </div>
                     </div>
                   </div>
@@ -82,11 +81,11 @@
                   </div>
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p><i class="fa fa-envelope-o" aria-hidden="true"></i> メッセージ</p>
+                      <p><i class="fa fa-envelope-o" aria-hidden="true"></i> 応募状況</p>
                     </div>
                     <div class="col-xs-12 dash-article" style="height:300px;">
                       <p>
-                        メッセージとか、届くのでしょうか？
+                        新着応募はありません。
                       </p>
                     </div>
                   </div>
@@ -99,9 +98,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 
 

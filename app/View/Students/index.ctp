@@ -2,7 +2,7 @@
 <script type="text/javascript">
     jQuery(function($) {
         $('#top-1').bgSwitcher({
-            images: ['img/sample6.jpg','img/sample3.jpg', 'img/sample4.jpg', 'img/sample5.jpg','img/sample2.jpg'],
+            images: ['img/country/thai/4.jpg','img/country/india/2.jpg', 'img/country/hongkong/1.jpg', 'img/country/malay/3.jpg','img/country/viet/2.jpg'],
             interval: 7000,
             effect: "fade"
         });
@@ -18,11 +18,6 @@
               <h1>まだ見ぬ世界へ！</h1>
               <h3></h3>
               <p><button type="button" class="btn btn-secondary btn-on-img">ご利用方法</button></p>
-            </div>
-          </div>
-          <div class="raw">
-            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-
             </div>
           </div>
         </div>
@@ -41,13 +36,15 @@
             <div class="col-sm-7 col-sm-offset-1">
               <? echo $this->Html->image("urban.jpg", array('class' => 'img-obfit img-responsive')); ?>
               <p class="visible-xs">kokokara開く、世界への扉。</p>
-              <p class="visible-xs subtext">空部屋を活用してみませんか？　子どもが巣立った後の部屋に世界中を旅する人を迎えたり。新しい毎日が始まります。</p>
+              <p class="visible-xs subtext">今どこで何をしていますか？これから、どこで何をしたいですか？</p>
+              <button type="button" class="btn btn-primary btn-lg btn-block" style="font-size:12px;"><i class="fa fa-plane" aria-hidden="true"></i> 探しに行こう！</button>
             </div>
             <div class="col-sm-3 hidden-xs">
               <div class="raw">
                 <div class="col-sm-12">
-                  <p><b>kokokara開く、<br>世界への扉。</b></p>
-                  <p class="subtext">空部屋を活用してみませんか？　子どもが巣立った後の部屋に世界中を旅する人を迎えたり。新しい毎日が始まります。</p>
+                  <p><b>kokokara開く、世界への扉。</b></p>
+                  <p class="subtext">今どこで何をしていますか？これから、どこで何をしたいですか？</p>
+                  <button type="button" class="btn btn-primary btn-lg btn-block" style="font-size:16px;"><i class="fa fa-plane" aria-hidden="true"></i> 探しに行こう！</button>
                 </div>
               </div>
             </div>

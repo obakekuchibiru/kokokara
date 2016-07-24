@@ -55,6 +55,9 @@
 		padding-left:5px;
 		color:$text-color;
 	}
+	@media #{$smaller}{
+		height:auto !important;
+	}
 }
 .side-bar-title{
 	@media #{$smaller}{
