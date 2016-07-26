@@ -24,7 +24,7 @@ class FacebookComponent extends Component {
     }
   }
   public function getLoginUrl(){
-    //facebookインスタンスの生成
+/*    //facebookインスタンスの生成
     $facebook = $this->createFacebook();
     $url = $facebook->getLoginUrl(
       array(
@@ -34,6 +34,12 @@ class FacebookComponent extends Component {
       )
     );
     return $url;
+*/
+        $params = array('display'=>'popup',
+      'redirect_uri'=> 'http://' . $_SERVER['HTTP_HOST'] . '/account/callback/facebook/',
+      // 'scope'=>'${カンマ区切りでのパーミッション}',
+      );
+    return $this->facebookInstance->getLoginUrl($params);
   }
   //facebookインスタンスの生成
   private function createFacebook() {
