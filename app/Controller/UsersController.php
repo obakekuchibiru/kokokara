@@ -1,4 +1,10 @@
 <?php
+
+App::uses('AppController', 'Controller');
+//ライブラリがクラスでないため、import を使用
+App::import('Vendor', 'facebook', array("file" => "facebook".DS."src".DS."facebook.php"));
+
+
 class UsersController extends AppController {
   public $name = 'Users';
   public $uses = 'User';

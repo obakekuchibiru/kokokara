@@ -7,6 +7,8 @@
  */
 App::uses('Security', 'Utility');
 
+
+
 class StudentsController extends AppController{
 	#フォームヘルパー
 	public $helpers = array('Html', 'Form');
