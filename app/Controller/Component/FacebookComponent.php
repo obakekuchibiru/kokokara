@@ -1,6 +1,6 @@
 <?php
 App::uses('Component', 'Controller');
-App::import('Vendor', 'facebook/src/facebook');
+App::import('Vendor', 'facebook', array("file" => 'facebook'.DS.'src'.DS.'facebook.php'));
 class FacebookComponent extends Component {
   public $uses = array('User');
   public $components = array(
