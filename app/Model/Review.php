@@ -8,5 +8,6 @@ class Review extends AppModel{
 
 	public $belongsTo = array(
 		'Student',
+		'Event'
 		);
 }

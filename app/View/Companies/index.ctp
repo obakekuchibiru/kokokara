@@ -1,6 +1,7 @@
 <? $this->Html->css('user-page.min', null, array('inline' => false)); ?>
 <? debug($company); ?>
 <? debug($company_logo); ?>
+<? debug($review); ?>
 <div id="main-container" style="background:#f3f3f3;">
     <?php echo $this->element('header/mypage-tags'); ?>
     <div id="mypage-cnts-dashboard">
@@ -104,7 +105,6 @@
 
 <?php
 echo $this->Session->flash('auth');
-echo debug($company);
 echo $this->Html->link('企業情報編集',array('action'=>'edit', $company['id']));
 echo $this->Html->link('新規イベント登録','/companies/addevent'); ?>
 <br><a href="#">イベント編集</a><br>
