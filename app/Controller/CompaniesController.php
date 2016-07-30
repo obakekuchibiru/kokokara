@@ -35,6 +35,9 @@ class CompaniesController extends AppController{
 	}
 
 	public function index(){
+		$conditions = array("Review.company_id" => $this->Auth->user('id'));
+		$this->loadModel('Review');
+		$this->set('review', $this->Review->find('all', array('conditions' => $conditions)));
 		$this->loadModel('Attachment');
 		debug($this->Auth->user());
 		$this->set('company', $this->Auth->user());
