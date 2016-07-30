@@ -30,7 +30,13 @@ var h = $(window).height();
 $('#main-container').css("height",h + "px");
 });
 </script>
-
+<script type="text/javascript">
+//auto expand textarea
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
+</script>
 
 <!-- preloader section -->
 <div class="preloader">
@@ -59,26 +65,51 @@ $('#main-container').css("height",h + "px");
 				<h3>カンパニーページ</h3>
 				<h1>kokokara University</h1>
 				<hr>
-				<a class="smoothScroll btn btn-danger" data-remodal-target="modal" >登校</a>
-				<a href="#contact" class="smoothScroll btn btn-default">当校について</a>
+          <style>
+            .submit{
+              margin-top:0 !important;
+            }
+            .submit input{
+              background:none;
+              border:none;
+              border-radius:2px;
+            }
+              input:-webkit-autofill {
+                  -webkit-box-shadow: 0 0 0px 1000px #f2f2f2 inset;
+              }
+          </style>
+
+
+
+
+
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row form-row" data-toggle="validator" role="form">
+              <div class="col-sm-8 col-sm-offset-2 form-group">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p>メールアドレス</p>
+                    <?php echo $this->Form->input('Company.email', array('label' => false, 'id'=>'inputEmail','placeholder'=>'Email address', 'required','autofocus')); ?>
+                  </div>
+                  <div class="col-sm-12" style="padding-top:10px;">
+                    <p>パスワード<p>
+                    <?php echo $this->Form->input('Company.password', Array('label' => false, 'id'=>'unputPassword','class'=>'form-control','placeholder'=>'Password', 'required')); ?>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label for="inputEmail" class="sr-only">メールアドレス</label>
+
+            <label for="inputPassword" class="sr-only">パスワード</label>
+
+
+    				<a class="smoothScroll btn btn-danger"><?php echo $this->Form->end(__('ログイン')); ?></a>
+    				<a href="#contact" class="smoothScroll btn btn-default">パスワードを忘れた</a>
+          </div>
+        </div>
 			</div>
 		</div>
 	</div>
 </section>
-
-
-
-
-    <div class="container-fluid" style="background:#f2f2f2;">
-      <div class="col-sm-offset-3 col-sm-6 comp-signin-box">
-        <form class="form-signin">
-          <h4 class="form-signin-heading">カンパニーページへログイン</h4>
-          <label for="inputEmail" class="sr-only">Email address</label>
-            <?php echo $this->Form->input('Company.email', array('label' => false, 'id'=>'inputEmail','class'=>'form-control','placeholder'=>'Email address', 'required','autofocus')); ?>
-          <label for="inputPassword" class="sr-only">Password</label>
-            <?php echo $this->Form->input('Company.password', Array('label' => false, 'id'=>'unputPassword','class'=>'form-control','placeholder'=>'Password', 'required')); ?>
-
-          <?php echo $this->Form->end(__('ログイン')); ?>
-        </form>
-      </div>
-    </div> <!-- /container -->

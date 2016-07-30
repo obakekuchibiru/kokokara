@@ -80,7 +80,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			$current = Router::url();
 			if($current == '/kokokara/'){
 				echo $this->element('header/header-top');
-			}elseif($current == '/kokokara/students/login' || $current == '/kokokara/Students/login' ){
+			}elseif($current == '/kokokara/students/login' || $current == '/kokokara/Students/login' || $current == '/kokokara/companies/login' || $current == '/kokokara/Companies/login'){
 				null;
 			}else{
 				echo $this->element('header/header');
