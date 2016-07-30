@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="raw">
                     <ul>
-                        <li class="col-sm-2"><a href="#">ダッシュボード</a></li>
+                        <li class="col-sm-2"><a href="/kokokara/companies/">ダッシュボード</a></li>
                         <li class="col-sm-2"><?echo $this->Html->link('プロフィール管理',array('action'=>'edit', $company['id']));?></li>
                         <li class="col-sm-2"><a href="#">応募状況</a></li>
                         <li class="col-sm-2"><? echo $this->Html->link('口コミ確認','/companies/reviewindex'); ?></li>
