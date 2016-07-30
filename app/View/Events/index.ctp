@@ -22,7 +22,7 @@
       <div class="container-fluid nopadding">
         <div class="row">
           <div class="col-xs-12 event-img" style="background-image:url('img/urban.jpg')">
-
+            
           </div>
         </div>
       </div>

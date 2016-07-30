@@ -284,3 +284,29 @@
 .icon-valued{
 	font-size:22px !important;
 }
+
+
+//review-page
+.review-title{
+	@media #{$smartp}{
+		padding-top:80px;
+	}
+	@media #{$smaller}{
+		padding-top:120px;
+		&div{
+			padding:30px;
+		}
+	}
+	@media #{$middle}{
+		padding-top:150px;
+		&div{
+			padding:30px;
+		}
+	}
+	@media #{$large}{
+		padding-top:200px;
+		&div{
+			padding:30px;
+		}
+	}
+}

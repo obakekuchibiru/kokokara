@@ -201,7 +201,7 @@
                         <div class="row form-row">
                           <div class="col-sm-3"><label for="user-gender">トップ画 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
                           <div class="col-sm-3 form-group">
-                          <? echo $this->Form->input('Thumbnail.0.attachment', array('type'=>'file','label'=>'トップ画像')); ?>
+                          <? echo $this->Form->input('Thumbnail.0.attachment', array('type'=>'file','label'=>false)); ?>
                           <? echo $this->Form->input('Thumbnail.0.model', array('type'=>'hidden','value'=>'Event')); ?>
                           <? echo $this->Form->input('Thumbnail.0.purpose', array('type'=>'hidden','value'=>'Thumbnail')); ?>
                           </div>
@@ -216,34 +216,79 @@
                           <div class="col-sm-9 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <input type="text" class="form-control" name="skill" placeholder="" required="">
+                                <? echo $this->Form->input('Event.skill1', array('label' => false,'class'=>'form-control','required')); ?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
                           </div>
-                          <div class="col-sm-9 col-sm-offset-3 form-group">
+                          <div class="col-sm-9 col-sm-offset-3 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <input type="text" class="form-control" name="skill" placeholder="" required="">
+                                <? echo $this->Form->input('Event.skill2', array('label' => false,'class'=>'form-control','required')); ?>
                                 <div class="help-block with-errors"></div>
                               </div>
-                              <div class="col-sm-2">
-                                 <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
-                              </div>
                             </div>
                           </div>
-                          <div class="col-sm-9 col-sm-offset-3 form-group hide" id="optionTemplate">
+                          <div class="col-sm-9 col-sm-offset-3 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <input type="text" class="form-control" name="option[]" placeholder="">
-                              </div>
-                              <div class="col-sm-2">
-                                 <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                                <? echo $this->Form->input('Event.skill3', array('label' => false,'class'=>'form-control')); ?>
+                                <div class="help-block with-errors"></div>
                               </div>
                             </div>
                           </div>
+                          <div class="col-sm-9 col-sm-offset-3 form-group" style="margin-bottom:10px;">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <? echo $this->Form->input('Event.skill4', array('label' => false,'class'=>'form-control')); ?>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
                             <p>2個以上の記入が必須となります </p>
+                          </div>
+                        </div>
+                        <div id="form-skill" data-toggle="validator" role="form"  class="row form-row">
+                          <div class="col-sm-3">
+                            <label for="tel">募集対象 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label>
+                          </div>
+                          <div class="col-sm-9 form-group" style="margin-bottom:10px;">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <? echo $this->Form->input('Event.recruit1', array('label' => false));?>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <? echo $this->Form->input('Event.recruit2', array('label' => false));?>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <? echo $this->Form->input('Event.recruit3', array('label' => false));?>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <? echo $this->Form->input('Event.recruit4', array('label' => false));?>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p>2個以上の記入が必須となります。</p>
                           </div>
                         </div>
                         <div class="row form-row">
@@ -273,11 +318,20 @@
                           </div>
                         </div>
                         <div class="row form-row">
+                          <div class="col-sm-3"><label for="place">会社概要 </label></div>
+                          <div class="col-sm-9 form-group">
+                            <? echo $this->Form->input('Event.profile', array('label' => false,'style'=>'height:150px;'));?>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p></p>
+                          </div>
+                        </div>
+                        <div class="row form-row">
                           <div class="col-sm-3"><label for="place">担当者様のお写真 </label></div>
                           <div class="col-sm-9 form-group">
                             <?
                             echo $this->Form->input('Event.company_id', array('type'=>'hidden', 'value'=>$nowcompany));
-                            echo $this->Form->input('Photo.0.attachment', array('type'=>'file','label'=>null));
+                            echo $this->Form->input('Photo.0.attachment', array('type'=>'file','label'=>false));
                             echo $this->Form->input('Photo.0.model', array('type'=>'hidden','value'=>'Event'));
                             echo $this->Form->input('Photo.0.purpose', array('type'=>'hidden','value'=>'staff_photo'));
                             ?>
@@ -289,10 +343,10 @@
                         <div class="row form-row">
                           <div class="col-sm-3"><label for="place">担当者様からの一言 </label></div>
                           <div class="col-sm-9 form-group">
-                            <? echo $this->Form->input('Event.staff_message', array('label' => '担当者様からの一言')); ?>
+                            <? echo $this->Form->input('Event.staff_message', array('label' => false,'style'=>'height:100px;')); ?>
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-                            <p>報酬にチェックが入っていない場合、「報酬無し」と表示されます。</p>
+
                           </div>
                         </div>
                         <div class="raw clearfix dash-elm">
