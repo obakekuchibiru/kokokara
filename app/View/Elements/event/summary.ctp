@@ -83,7 +83,7 @@
   <div class="row">
     <div class="col-sm-12 ev-sm-lower hidden-lg">
       <div class="row col-label" style="padding-top:15px; padding-left:20px;">
-        <h2 style="padding:0;margin:0;color:#f3f3f3;font-size:18px;">このインターンに関して</h2>
+        <h2 style="padding:0;margin:0;color:#f3f3f3;font-size:18px;"><i class="fa fa-quote-left" aria-hidden="true"></i> このインターンに関して</h2>
       </div>
       <div class="row">
         <div class="col-sm-12" style="padding:20px 35px">
@@ -92,7 +92,7 @@
               <? echo $events['Event']['about']?>
             </p>
           </div>
-          <button type="button" class="btn btn-primary btn-lg btn-block" data-remodal-target="modal">申し込む</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" data-remodal-target="modal"><i class="fa fa-magic" aria-hidden="true"></i> 申し込む</button>
         </div>
       </div>
     </div>

@@ -1,7 +1,20 @@
 @charset "UTF-8";
 @import "common.scss";
 
-
+.btn-block a{
+	text-decoration:none !important;
+	color:#ffffff;
+	&:hover{
+		text-decoration:none !important;
+	}
+}
+.btn-review{
+	background:#e0e0e0 !important;
+	border:none !important;
+	&:hover{
+		background:#FF8B8F !important;
+	}
+}
 .event-img{
 	background:$border-color;
 	background-position:center;

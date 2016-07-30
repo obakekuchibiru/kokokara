@@ -69,4 +69,14 @@
       </div><!-- /.arrow_question -->
       </div><!-- /.question_Box -->
   </div>
+  <div class="col-sm-10 col-xs-9 col-sm-offset-2 col-xs-offset-3" style="text-align:center;margin-top:20px;">
+    <p>このプログラムに参加したことがありますか？レビューを書いて企業からフィードバックをもらおう！</p>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-review" data-remodal-target="modal">
+          <i class="fa fa-comment" aria-hidden="true"></i> <?echo $this->Html->link('レビューを書く',array('action'=>'addreview', $events['Event']['id'])); ?>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
