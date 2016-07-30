@@ -79,7 +79,7 @@
         <div class="row">
           <div class="col-sm-12 ev-sm-review col-lg-8">
             <?php echo $this->element('event/review'); ?>
-            
+            <?echo $this->Html->link('レビュー投稿テスト',array('action'=>'addreview', $events['Event']['id'])); ?>
           </div>
         </div>
       </div> <!-- ev-revew container end -->

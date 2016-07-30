@@ -1,17 +1,8 @@
+
+
 <h3><i class="fa fa-info-circle" aria-hidden="true"></i> このプログラムについて</h3>
-<!--
-<p>
-  ではみなさんは、そういうふうに川だと云いわれたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。<br><br>
-  先生は、黒板に吊つるした大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを指さしながら、みんなに問といをかけました。<br>
-　                 カムパネルラが手をあげました。それから四五人手をあげました。ジョバンニも手をあげようとして、急いでそのままやめました。<br>
-たしかにあれがみんな星だと、いつか雑誌で読んだのでしたが、このごろはジョバンニはまるで毎日教室でもねむく、本を読むひまも読む本もないので、なんだかどんなこともよくわからないという気持ちがするのでした。<br>
-　                 ところが先生は早くもそれを見附みつけたのでした。<br><br>
-  「ジョバンニさん。あなたはわかっているのでしょう。」
-</p>
--->
 
 <div class="row ev-detail-table">
-  <hr>
   <div class="col-sm-4 left"><p class="table-subtitle">身につくスキル</p></div>
   <div class="col-sm-8 left">
     <div class="row">
@@ -37,6 +28,20 @@
     </div>
   </div>
 </div>
+<div class="row ev-detail-table"style="padding-top:30px;">
+  <hr>
+  <p class="table-subtitle">ロケーション(おおよその)：●●、●●</p>
+  <div class="col-xs-12 nopadding" style="height:200px;border:1px solid #e0e0e0;">
+    <iframe
+      width="100%"
+      height="100%"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDMt7Ng_vRmIMK3GnMPdshb8QMc4jwzaTo
+        &q=<? echo $locationSet ?>" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
 <div class="row ev-detail-table">
   <hr>
   <div class="col-sm-4 left"><p class="table-subtitle">プログラム内容</p></div>
