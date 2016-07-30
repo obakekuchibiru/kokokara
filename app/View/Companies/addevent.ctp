@@ -3,7 +3,8 @@
 <? echo $this->Html->script("jquery.add-input-area.min.js");?>
 
 <?
-echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
+// echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
+  echo $this->form->create(array('url'=>'addevent_preview', 'type'=>'post'));
 ?>
 
 
@@ -296,7 +297,7 @@ echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
                         </div>
                         <div class="raw clearfix dash-elm">
                           <div class="col-sm-4 col-sm-offset-4">
-                            <? echo $this->Form->end('投稿する'); ?>
+                            <? echo $this->Form->end('内容確認'); ?>
                           </div>
                         </div>
                       </div>

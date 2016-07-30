@@ -120,18 +120,24 @@ class CompaniesController extends AppController{
 	public function addevent(){
 		debug($this->Auth->user());
 		$this->set('nowcompany', $this->Auth->user('id'));
-		if($this->request->is('post')){
+		}
+
+	public function addevent_preview(){
+		$this->Session->setFlash('確認画面');
+		$this->Company->set($this->request->data);
+	}
+
+	public function addevent_complete(){
+			if($this->request->is('post')){
 			if($this->Company->Event->saveAll($this->request->data)){
 				$this->Session->setFlash('イベント登録が完了しました。');
 				$this->redirect('index');
 			}else{
 				$this->Session->setFlash('登録に失敗しました。');
 			}
-
-			}
-
-
 		}
+	}
+
 
 	public function editevent(){
 
