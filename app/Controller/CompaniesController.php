@@ -35,6 +35,8 @@ class CompaniesController extends AppController{
 	}
 
 	public function index(){
+		$this->loadModel('Event');
+		$this->set('event', $this->Event->findBycompany_id($this->Auth->user('id')));
 		$conditions = array("Review.company_id" => $this->Auth->user('id'), "Review.active" => "0");
 		$this->loadModel('Review');
 		$this->set('review', $this->Review->find('all', array('conditions' => $conditions)));
