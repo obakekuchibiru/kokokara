@@ -16,7 +16,13 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="/kokokara/"><i class="fa fa-caret-square-o-right"></i>　kokokara</a>
+						<?
+						if (strstr($current, '/companies/')) {
+						 echo $this->element('header/header-link-comp');
+						} else {
+						 echo $this->element('header/header-link');
+						}
+						?>
 	        </div>
 
 	        <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,7 +37,7 @@
 	            <button type="submit" class="btn btn-default">さがす</button>
 	          </form>
 	          <ul class="nav navbar-nav navbar-right">
-	              
+
 	          </ul>
 	        </div><!-- /.navbar-collapse -->
 	    </div><!-- /.container-fluid -->

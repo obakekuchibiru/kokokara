@@ -46,7 +46,7 @@ echo $this->Form->create('Company', array('url' => 'signup'));
                   <!-- 必須項目開始 -->
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p>必須項目</p>
+                      <p>企業アカウントの作成</p>
                     </div>
                     <div class="col-xs-12 dash-article form-field">
                       <?php
