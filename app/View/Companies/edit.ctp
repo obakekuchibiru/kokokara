@@ -83,7 +83,7 @@ echo $this->Form->input('Company.id',array('type'=>'hidden','value'=>$company_da
                           </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="comment">メール</label></div>
+                          <div class="col-sm-3"><label for="comment">メール <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
                           <div class="col-sm-9 form-group">
                             <? echo $this->Form->input('Company.email', array('label'=>false));?>
                           </div>
@@ -101,23 +101,9 @@ echo $this->Form->input('Company.id',array('type'=>'hidden','value'=>$company_da
                           </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="user-gender">業界 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
+                          <div class="col-sm-3"><label for="user-gender">業界 </label></div>
                           <div class="col-sm-3 form-group">
-                            <?
-                            echo $this->Form->select('Company.industry_type', array(
-                              '0'=>'マーケティング',
-                              '1'=>'営業',
-                              '2'=>'企画',
-                              '3'=>'デザイン',
-                              '4'=>'プログラミング',
-                              '5'=>'サービス',
-                              '6'=>'教育'),
-                                array(
-                                  'label'=>false,
-                                  'empty'=>'選択して下さい',
-                                  'class'=>'form-control'
-                            ));
-                              ?>
+                            <?php echo $this->element('lists/industry-list'); ?>
                           </div>
                         </div>
                         <div class="row form-row">
@@ -140,14 +126,14 @@ echo $this->Form->input('Company.id',array('type'=>'hidden','value'=>$company_da
                           </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="user-gender">会社所在地 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
+                          <div class="col-sm-3"><label for="user-gender">会社所在地</label></div>
                           <div class="col-sm-9 form-group" style="margin-bottom:10px;">
                             <? echo $this->Form->input('Company.country', array('label'=>'場所（国名）'));?>
                             <? echo $this->Form->input('Company.state', array('label'=>'場所（都市名）'));?>
                           </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="user-gender">企業ロゴ <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
+                          <div class="col-sm-3"><label for="user-gender">企業ロゴ</label></div>
                           <div class="col-sm-3 form-group">
                             <?
                             echo $this->Form->input('Logo.0.attachment', array('type'=>'file', 'label'=>false));
@@ -162,7 +148,7 @@ echo $this->Form->input('Company.id',array('type'=>'hidden','value'=>$company_da
                         <div class="row form-row">
                           <div class="col-sm-3"><label for="comment">サイトURL</label></div>
                           <div class="col-sm-9 form-group">
-                            <? echo $this->Form->input('Company.url', array('label'=>'サイトURL'));?>
+                            <? echo $this->Form->input('Company.url', array('label'=>false));?>
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
                             <p>会社のホームページやそれに該当するサイトがあれば、URLをご記入下さい。</p>
