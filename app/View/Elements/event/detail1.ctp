@@ -1,3 +1,10 @@
+<?
+if($events['Event']['country']==null){
+  $locationSummary =  $this->element('lists/locationSet').'、'.$events['Event']['location'];
+}elseif($events['Event']['prefecture']==null){
+  $locationSummary = '未完、'.$events['Event']['location'];
+}
+?>
 
 
 <h3><i class="fa fa-info-circle" aria-hidden="true"></i> このプログラムについて</h3>
@@ -30,14 +37,14 @@
 </div>
 <div class="row ev-detail-table"style="padding-top:30px;">
   <hr>
-  <p class="table-subtitle">ロケーション(おおよその)：●●、●●</p>
+  <p class="table-subtitle">ロケーション：<? echo $locationSummary ?></p>
   <div class="col-xs-12 nopadding" style="height:200px;border:1px solid #e0e0e0;">
     <iframe
       width="100%"
       height="100%"
       frameborder="0" style="border:0"
       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDMt7Ng_vRmIMK3GnMPdshb8QMc4jwzaTo
-        &q=<? echo $locationSet ?>" allowfullscreen>
+        &q=<? echo $locationSummary ?>" allowfullscreen>
     </iframe>
   </div>
 </div>
