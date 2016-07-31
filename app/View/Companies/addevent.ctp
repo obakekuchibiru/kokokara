@@ -40,17 +40,12 @@
     }
   }
 </script>
-<script type="text/javascript">
-  $(function() {
-    // ポップオーバー文言
-    $('.info-private').attr('data-content','必須項目です');
-
-    // ポップオーバーアクション
-    $("[data-toggle=popover]").popover({
-      trigger: 'hover', // click,hover,focus,manualを選択出来る
-      html: true,       // HTMLタグを含めるか
-    });
+<script>
+$(document).ready(function(){
+  $('.btn1').on('click', function () {
+    $("#neededlicense").slideToggle();
   });
+});
 </script>
 
 <div id="main-container" style="background:#f3f3f3;">
@@ -104,7 +99,7 @@
 
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-                            <p>プログラムの見所やキャッチコピーなどをご記入下さい。詳細は後述の「プログラム内容」にご記入頂けます。<br>またこちらの情報は、<a href="hoge">プログラム一覧ページ</a>や<a href="hoge">meta description</a>にも反映されます。</p>
+                            <p>プログラムの見所やキャッチコピーなどをご記入下さい。なおプログラム詳細は下の「プログラム内容」にご記入頂けます。</p>
                           </div>
                         </div>
                         <div class="row form-row">
@@ -114,14 +109,14 @@
 
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-                            <p>プログラム内容に関して自由にご記入下さい。</p>
+                            <p>プログラムの詳細や事業内容について、心意気や求める人物像など自由にご記入下さい。</p>
                           </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="user-gender">職務系統 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
+                          <div class="col-sm-3"><label for="user-gender">職種 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
                           <div class="col-sm-3 form-group">
                             <?
-                            echo $this->Form->select('Event.job_type', array(
+                            echo $this->Form->select('Event.job_type1', array(
                               '0'=>'マーケティング',
                               '1'=>'営業',
                               '2'=>'企画',
@@ -131,19 +126,40 @@
                               '6'=>'教育'),
                                 array(
                                   'label'=>false,
-                                  'empty'=>'選択して下さい',
+                                  'empty'=>'職種1 (必須)',
+                                  'class'=>'form-control',
+                                  'required'
+                                  ));
+                              ?>
+                          </div>
+                          <div class="col-sm-3 form-group">
+                            <?
+                            echo $this->Form->select('Event.job_type2', array(
+                              '0'=>'マーケティング',
+                              '1'=>'営業',
+                              '2'=>'企画',
+                              '3'=>'デザイン',
+                              '4'=>'プログラミング',
+                              '5'=>'サービス',
+                              '6'=>'教育'),
+                                array(
+                                  'label'=>false,
+                                  'empty'=>'職種2 (任意)',
                                   'class'=>'form-control'
                                   ));
                               ?>
                           </div>
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p>インターン生はどのようなお仕事をする事になりますか？職種は、2つまでお選び頂けます。</p>
+                          </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="user-gender">期間 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
+                          <div class="col-sm-3"><label for="user-gender">雇用期間 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
                           <div class="col-sm-3 form-group">
                             <?
                             echo $this->Form->select('Event.period', array(
-                              '0'=>'1ヶ月未満',
-                              '1' =>'1-2ヶ月',
+                              '0'=>'1ヶ月未満OK',
+                              '1' =>'1ヶ月以上',
                               '2'=>'3ヶ月以上',
                               '3'=>'6ヶ月以上',
                               '4'=>'1年以上'),
@@ -153,6 +169,9 @@
                                 'class'=>'form-control'
                                 ));
                             ?>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p>インターン生にはどのぐらいの期間働いて欲しいですか？雇用条件の最低期間を選択して下さい。</p>
                           </div>
                         </div>
                         <div class="row form-row">
@@ -185,17 +204,12 @@
                             <div class="help-block with-errors"></div>
                           </div>
                           <div id="location-foreign" class="col-sm-7 col-sm-offset-3 form-group">
-                            <select class="form-control" id="" name="term" style="margin-bottom:10px;">
-                              <option>国名を選択して下さい</option>
-                              <option>国1</option>
-                              <option>国2</option>
-                              <option>国3</option>
-                              <option>国4</option>
-                              <option>国5</option>
-                            </select>
+                              <?php echo $this->element('lists/country-list'); ?>
+                              <div class="help-block with-errors"></div>
+                              最寄り駅や地域名：
                             <? echo $this->Form->input('Event.location', array('label' => false,'name'=>'location-summary')); ?>
                             <div class="help-block with-errors"></div>
-                            <p>ここに、住所の詳細を記載する必要は御座いません。おおよその地区や最寄のバス停などをご記載下さい</p>
+                            <p>ここに、住所の詳細を記載する必要は御座いません。おおよその地区や最寄の駅・バス停などをご記載下さい</p>
                           </div>
                         </div>
                         <div class="row form-row">
@@ -216,7 +230,7 @@
                           <div class="col-sm-9 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.skill1', array('label' => false,'class'=>'form-control','required')); ?>
+                                <? echo $this->Form->input('Event.skill1', array('label' => false,'class'=>'form-control','placeholder'=>'身につくスキル1','required')); ?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
@@ -224,7 +238,7 @@
                           <div class="col-sm-9 col-sm-offset-3 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.skill2', array('label' => false,'class'=>'form-control','required')); ?>
+                                <? echo $this->Form->input('Event.skill2', array('label' => false,'class'=>'form-control','placeholder'=>'身につくスキル2','required')); ?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
@@ -232,7 +246,7 @@
                           <div class="col-sm-9 col-sm-offset-3 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.skill3', array('label' => false,'class'=>'form-control')); ?>
+                                <? echo $this->Form->input('Event.skill3', array('label' => false,'class'=>'form-control','placeholder'=>'他にもあればご記入下さい')); ?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
@@ -240,15 +254,16 @@
                           <div class="col-sm-9 col-sm-offset-3 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.skill4', array('label' => false,'class'=>'form-control')); ?>
+                                <? echo $this->Form->input('Event.skill4', array('label' => false,'class'=>'form-control','placeholder'=>'他にもあればご記入下さい')); ?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p>インターンを通してどのようなスキルを得る事ができますか？2個以上記入して下さい</p>
                           </div>
 
-                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-                            <p>2個以上の記入が必須となります </p>
-                          </div>
+
                         </div>
                         <div id="form-skill" data-toggle="validator" role="form"  class="row form-row">
                           <div class="col-sm-3">
@@ -257,7 +272,7 @@
                           <div class="col-sm-9 form-group" style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.recruit1', array('label' => false));?>
+                                <? echo $this->Form->input('Event.recruit1', array('label' => false,'placeholder'=>'募集対象1','required'));?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
@@ -265,7 +280,7 @@
                           <div class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.recruit2', array('label' => false));?>
+                                <? echo $this->Form->input('Event.recruit2', array('label' => false,'placeholder'=>'募集対象2','required'));?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
@@ -273,7 +288,7 @@
                           <div class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.recruit3', array('label' => false));?>
+                                <? echo $this->Form->input('Event.recruit3', array('label' => false,'placeholder'=>'もしあればご記入下さい'));?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
@@ -281,15 +296,38 @@
                           <div class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;">
                             <div class="row">
                               <div class="col-sm-10">
-                                <? echo $this->Form->input('Event.recruit4', array('label' => false));?>
+                                <? echo $this->Form->input('Event.recruit4', array('label' => false,'placeholder'=>'もしあればご記入下さい'));?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
+                          </div>
+                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
+                            <p>どのような人材を求めていますか？また、お仕事をするにあたってどのような条件を満たしている必要がありますか？2個以上記入して下さい。</p>
+                            <a class="btn1">資格や検定、TOEICなどのスコアの取得が募集条件にありますか？</a>
+                          </div>
+                          <div id="neededlicense" class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;margin-top:10px;display:none;">
+                            <div class="row">
+                              <div class="col-sm-5">
+                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格1','style'=>'margin-bottom:5px;'));?>
+                              </div>
+                              <div class="col-sm-5">
+                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格2','style'=>'margin-bottom:5px;'));?>
+                              </div>
+                              <div class="col-sm-5">
+                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格3','style'=>'margin-bottom:5px;'));?>
+                              </div>
+                              <div class="col-sm-5">
+                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格4','style'=>'margin-bottom:5px;'));?>
+                              </div>
+                            </div>
+                            <div class="col-sm-10 user-edit-info">
+                              <p>4つまでご記入頂けます。それ以上ある場合は「プログラム詳細」にご記入下さい。</p>
+                            </div>
+
                           </div>
 
-                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-                            <p>2個以上の記入が必須となります。</p>
-                          </div>
+
+
                         </div>
                         <div class="row form-row">
                           <div class="col-sm-3"><label for="place">その他手当 </label></div>
@@ -341,7 +379,7 @@
                           </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="place">担当者様からの一言 </label></div>
+                          <div class="col-sm-3"><label for="place">担当者様から一言 </label></div>
                           <div class="col-sm-9 form-group">
                             <? echo $this->Form->input('Event.staff_message', array('label' => false,'style'=>'height:100px;')); ?>
                           </div>

@@ -101,7 +101,7 @@ echo $this->Form->input('Company.id',array('type'=>'hidden','value'=>$company_da
                           </div>
                         </div>
                         <div class="row form-row">
-                          <div class="col-sm-3"><label for="user-gender">業種 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
+                          <div class="col-sm-3"><label for="user-gender">業界 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
                           <div class="col-sm-3 form-group">
                             <?
                             echo $this->Form->select('Company.industry_type', array(
