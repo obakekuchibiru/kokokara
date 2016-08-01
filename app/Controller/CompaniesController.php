@@ -92,10 +92,7 @@ class CompaniesController extends AppController{
             )
         ));
         $this->set('company_data',$company_data);
-
         $this->Company->id = $id;
-
-        
         if($this->request->is('get')) {
             	$this->request->data = $this->Company->read();            
         }

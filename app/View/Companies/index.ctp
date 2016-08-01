@@ -2,6 +2,7 @@
 <? debug($company); ?>
 <? debug($company_logo); ?>
 <? debug($review); ?>
+<? debug($event); ?>
 <div id="main-container" style="background:#f3f3f3;">
     <?php echo $this->element('header/mypage-tags'); ?>
     <div id="mypage-cnts-dashboard">
