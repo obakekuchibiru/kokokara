@@ -32,7 +32,14 @@ class Event extends AppModel{
             'conditions' => array(
                 'Photo.model' =>'Event',
                 'Photo.purpose' =>'staff_photo')
-            )
+            ),
+        'Album'=> array(
+            'className' => 'Attachment',
+            'foreignKey' => 'foreign_key',
+            'conditions' => array(
+                'Album.model' => 'Event',
+                'Album.purpose' => 'Album')
+            ),
         );
 
     public $actsAs = array(

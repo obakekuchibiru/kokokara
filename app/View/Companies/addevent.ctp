@@ -394,6 +394,21 @@ $(document).ready(function(){
                         </div>
                       </div>
                   </div>
+
+
+                <? echo $this->Form->input('Album.0.attachment', array('type'=>'file','label'=>false)); ?>
+                <? echo $this->Form->input('Album.0.model', array('type'=>'hidden','value'=>'Event')); ?>
+                <? echo $this->Form->input('Album.0.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+                <? echo $this->Form->input('Album.1.attachment', array('type'=>'file','label'=>false)); ?>
+                <? echo $this->Form->input('Album.1.model', array('type'=>'hidden','value'=>'Event')); ?>
+                <? echo $this->Form->input('Album.1.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+                <? echo $this->Form->input('Album.2.attachment', array('type'=>'file','label'=>false)); ?>
+                <? echo $this->Form->input('Album.2.model', array('type'=>'hidden','value'=>'Event')); ?>
+                <? echo $this->Form->input('Album.2.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+                  
                   <!-- 必須項目終了 -->
                   <!-- 任意項目開始-->
 
@@ -440,6 +455,22 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
+
+<!-- album用
+
+                <? echo $this->Form->input('Album.0.attachment', array('type'=>'file','label'=>false)); ?>
+                <? echo $this->Form->input('Album.0.model', array('type'=>'hidden','value'=>'Event')); ?>
+                <? echo $this->Form->input('Album.0.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+                <? echo $this->Form->input('Album.1.attachment', array('type'=>'file','label'=>false)); ?>
+                <? echo $this->Form->input('Album.1.model', array('type'=>'hidden','value'=>'Event')); ?>
+                <? echo $this->Form->input('Album.1.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+                <? echo $this->Form->input('Album.2.attachment', array('type'=>'file','label'=>false)); ?>
+                <? echo $this->Form->input('Album.2.model', array('type'=>'hidden','value'=>'Event')); ?>
+                <? echo $this->Form->input('Album.2.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+-->
 
 
 <!-- 任意項目開始 -->
