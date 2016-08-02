@@ -308,16 +308,16 @@ $(document).ready(function(){
                           <div id="neededlicense" class="col-sm-9 col-sm-offset-3 form-group"style="margin-bottom:10px;margin-top:10px;display:none;">
                             <div class="row">
                               <div class="col-sm-5">
-                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格1','style'=>'margin-bottom:5px;'));?>
+                                <? echo $this->Form->input('Event.skill_required1', array('label' => false,'placeholder'=>'資格1','style'=>'margin-bottom:5px;'));?>
                               </div>
                               <div class="col-sm-5">
-                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格2','style'=>'margin-bottom:5px;'));?>
+                                <? echo $this->Form->input('Event.skill_required2', array('label' => false,'placeholder'=>'資格2','style'=>'margin-bottom:5px;'));?>
                               </div>
                               <div class="col-sm-5">
-                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格3','style'=>'margin-bottom:5px;'));?>
+                                <? echo $this->Form->input('Event.skill_required3', array('label' => false,'placeholder'=>'資格3','style'=>'margin-bottom:5px;'));?>
                               </div>
                               <div class="col-sm-5">
-                                <? echo $this->Form->input('Event.undecided', array('label' => false,'placeholder'=>'資格4','style'=>'margin-bottom:5px;'));?>
+                                <? echo $this->Form->input('Event.skill_required4', array('label' => false,'placeholder'=>'資格4','style'=>'margin-bottom:5px;'));?>
                               </div>
                             </div>
                             <div class="col-sm-10 user-edit-info">
@@ -384,7 +384,9 @@ $(document).ready(function(){
                             <? echo $this->Form->input('Event.staff_message', array('label' => false,'style'=>'height:100px;')); ?>
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-
+                <? echo $this->Form->input('Album.0.attachment', array('type'=>'file','label'=>false,'multiple'=>true)); ?>
+                <? echo $this->Form->input('Album.0.model', array('type'=>'hidden','value'=>'Event','multiple'=>true)); ?>
+                <? echo $this->Form->input('Album.0.purpose', array('type'=>'hidden','value'=>'Album','multiple'=>true)); ?>
                           </div>
                         </div>
                         <div class="raw clearfix dash-elm">
@@ -396,19 +398,9 @@ $(document).ready(function(){
                   </div>
 
 
-                <? echo $this->Form->input('Album.0.attachment', array('type'=>'file','label'=>false)); ?>
-                <? echo $this->Form->input('Album.0.model', array('type'=>'hidden','value'=>'Event')); ?>
-                <? echo $this->Form->input('Album.0.purpose', array('type'=>'hidden','value'=>'Album')); ?>
 
-                <? echo $this->Form->input('Album.1.attachment', array('type'=>'file','label'=>false)); ?>
-                <? echo $this->Form->input('Album.1.model', array('type'=>'hidden','value'=>'Event')); ?>
-                <? echo $this->Form->input('Album.1.purpose', array('type'=>'hidden','value'=>'Album')); ?>
 
-                <? echo $this->Form->input('Album.2.attachment', array('type'=>'file','label'=>false)); ?>
-                <? echo $this->Form->input('Album.2.model', array('type'=>'hidden','value'=>'Event')); ?>
-                <? echo $this->Form->input('Album.2.purpose', array('type'=>'hidden','value'=>'Album')); ?>
 
-                  
                   <!-- 必須項目終了 -->
                   <!-- 任意項目開始-->
 
