@@ -36,6 +36,9 @@ $(document).ready(function(){
   $('.btn1').on('click', function () {
     $("#neededlicense").slideToggle();
   });
+  $('.btn2').on('click', function () {
+    $("#videoattach").slideToggle();
+  });
 });
 </script>
 
@@ -219,7 +222,9 @@ $(document).ready(function(){
                             </div>
                             <div class="col-sm-12 user-edit-info" style="padding-left:0;">
                               <p>こちらの画像はプログラムページのトップ画像としてだけでなく、プログラム一覧ページでは当プログラムのサムネイルとしても活用されます。</p>
+
                             </div>
+
                           </div>
                         </div>
                         <div class="row form-row">
@@ -236,7 +241,18 @@ $(document).ready(function(){
                             </section>
 
                             <div class="col-sm-12 user-edit-info" style="padding-left:0;">
-                              <p>プログラムに関連する画像などをアップロードして頂けます。</p>
+                              <p>プログラムに関連する画像などをアップロードして頂けます。<br><a class="btn2">YoutubeやVimeoなどの動画サイトのリンクを貼りますか？</a></p>
+                            </div>
+                            <div id="videoattach" class="col-sm-12 form-group"style="margin-bottom:10px;margin-top:10px;display:none;">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <? echo $this->Form->input('Event.video', array('label' => false,'placeholder'=>'e.g.https://www.youtube.com/watch?v=example000000','style'=>'margin-bottom:5px;'));?>
+                                </div>
+                              </div>
+                              <div class="user-edit-info">
+                                <p>YoutubeやVimeoの動画リンクをコピー・ペーストして下さい。</p>
+                              </div>
+
                             </div>
                           </div>
                         </div>
