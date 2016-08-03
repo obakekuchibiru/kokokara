@@ -1,6 +1,9 @@
 <? $this->Html->css('user-page.min', null, array('inline' => false)); ?>
 <? echo $this->Html->script("validator.js");?>
 <? echo $this->Html->script("jquery.add-input-area.min.js");?>
+<? echo $this->Html->script("dropzone.js");?>
+<? echo $this->Html->script("app.js");?>
+
 
 <?
 // echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
@@ -28,22 +31,13 @@
   //オンロードさせ、リロード時に選択を保持
   window.onload = entryChange1;
 </script>
-<script type="text/javascript">
-  function entryChange2(){
-    radio = document.getElementsById('EventReward')
-    if(radio[0].checked) {
-      //フォーム
-      document.getElementById('salary-detail').style.display = "";
-    }else{
-      //フォーム
-      document.getElementById('salary-detail').style.display = "none";
-    }
-  }
-</script>
 <script>
 $(document).ready(function(){
   $('.btn1').on('click', function () {
     $("#neededlicense").slideToggle();
+  });
+  $('.btn2').on('click', function () {
+    $("#videoattach").slideToggle();
   });
 });
 </script>
@@ -214,13 +208,52 @@ $(document).ready(function(){
                         </div>
                         <div class="row form-row">
                           <div class="col-sm-3"><label for="user-gender">トップ画 <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
-                          <div class="col-sm-3 form-group">
-                          <? echo $this->Form->input('Thumbnail.0.attachment', array('type'=>'file','label'=>false)); ?>
-                          <? echo $this->Form->input('Thumbnail.0.model', array('type'=>'hidden','value'=>'Event')); ?>
-                          <? echo $this->Form->input('Thumbnail.0.purpose', array('type'=>'hidden','value'=>'Thumbnail')); ?>
+                          <div class="col-sm-7 form-group">
+                            <div class="input-group">
+                                <label class="input-group-btn" style="padding:0;margin:0;">
+                                    <span class="btn btn-primary" style="padding:8px 12px;">
+                                        Upload&hellip;
+                                        <? echo $this->Form->input('Thumbnail.0.attachment', array('type'=>'file','label'=>false,'style'=>'display:none;')); ?>
+                                        <? echo $this->Form->input('Thumbnail.0.model', array('type'=>'hidden','value'=>'Event')); ?>
+                                        <? echo $this->Form->input('Thumbnail.0.purpose', array('type'=>'hidden','value'=>'Thumbnail')); ?>
+                                    </span>
+                                </label>
+                                <input type="text" class="form-control" readonly>
+                            </div>
+                            <div class="col-sm-12 user-edit-info" style="padding-left:0;">
+                              <p>こちらの画像はプログラムページのトップ画像としてだけでなく、プログラム一覧ページでは当プログラムのサムネイルとしても活用されます。</p>
+
+                            </div>
+
                           </div>
-                          <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-                            <p>こちらの画像はプログラムページのトップ画像としてだけでなく、プログラム一覧ページでは当プログラムのサムネイルとしても活用されます。</p>
+                        </div>
+                        <div class="row form-row">
+                          <div class="col-sm-3"><label for="user-gender">イメージ <i class="fa fa-star info-private" data-toggle="popover" data-placement="top"></i></label></div>
+                          <div class="col-sm-7 form-group">
+                            <section>
+                              <div id="dropzone">
+                                <div action="/upload" class="dropzone needsclick" id="demo-upload" style="text-align:center;">
+                                  <div class="dz-message needsclick" style="padding:20px;">
+                                    画像ファイルをここにドロップするか、<br>ここをクリックして選択して下さい。<br />
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+
+                            <div class="col-sm-12 user-edit-info" style="padding-left:0;">
+                              <p>プログラムに関連する画像などをアップロードして頂けます。<br><a class="btn2">YoutubeやVimeoなどの動画サイトのリンクを貼りますか？</a></p>
+                            </div>
+                            <div id="videoattach" class="col-sm-12 form-group"style="margin-bottom:10px;margin-top:10px;display:none;">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <? echo $this->Form->input('Event.video', array('label' => false,'placeholder'=>'e.g.https://www.youtube.com/watch?v=example000000','style'=>'margin-bottom:5px;'));?>
+                                </div>
+                              </div>
+                              <div class="user-edit-info">
+                                <p>YoutubeやVimeoの動画リンクをコピー・ペーストして下さい。</p>
+                              </div>
+
+                            </div>
                           </div>
                         </div>
                         <div id="form-skill" data-toggle="validator" role="form"  class="row form-row">

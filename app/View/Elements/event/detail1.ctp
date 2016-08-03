@@ -1,9 +1,13 @@
 <?
 if($events['Event']['country']==null){
-  $locationSummary =  $this->element('lists/locationSet').'、'.$events['Event']['location'];
+  $locationSummary =  $this->element('lists/locationSet').$events['Event']['location'];
 }elseif($events['Event']['prefecture']==null){
-  $locationSummary = '未完、'.$events['Event']['location'];
+  $locationSummary = $this->element('lists/locationSetCnt').$events['Event']['location'];
 }
+
+$gmap_encore = urlencode($locationSummary);
+$gmap_url = '"https://www.google.com/maps/embed/v1/place?key=AIzaSyC0Y900RYO7Cnpg3mlQzNxSq4-RoNORxOs
+  &q='.$gmap_encore.'"';
 ?>
 
 
@@ -13,11 +17,25 @@ if($events['Event']['country']==null){
   <div class="col-sm-4 left"><p class="table-subtitle">身につくスキル</p></div>
   <div class="col-sm-8 left">
     <div class="row">
-      <div class="col-sm-12 left"><p class="table-text">スキル1：<b>13文字ってどれくらい？</b></p></div>
+      <div class="col-sm-12 left"><p class="table-text"><b><?echo $events['Event']['skill1'] ?></b></p></div>
     </div>
     <div class="row">
-      <div class="col-sm-12 left"><p class="table-text">スキル2：<b>13文字ってこれぐらい。</b></p></div>
+      <div class="col-sm-12 left"><p class="table-text"><b><?echo $events['Event']['skill2'] ?></b></p></div>
     </div>
+      <?
+      if($events['Event']['skill3'] !== ''){
+        echo $this->element('branches/skill3');
+      }else{
+        echo null;
+      }
+      ?>
+      <?
+      if($events['Event']['skill4'] !== ''){
+        echo $this->element('branches/skill4');
+      }else{
+        echo null;
+      }
+      ?>
   </div>
 </div>
 <div class="row ev-detail-table">
@@ -25,14 +43,25 @@ if($events['Event']['country']==null){
   <div class="col-sm-4 left"><p class="table-subtitle">募集対象</p></div>
   <div class="col-sm-8 left">
     <div class="row">
-      <div class="col-sm-12 left"><p class="table-text">条件1：<b>やる気のある大学生3回生</b></p></div>
+      <div class="col-sm-12 left"><p class="table-text"><b><?echo $events['Event']['recruit1'] ?></b></p></div>
     </div>
     <div class="row">
-      <div class="col-sm-12 left"><p class="table-text">条件2：<b>マーケティングに興味のある人</b></p></div>
+      <div class="col-sm-12 left"><p class="table-text"><b><?echo $events['Event']['recruit2'] ?></b></p></div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 left"><p class="table-text">条件3：<b>人とのコミュニケーションが好きな人</b></p></div>
-    </div>
+    <?
+    if($events['Event']['recruit3'] !== ''){
+      echo $this->element('branches/recruit3');
+    }else{
+      echo null;
+    }
+    ?>
+    <?
+    if($events['Event']['recruit4'] !== ''){
+      echo $this->element('branches/recruit4');
+    }else{
+      echo null;
+    }
+    ?>
   </div>
 </div>
 <div class="row ev-detail-table"style="padding-top:30px;">
@@ -43,8 +72,7 @@ if($events['Event']['country']==null){
       width="100%"
       height="100%"
       frameborder="0" style="border:0"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDMt7Ng_vRmIMK3GnMPdshb8QMc4jwzaTo
-        &q=<? echo $locationSummary ?>" allowfullscreen>
+      src=<? echo $gmap_url ?> allowfullscreen>
     </iframe>
   </div>
 </div>

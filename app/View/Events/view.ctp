@@ -6,6 +6,7 @@
 <? $this->Html->css('remodal', null, array('inline' => false)); ?>
 <? $this->Html->css('remodal-default-theme', null, array('inline' => false)); ?>
 <? $this->Html->css('event.min', null, array('inline' => false)); ?>
+<? $this->Html->css('fotorama', null, array('inline' => false)); ?>
 
 <?php
   $event_thumb = $this->Html->url('/'.'files/thumbnail/attachment/'. $events['Thumbnail'][0]['dir'] . '/' . $events['Thumbnail'][0]['attachment']);
