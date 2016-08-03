@@ -17,9 +17,9 @@ class Attachment extends AppModel
                     'thumb' => '80x80',
                 ),
                 'thumbnailMethod'  => 'php',
-                'fields' => [
+                'fields' => array(
                     'dir' => 'dir'
-                ]
+                ),
             ),
         ),
     );

@@ -44,8 +44,9 @@ class Event extends AppModel{
 
     public $actsAs = array(
     "Upload.Upload" => array(
-      "staff_photo",
+      "Photo",
       "Thumbnail" ,
+      "Album",
             ),
         );
 

@@ -1,6 +1,7 @@
 <h2>プレビューテスト</h2>
 
 <? echo h($this->Form->value('Event.title')); ?>
+<? debug($this->request->data); ?>
 
 <? echo $this->Form->create('Event', array('url'=>'addevent_complete', 'type'=>'file'));
 
