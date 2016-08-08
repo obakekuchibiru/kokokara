@@ -6,8 +6,7 @@ if($events['Event']['country']==null){
 }
 
 $gmap_encore = urlencode($locationSummary);
-$gmap_url = '"https://www.google.com/maps/embed/v1/place?key=AIzaSyC0Y900RYO7Cnpg3mlQzNxSq4-RoNORxOs
-  &q='.$gmap_encore.'"';
+$gmap_url = 'http://maps.google.co.jp/maps?&q='.$gmap_encore.'&output=embed';
 ?>
 
 
@@ -67,12 +66,12 @@ $gmap_url = '"https://www.google.com/maps/embed/v1/place?key=AIzaSyC0Y900RYO7Cnp
 <div class="row ev-detail-table"style="padding-top:30px;">
   <hr>
   <p class="table-subtitle">ロケーション：<? echo $locationSummary ?></p>
-  <div class="col-xs-12 nopadding" style="height:200px;border:1px solid #e0e0e0;">
+  <div class="col-xs-12 nopadding gmap-location" style="border:1px solid #e0e0e0;">
     <iframe
       width="100%"
       height="100%"
-      frameborder="0" style="border:0"
-      src=<? echo $gmap_url ?> allowfullscreen>
+      frameborder="0"
+      src="<? echo $gmap_url ?>" allowfullscreen>
     </iframe>
   </div>
 </div>
