@@ -116,7 +116,20 @@
 		margin-left:40px;
 	}
 }
-
+.gmap-location{
+	@media #{$smartp}{
+		height:200px;
+	}
+	@media #{$smaller}{
+		height:300px;
+	}
+	@media #{$middle}{
+		height:400px;
+	}
+	@media #{$large}{
+		height:500px
+	}
+}
 .ev-sm-lg-side{
 	background:#ffffff;
 	position:absolute;
