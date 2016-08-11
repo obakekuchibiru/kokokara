@@ -22,7 +22,8 @@ class CompaniesController extends AppController{
 				'loginAction' => array('controller' => 'Companies', 'action' => 'login'),
 				'loginRedirect' => array('controller' => 'Companies', 'action' => 'index'),
 				'logoutRedirect' => array('controller' => 'Companies', 'action'=> 'login'),
-				'authError' => 'ログインしてください',
+				'authError' => 'ロh
+				グインしてください',
 				
 			)
 		);
@@ -46,8 +47,7 @@ class CompaniesController extends AppController{
 	}
 
 	#新規登録処理
-	public function signup(){
-	
+	public function signup(){	
 		if ($this->request->is('post')) {
                 $this->Company->create();
                 if ($this->Company->save($this->request->data)) {
@@ -121,11 +121,27 @@ class CompaniesController extends AppController{
 	public function addevent(){
 		debug($this->Auth->user());
 		$this->set('nowcompany', $this->Auth->user('id'));
+			if($this->request->is('post')){
+				if($this->Company->Event->saveAll($this->request->data)){
+					$this->Session->setFlash('イベント登録が完了しました。');
+					$this->redirect('index');
+				}else{
+				$this->Session->setFlash('登録に失敗しました。');
+			}
 		}
+	}
 
 	public function addevent_preview(){
 		$this->Session->setFlash('確認画面');
 		$this->Company->set($this->request->data);
+		if($this->request->is('post')){
+			if($this->Company->Event->saveAll($this->request->data)){
+				$this->Session->setFlash('イベント登録が完了しました。');
+				$this->redirect('index');
+			}else{
+				$this->Session->setFlash('登録に失敗しました。');
+			}
+		}
 	}
 
 	public function addevent_complete(){
@@ -163,9 +179,23 @@ class CompaniesController extends AppController{
 		}
 	}
 
-	public function addfeedback(){
-		
-	}
+	public function addfeedback($id=null){
+		$this->loadModel('Review');
+		$this->loadModel('Feedback');
+		$this->set('company', $this->Auth->user('id'));
+        $this->Review->id = $id;
+        $this->set('review',$id);
+		if ($this->request->is('post')) {
+				$this->loadModel('Review');
+                $this->Feedback->create();
+                if ($this->Feedback->save($this->request->data)) {
+                        $this->Session->setFlash(__('フィードバックを送信しました'));
+                        return $this->redirect(array('action' => 'reviewindex'));
+                }else{
+                        $this->Session->setFlash(__('フィードバックの送信に失敗しました。'));
+              }
+        }
+   	}
 
 	public function feedbackindex(){
 

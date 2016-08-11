@@ -33,7 +33,8 @@
   echo $this->Form->input('Event.reward',array('type'=>'hidden', 'value'=>$this->Form->value('Event.reward')));
   echo $this->Form->input('Event.residence',array('type'=>'hidden', 'value'=>$this->Form->value('Event.residence')));
   echo $this->Form->input('Event.transportation_expense',array('type'=>'hidden', 'value'=>$this->Form->value('Event.transportation_expense')));
-  echo $this->Form->input('Event.salary',array('type'=>'hidden', 'value'=>$this->Form->value('Eventsalary')));
+  echo $this->Form->input('Event.video',array('type'=>'hidden','value'=>$this->Form->value('Event.video')));
+  echo $this->Form->input('Event.salary',array('type'=>'hidden', 'value'=>$this->Form->value('Event.salary')));
   echo $this->Form->input('Event.profile',array('type'=>'hidden', 'value'=>$this->Form->value('Event.profile')));
   echo $this->Form->input('Event.company_id',array('type'=>'hidden', 'value'=>$this->Form->value('Event.company_id')));
   echo $this->Form->input('Event.staff_message',array('type'=>'hidden', 'value'=>$this->Form->value('Event.staff_message')));
