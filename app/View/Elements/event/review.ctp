@@ -73,8 +73,8 @@
     <p>このプログラムに参加したことがありますか？レビューを書いて企業からフィードバックをもらおう！</p>
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-        <button type="button" class="btn btn-primary btn-lg btn-block btn-review" data-remodal-target="modal">
-          <i class="fa fa-comment" aria-hidden="true"></i> <?echo $this->Html->link('レビューを書く',array('action'=>'addreview', $events['Event']['id'])); ?>
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-review" onclick="location.href='<? echo '/kokokara/events/addreview/'.$events['Event']['id'] ?>'">
+          <p><i class="fa fa-comment" aria-hidden="true"></i> レビューを書く</p>
         </button>
       </div>
     </div>

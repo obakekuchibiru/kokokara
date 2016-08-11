@@ -35,19 +35,29 @@
         }
         ?>
       </div>
-      <div class="col-xs-3 col-sm-2">
-        <div class="icon-block"><p class="sample-font"><i class="fa fa-building"></i></p></div>
-        <p>
-          <?php
-            if($events['Event']['frequency'] == 0){
-            	echo '週1~2日';
-            }elseif($events['Event']['frequency'] == 1){
-              echo '週3~5回';
-            }elseif($events['Event']['frequency'] == 2){
-              echo '週5回以上';
-            }
-          ?>
-        </p>
+      <div class="col-xs-3 col-sm-2 job2-parent">
+        <script>
+          $(".hoge_parent:not(:has(div))").hide();
+        </script>
+        <?
+        if($events['Event']['job_type'] == 0){
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-binoculars"></i></p></div><p>マーケティング</p>';
+        }elseif($events['Event']['job_type2'] == 1){
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-briefcase"></i></p></div><p>営業</p>';
+        }elseif($events['Event']['job_type2'] == 2){
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-hand-paper-o"></i></p></div><p>企画</p>';
+        }elseif($events['Event']['job_type2'] == 3){
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-paint-brush"></i></p></div><p>デザイン</p>';
+        }elseif($events['Event']['job_type2'] == 4){
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-code"></i></p></div><p>プログラミング</p>';
+        }elseif($events['Event']['job_type2'] == 5){
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-sign-language"></i></p></div><p>サービス</p>';
+        }elseif($events['Event']['job_type2'] == 6){
+          echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-book"></i></p></div><p>教育</p>';
+        }elseif($events['Event']['job_type2'] == null){
+          echo null;
+        }
+        ?>
       </div>
       <div class="col-xs-3 col-sm-2">
         <?php

@@ -9,7 +9,6 @@ $gmap_encore = urlencode($locationSummary);
 $gmap_url = 'http://maps.google.co.jp/maps?&q='.$gmap_encore.'&output=embed';
 ?>
 
-
 <h3><i class="fa fa-info-circle" aria-hidden="true"></i> このプログラムについて</h3>
 
 <div class="row ev-detail-table">
