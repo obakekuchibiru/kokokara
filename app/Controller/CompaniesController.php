@@ -6,11 +6,11 @@ App::uses('Security', 'Utility');
 
 class CompaniesController extends AppController{
 	#フォームヘルパー
-	public $helpers = array('Html', 'Form');
+	public $helpers = array('Html','Form',);
 
-	public	$uses = Array('Company', 'Event');
+	public $uses = Array('Company', 'Event');
 
-	public	$components = array(
+	public $components = array(
 		'Session',
 		'Auth' => array(
 			'authenticate' => array(
@@ -22,8 +22,7 @@ class CompaniesController extends AppController{
 				'loginAction' => array('controller' => 'Companies', 'action' => 'login'),
 				'loginRedirect' => array('controller' => 'Companies', 'action' => 'index'),
 				'logoutRedirect' => array('controller' => 'Companies', 'action'=> 'login'),
-				'authError' => 'ロh
-				グインしてください',
+				'authError' => 'ログインしてください',
 				
 			)
 		);
@@ -118,6 +117,9 @@ class CompaniesController extends AppController{
 	}
 	*/
 
+
+
+
 	public function addevent(){
 		debug($this->Auth->user());
 		$this->set('nowcompany', $this->Auth->user('id'));
@@ -130,6 +132,8 @@ class CompaniesController extends AppController{
 			}
 		}
 	}
+	
+	*/
 
 	public function addevent_preview(){
 		$this->Session->setFlash('確認画面');
@@ -154,6 +158,8 @@ class CompaniesController extends AppController{
 			}
 		}
 	}
+
+	
 
 
 	public function editevent(){
