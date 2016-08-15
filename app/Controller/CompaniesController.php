@@ -133,7 +133,7 @@ class CompaniesController extends AppController{
 		}
 	}
 	
-	*/
+	
 
 	public function addevent_preview(){
 		$this->Session->setFlash('確認画面');
