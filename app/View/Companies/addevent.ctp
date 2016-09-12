@@ -6,8 +6,8 @@
 
 
 <?
-    echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));
-//  echo $this->Form->create(array('url'=>'addevent_preview', 'type'=>'file'));
+//    echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));  
+    echo $this->Form->create(array('url'=>'addevent_preview', 'type'=>'file'));
 ?>
 
 

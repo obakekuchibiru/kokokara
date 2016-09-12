@@ -85,6 +85,7 @@ class CompaniesController extends AppController{
 
 	#更新処理
  	public function edit($id =null) {
+ 		$this->set('company', $this->Auth->user());
         $company_data = $this->Company->find('first',array(
             'conditions'=>array(
                 'id'=>$id,
@@ -122,6 +123,7 @@ class CompaniesController extends AppController{
 
 	public function addevent(){
 		debug($this->Auth->user());
+		$this->set('company', $this->Auth->user());
 		$this->set('nowcompany', $this->Auth->user('id'));
 			if($this->request->is('post')){
 				if($this->Company->Event->saveAll($this->request->data)){

@@ -18,19 +18,19 @@
     <div class="row ev-sm-icons">
       <div class="col-xs-3 col-sm-2">
         <?
-        if($events['Event']['job_type'] == 0){
+        if($events['Event']['job_type1'] == 0){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-binoculars"></i></p></div><p>マーケティング</p>';
-        }elseif($events['Event']['job_type'] == 1){
+        }elseif($events['Event']['job_type1'] == 1){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-briefcase"></i></p></div><p>営業</p>';
-        }elseif($events['Event']['job_type'] == 2){
+        }elseif($events['Event']['job_type1'] == 2){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-hand-paper-o"></i></p></div><p>企画</p>';
-        }elseif($events['Event']['job_type'] == 3){
+        }elseif($events['Event']['job_type1'] == 3){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-paint-brush"></i></p></div><p>デザイン</p>';
-        }elseif($events['Event']['job_type'] == 4){
+        }elseif($events['Event']['job_type1'] == 4){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-code"></i></p></div><p>プログラミング</p>';
-        }elseif($events['Event']['job_type'] == 5){
+        }elseif($events['Event']['job_type1'] == 5){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-sign-language"></i></p></div><p>サービス</p>';
-        }elseif($events['Event']['job_type'] == 6){
+        }elseif($events['Event']['job_type1'] == 6){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-book"></i></p></div><p>教育</p>';
         }
         ?>
@@ -40,7 +40,7 @@
           $(".hoge_parent:not(:has(div))").hide();
         </script>
         <?
-        if($events['Event']['job_type'] == 0){
+        if($events['Event']['job_type2'] == 0){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-binoculars"></i></p></div><p>マーケティング</p>';
         }elseif($events['Event']['job_type2'] == 1){
           echo '<div class="icon-block"><p class="sample-font"><i class="fa fa-briefcase"></i></p></div><p>営業</p>';

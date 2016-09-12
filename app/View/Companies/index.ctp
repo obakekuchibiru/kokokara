@@ -105,11 +105,7 @@
 
 
 <?php
-echo $this->Session->flash('auth');
-echo $this->Html->link('企業情報編集',array('action'=>'edit', $company['id']));
-echo $this->Html->link('新規イベント登録','/companies/addevent'); ?>
-<br><a href="#">イベント編集</a><br>
-<a href="#">口コミ確認</a><br>
+echo $this->Session->flash('auth'); ?>
 <?php echo $this->Html->link('企業情報編集',array('action'=>'edit', $company['id'])); ?><br>
 <?php echo $this->Html->link('新規イベント登録','/companies/addevent'); ?><br>
 <?php echo $this->Html->link('イベント編集','/companies/editevent'); ?><br>
