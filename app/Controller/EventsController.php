@@ -117,7 +117,8 @@ class EventsController extends AppController{
         }
     }
 
-    public function apply(){
+    public function apply($id=null){
+
 
 
 
@@ -199,15 +200,16 @@ class EventsController extends AppController{
 
     //新着events取得 by mark
     public function news(){
-        $this->set('events', $this->Event->find('all'));
-
-
-/*        $events = $this->Event->getEventsByCreated(10);
-        if($events==null){
-            throw new NotFoundException();
-        }
+        
+        $events = $this->Event->find('all', array(
+            'order' => array('Event.created' => 'desc'),
+            'limit' => 12
+            ));
+//        if($events==null){
+//            throw new NotFoundException();
+//       }
         $this->set('events', $events);
-*/    }
+    }
 
     //2015/04/27 追加 by mark//////////
     public function thanks() {

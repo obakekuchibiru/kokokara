@@ -102,6 +102,14 @@
     </div>
 </div>
 
+<ul>
+<?php foreach ($review as $review) : ?>
+<li>
+<?php echo h($review['Review']['id']); ?>
+<?php echo $this->Form->postlink('レビュー承認', array('action'=>'reviewconfirm', $review['Review']['id']), array('confirm'=>'承認しますか？')); ?>
+</li>
+<?php endforeach; ?>
+</ul>
 
 
 <?php
@@ -109,5 +117,4 @@ echo $this->Session->flash('auth'); ?>
 <?php echo $this->Html->link('企業情報編集',array('action'=>'edit', $company['id'])); ?><br>
 <?php echo $this->Html->link('新規イベント登録','/companies/addevent'); ?><br>
 <?php echo $this->Html->link('イベント編集','/companies/editevent'); ?><br>
-<?php echo $this->Html->link('口コミ確認','/companies/reviewindex'); ?><br>
 <?php echo $this->Html->link('ログアウト', '/companies/logout/'); ?>

@@ -168,17 +168,29 @@ class StudentsController extends AppController{
 	}
 
 	#更新処理
-	public function edit(){
-		if($this->request->is('post')){
-			if($this->Student->save($this->request->data)){
-				$this->Session->setFlash('更新完了！');
-				$this->Session->write('myData', $this->Student->findById($this->request->data['Student']['id']));
-				$this->redirect(array('controller' => 'students', 'action' => 'index'));
-			}else{
-				$this->Session->setFlash('更新失敗！');
-			}
-		}
-	}
+ 	public function edit($id =null) {
+ 		$this->set('student', $this->Auth->user());
+        $student_data = $this->Student->find('first',array(
+            'conditions'=>array(
+                'id'=>$id,
+            )
+        ));
+        $this->set('student_data',$student_data);
+        $this->Student->id = $id;
+        if($this->request->is('get')) {
+            	$this->request->data = $this->Student->read();            
+        }
+        if($this->request->is('post') || $this->request->is('put')){
+        	pr($this->request->data);
+		        if($this->Student->saveAll($this->request->data)) {
+        	        $this->Session->setFlash('更新が完了しました');
+            	    $this->redirect(array('action'=>'index'));
+            			} else {
+                			$this->Session->setFlash('更新に失敗しました');
+            			  }        
+    	}
+    }
+
 
 	#パスワード再設定
 	public function passwordForgot(){

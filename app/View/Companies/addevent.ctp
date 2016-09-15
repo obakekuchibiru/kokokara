@@ -6,8 +6,7 @@
 
 
 <?
-//    echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));  
-    echo $this->Form->create(array('url'=>'addevent_preview', 'type'=>'file'));
+    echo $this->Form->create('Event', array('url' => 'addevent', 'type'=>'file'));  
 ?>
 
 
@@ -421,13 +420,33 @@ $(document).ready(function(){
                         </div>
                         <div class="raw clearfix dash-elm">
                           <div class="col-sm-4 col-sm-offset-4">
-                            <? echo $this->Form->end('内容確認'); ?>
+<? echo $this->Form->input('Album.0.attachment', array('type'=>'file','label'=>false)); ?>    
+<? echo $this->Form->input('Album.0.model', array('type'=>'hidden','value'=>'Event')); ?>
+<? echo $this->Form->input('Album.0.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+<? echo $this->Form->input('Album.1.attachment', array('type'=>'file','label'=>false)); ?>    
+<? echo $this->Form->input('Album.1.model', array('type'=>'hidden','value'=>'Event')); ?>
+<? echo $this->Form->input('Album.1.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+<? echo $this->Form->input('Album.2.attachment', array('type'=>'file','label'=>false)); ?>    
+<? echo $this->Form->input('Album.2.model', array('type'=>'hidden','value'=>'Event')); ?>
+<? echo $this->Form->input('Album.2.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+<? echo $this->Form->input('Album.3.attachment', array('type'=>'file','label'=>false)); ?>    
+<? echo $this->Form->input('Album.3.model', array('type'=>'hidden','value'=>'Event')); ?>
+<? echo $this->Form->input('Album.3.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+<? echo $this->Form->input('Album.4.attachment', array('type'=>'file','label'=>false)); ?>    
+<? echo $this->Form->input('Album.4.model', array('type'=>'hidden','value'=>'Event')); ?>
+<? echo $this->Form->input('Album.4.purpose', array('type'=>'hidden','value'=>'Album')); ?>
+
+
+
+                            <? echo $this->Form->end('イベント投稿'); ?>
                           </div>
                         </div>
                       </div>
                   </div>
-
-
 
 
 

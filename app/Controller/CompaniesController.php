@@ -36,12 +36,15 @@ class CompaniesController extends AppController{
 
 	public function index(){
 		$this->loadModel('Event');
-		$this->set('event', $this->Event->findBycompany_id($this->Auth->user('id')));
+		$event = $this->Event->findBycompany_id($this->Auth->user('id'));
+		$this->set('event', $event);
 		$conditions = array("Review.company_id" => $this->Auth->user('id'), "Review.active" => "0");
 		$this->loadModel('Review');
-		$this->set('review', $this->Review->find('all', array('conditions' => $conditions)));
+		$review = $this->Review->find('all', array('conditions' => $conditions));
+		$this->set('review', $review);
 		$this->loadModel('Attachment');
-		$this->set('company', $this->Auth->user());
+		$company = $this->Auth->user();
+		$this->set('company', $company);
 		$this->set('company_logo', $this->Attachment->findByForeign_keyAndModel($this->Auth->user('id'),'company'));
 	}
 
@@ -125,9 +128,30 @@ class CompaniesController extends AppController{
 	}
 	
 
-	public function editevent(){
+ 	public function editevent($id =null) {
+ 		$this->set('', $this->Auth->user());
+        $company_data = $this->Company->find('first',array(
+            'conditions'=>array(
+                'id'=>$id,
+            )
+        ));
+        $this->set('company_data',$company_data);
+        $this->Company->id = $id;
+        if($this->request->is('get')) {
+            	$this->request->data = $this->Company->read();            
+        }
+        if($this->request->is('post') || $this->request->is('put')){
+        	pr($this->request->data);
+		        if($this->Company->saveAll($this->request->data)) {
+        	        $this->Session->setFlash('更新が完了しました');
+            	    $this->redirect(array('action'=>'index'));
+            			} else {
+                			$this->Session->setFlash('更新に失敗しました');
+            			  }        
+    	}
+    }
 
-	}
+
 
 	public function reviewindex(){
 		$conditions = array("Review.company_id" => $this->Auth->user('id'));
@@ -144,7 +168,7 @@ class CompaniesController extends AppController{
 		}
 		if($this->Review->save($data, 'false', $fields)){
 			$this->Session->setFlash('レビューを承認しました。');
-			$this->redirect(array('action'=>'reviewindex'));
+			$this->redirect(array('action'=>'index'));
 		}
 	}
 
