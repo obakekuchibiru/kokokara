@@ -108,17 +108,6 @@ class CompaniesController extends AppController{
     }
 
 
-	/*#2015/05/01 by mark
-	public function welcome(){
-		//Session が空じゃなかったら
-		if($this->Session->read('myData')){
-			//$id=$this->Session->read("myData")['Student']['id'];
-			$this->set('myData', $this->Session->read('myData'));
-		}
-	}
-	*/
-
-
 
 
 	public function addevent(){
@@ -135,34 +124,6 @@ class CompaniesController extends AppController{
 		}
 	}
 	
-	
-
-	public function addevent_preview(){
-		$this->Session->setFlash('確認画面');
-		$this->Company->set($this->request->data);
-		if($this->request->is('post')){
-			if($this->Company->Event->saveAll($this->request->data)){
-				$this->Session->setFlash('イベント登録が完了しました。');
-				$this->redirect('index');
-			}else{
-				$this->Session->setFlash('登録に失敗しました。');
-			}
-		}
-	}
-
-	public function addevent_complete(){
-			if($this->request->is('post')){
-			if($this->Company->Event->saveAll($this->request->data)){
-				$this->Session->setFlash('イベント登録が完了しました。');
-				$this->redirect('index');
-			}else{
-				$this->Session->setFlash('登録に失敗しました。');
-			}
-		}
-	}
-
-	
-
 
 	public function editevent(){
 

@@ -11,7 +11,14 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 class Student extends AppModel{
 	//タグアソシエーション
 	//アソシエーション
-
+	public $hasMany = array(
+		'picture'=> array(
+			'className' => 'Attachment',
+            'foreignKey' => 'foreign_key',
+            'conditions' => array(
+               'Picture.model' => 'Student')
+            ),
+		);
 
 /*	public $hasAndBelongsToMany = array(
 		'Stag',

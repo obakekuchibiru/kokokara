@@ -79,7 +79,7 @@ class PagesController extends AppController {
 
 	}
 
-	public function kokokara(){
+	public function about_us(){
 
 	}
 

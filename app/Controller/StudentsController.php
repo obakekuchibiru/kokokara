@@ -66,7 +66,6 @@ class StudentsController extends AppController{
 
 	#新規登録処理
 	public function signup(){
-
 		if ($this->request->is('post')) {
                 $this->Student->create();
                 if ($this->Student->save($this->request->data)) {

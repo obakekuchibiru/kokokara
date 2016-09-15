@@ -417,9 +417,6 @@ $(document).ready(function(){
                             <? echo $this->Form->input('Event.staff_message', array('label' => false,'style'=>'height:100px;')); ?>
                           </div>
                           <div class="col-sm-9 col-sm-offset-3 user-edit-info">
-                <? echo $this->Form->input('Album.0.attachment', array('type'=>'file','label'=>false,'multiple'=>true)); ?>
-                <? echo $this->Form->input('Album.0.model', array('type'=>'hidden','value'=>'Event','multiple'=>true)); ?>
-                <? echo $this->Form->input('Album.0.purpose', array('type'=>'hidden','value'=>'Album','multiple'=>true)); ?>
                           </div>
                         </div>
                         <div class="raw clearfix dash-elm">
@@ -481,21 +478,6 @@ $(document).ready(function(){
     </div>
 </div>
 
-<!-- album用
-
-                <? echo $this->Form->input('Album.0.attachment', array('type'=>'file','label'=>false)); ?>
-                <? echo $this->Form->input('Album.0.model', array('type'=>'hidden','value'=>'Event')); ?>
-                <? echo $this->Form->input('Album.0.purpose', array('type'=>'hidden','value'=>'Album')); ?>
-
-                <? echo $this->Form->input('Album.1.attachment', array('type'=>'file','label'=>false)); ?>
-                <? echo $this->Form->input('Album.1.model', array('type'=>'hidden','value'=>'Event')); ?>
-                <? echo $this->Form->input('Album.1.purpose', array('type'=>'hidden','value'=>'Album')); ?>
-
-                <? echo $this->Form->input('Album.2.attachment', array('type'=>'file','label'=>false)); ?>
-                <? echo $this->Form->input('Album.2.model', array('type'=>'hidden','value'=>'Event')); ?>
-                <? echo $this->Form->input('Album.2.purpose', array('type'=>'hidden','value'=>'Album')); ?>
-
--->
 
 
 <!-- 任意項目開始 -->
