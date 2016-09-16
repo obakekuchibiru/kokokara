@@ -151,6 +151,10 @@ class CompaniesController extends AppController{
     	}
     }
 
+    public function confirmevent($id=null){
+    	
+    }
+
 
 
 	public function reviewindex(){
