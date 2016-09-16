@@ -84,12 +84,10 @@
                   </div>
                   <div class="raw clearfix dash-elm">
                     <div class="col-xs-12 title-bar">
-                      <p><i class="fa fa-envelope-o" aria-hidden="true"></i> 応募状況</p>
+                      <p><i class="fa fa-envelope-o" aria-hidden="true"></i> イベント一覧</p>
                     </div>
                     <div class="col-xs-12 dash-article" style="height:300px;">
-                      <p>
-                        新着応募はありません。
-                      </p>
+                      <? echo $this->element('lists/uploaded-events-lists'); ?>
                     </div>
                   </div>
                 </div>
