@@ -40,6 +40,8 @@ class EventsController extends AppController{
 
 
 
+
+
     public function updateLogin(){
         if($this->Session->read('myData')){
             $id=$this->Session->read("myData")['Student']['id'];
@@ -49,51 +51,25 @@ class EventsController extends AppController{
     }
 
     public function index(){
-        $this->set('events', $this->Event->find('all'));
-        debug($events);
-//        $this->loadModel('EventsLog');
-//        $this->loadModel('Student');
-//
-//        $myData=$this->Session->read("myData");
-        //$this->updateLogin();
-        /*if($myData==null){
-            $this->redirect(array("controller"=>"Student","action"=>"login"));
-        }*/
-//        $id=$this->request->query["id"];
-
-        //ログ
-//        $this->EventsLog->goEventsLog($myData['Student']['id'], $id);
-//        $event=$this->Event->getOriginal($id);
-
-        //もし不正なidなら404
-        /*
-        if($event==null){
-
+        //リクエストがPOSTの場合
+     if($this->request->is('post')){
+         //Formの値を取得
+         //$title=$this->data['Search']['title'];
+        $title=$this->request->data['Search']['title'];
+         //POSTされたデータを曖昧検索
+        $data=$this->Event->find('all',array(
+            'conditions'=>array('title like'=>'%'.$title.'%')));
+        $this->set('event',$data);
+        }else{ //POST以外の場合
+        //Collectionモデルから全てのデータを検索
+            $data=$this->Event->find('all');
+            //データの連想配列をセット
+            $this->set('event',$data);
         }
-        */
-//        if($event==null){
-//            throw new NotFoundException();
-//        }
-
-        //sessionのmyData更新
-        /*
-        $myData=$this->Student->find("first",array("conditions"=>array("Student.id"=>$myData['Student']['id'])));
-        $this->Session->write('myData', $myData);
-        */
-        //event取得
-        //ジャンルごとのイベント情報を追加したものをcomeventに入れる
+    }
 
 
-        //新着記事 by mark
-//        $new_events = $this->Event->getEventsByCreated(10);
-
-        //$comevent=$this->Event->getOriginal($id);
-//        $this->set("myData",$myData);
-//     $this->set("event",$event);
-        //新着記事 by mark
-//        $this->set('new_events', $new_events);
-//        $this->render();
-
+    public function search(){
 
     }
 
@@ -213,10 +189,6 @@ class EventsController extends AppController{
 
     //2015/04/27 追加 by mark//////////
     public function thanks() {
-
-    }
-
-    public function consult(){
 
     }
 
