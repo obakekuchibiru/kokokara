@@ -126,7 +126,10 @@ echo $this->Form->create('Company', array('url' => 'signup'));
                                 <?php echo $this->Form->input('Company.password', array('type'=>'password', 'data-minlength'=>'6','class'=>'form-control','id'=>'inputPassword','label' => false, 'required'));?>
                               </div>
                               <div class="col-sm-6">
+                              <!--
                                 <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="パスワードが一致しておりません" placeholder="パスワード確認" required>
+                                -->
+                                 <?php echo $this->Form->input('Company.password_confirm'); ?>
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
@@ -135,6 +138,8 @@ echo $this->Form->create('Company', array('url' => 'signup'));
                       </div>
                   </div>
                   <!-- 必須項目終了 -->
+                  <?php echo $this->Form->input('Company.kokokara_pass'); ?>
+
                   <div class="raw clearfix dash-elm">
                     <div class="col-sm-4 col-sm-offset-4">
                       <?php echo $this->Form->end('登録する', array('class' => 'btn btn-primary btn-lg btn-block')); ?>
