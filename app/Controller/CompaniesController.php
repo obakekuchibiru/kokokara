@@ -36,7 +36,7 @@ class CompaniesController extends AppController{
 
 	public function index(){
 		$this->loadModel('Event');
-		$event = $this->Event->findBycompany_id($this->Auth->user('id'));
+		$event = $this->Event->findAllBycompany_id($this->Auth->user('id'));
 		$this->set('event', $event);
 		$conditions = array("Review.company_id" => $this->Auth->user('id'), "Review.active" => "0");
 		$this->loadModel('Review');
@@ -45,7 +45,7 @@ class CompaniesController extends AppController{
 		$this->loadModel('Attachment');
 		$company = $this->Auth->user();
 		$this->set('company', $company);
-		$this->set('company_logo', $this->Attachment->findByForeign_keyAndModel($this->Auth->user('id'),'company'));
+		$this->set('company_logo', $this->Attachment->findAllByForeign_keyAndModel($this->Auth->user('id'),'company'));
 	}
 
 	#新規登録処理
