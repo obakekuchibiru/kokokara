@@ -47,12 +47,51 @@ class Company extends AppModel{
 			)
 		),
 		'password' => array(
+				array(
 			'rule' => 'alphaNumeric',
 			'message' => '有効なパスワードを入力してください',
 //			'required' => true
+			),
+				array(
+			'rule' => 'passwordConfirm',
+			'message' => 'パスワードが一致していません',
+			),
+		),
+		'password_confirm' => array(
+				array(
+			'rule' => 'notEmpty',
+			'message' => 'パスワード(確認)を入力してください',
+				),
+
+		),
+		'kokokara_pass' => array(
+				array(
+			'rule' => 'notEmpty',
+			'message' => 'kokokara_passを入力してください',
+				),
+				array(
+			'rule' => 'kokokaraPass',
+			'message' => 'kokokara_passが正しくありません',
+				),
 		),
 		
 	);
+
+	public function passwordConfirm($check){
+		if($this->data['Company']['password'] === $this->data['Company']['password_confirm']){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	public function kokokaraPass($check){
+		if($this->data['Company']['kokokara_pass'] == ""){
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 	public function loadModel($model_name) {
 		App::uses($model_name,'Model');
