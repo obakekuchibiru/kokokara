@@ -108,11 +108,6 @@
 </li>
 <?php endforeach; ?>
 </ul>
-<?php foreach ($event as $event) : ?>
-<li>
-  <?php echo h($event['Event']['title']); ?>
-</li>
-<?php endforeach; ?>
 <?php echo $this->Html->link('企業情報編集',array('action'=>'edit', $company['id'])); ?><br>
 <?php echo $this->Html->link('新規イベント登録','/companies/addevent'); ?><br>
 <?php echo $this->Html->link('イベント編集','/companies/editevent'); ?><br>

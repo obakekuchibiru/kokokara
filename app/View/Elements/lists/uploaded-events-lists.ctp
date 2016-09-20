@@ -18,10 +18,15 @@ jQuery( function($) {
     </tr>
   </thead>
   <tbody class="dashboard-lists">
-    <?php
-		foreach ($event as $event);{
-			echo $this->element('lists/inside-foreach-eventlist');
-		}
+		<?php
+		foreach ($event as $event) :
+		  echo $this->element('lists/inside-foreach-eventlist',
+				array(
+					"elementtitle" => $event['Event']['title'],
+					"elementid" => $event['Event']['id']
+				)
+			);
+		endforeach;
 		?>
   </tbody>
 </table>
